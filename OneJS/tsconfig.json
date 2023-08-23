@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "ScriptLib/3rdparty/*",
+                "ScriptLib/*",
+                "Addons/*",
+                "Modules/*",
+                "*"
+            ]
+        },
+        "skipLibCheck": true,
+        "removeComments": true,
+        "jsx": "react",
+        "jsxFactory": "h",
+        "target": "es5",
+        "module": "commonjs",
+        "forceConsistentCasingInFileNames": false,
+        "lib": [
+            "ES6", "es2017"
+        ]
+    }
+}
