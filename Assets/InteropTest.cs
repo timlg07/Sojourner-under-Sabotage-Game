@@ -24,4 +24,9 @@ public class InteropTest : MonoBehaviour
         _progress++;
         OnProgressChanged?.Invoke(_progress);
     }
+    
+    public void OpenWebView()
+    {
+        BrowserUI.ShowMessage();
+    }
 }
