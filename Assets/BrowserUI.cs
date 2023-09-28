@@ -8,6 +8,13 @@ public class BrowserUI : MonoBehaviour
     private static extern void _ShowMessage(string message);
 #endif
 
+    public void Start()
+    {
+#if UNITY_WEBGL
+        WebGLInput.captureAllKeyboardInput = false;
+#endif
+    }
+    
     public static void ShowMessage()
     {
 #if UNITY_WEBGL
