@@ -1,9 +1,9 @@
 mergeInto(LibraryManager.library, {
-    _ShowMessage: function (content) {
-        const value = UTF8ToString(content);
-        if (window.monacoEditor) {
-            window.monacoEditor.setValue(value);
-            document.getElementById('monaco-container').style.display = "initial";
-        }
+    _ShowMessage: function (str1, str2) {
+        const valueDebug = UTF8ToString(str1);
+        const valueTest = UTF8ToString(str2);
+        window.monacoEditorDebug.setValue(valueDebug);
+        window.monacoEditorTest.setValue(valueTest);
+        document.getElementById('ui-overlay').style.display = "initial";
     },
 });
