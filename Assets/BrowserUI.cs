@@ -26,4 +26,9 @@ public class BrowserUI : MonoBehaviour
         Debug.Log("Not supported on this platform (needs to be the WebGL export)");
 #endif
     }
+
+    public void OnEditorClose()
+    {
+        Debug.Log("Editor closed");
+    }
 }
