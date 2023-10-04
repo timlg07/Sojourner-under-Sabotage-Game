@@ -5,7 +5,7 @@ public class BrowserUI : MonoBehaviour
 {
 #if UNITY_WEBGL
     [DllImport("__Internal")]
-    private static extern void _ShowMessage(string debug, string test);
+    private static extern void OpenEditors(string componentName);
 #endif
 
     public void Start()
@@ -15,13 +15,11 @@ public class BrowserUI : MonoBehaviour
 #endif
     }
     
-    public static void ShowMessage()
+    public static void OpenEditorsForComponent(string componentName)
     {
 #if UNITY_WEBGL
-        _ShowMessage(
-            "public class Demo {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World\");\n\t}\n}",
-            "public class DemoTest {\n\t@Test\n\tpublic void test() {\n\t\tassertEquals(1,1);\n\t}\n}"
-        );
+        OpenEditors(componentName);
+        Time.timeScale = 0;
 #else
         Debug.Log("Not supported on this platform (needs to be the WebGL export)");
 #endif
@@ -30,5 +28,6 @@ public class BrowserUI : MonoBehaviour
     public void OnEditorClose()
     {
         Debug.Log("Editor closed");
+        Time.timeScale = 1;
     }
 }

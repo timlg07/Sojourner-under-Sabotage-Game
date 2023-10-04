@@ -27,6 +27,6 @@ public class InteropTest : MonoBehaviour
     
     public void OpenWebView()
     {
-        BrowserUI.ShowMessage();
+        BrowserUI.OpenEditorsForComponent("Demo");
     }
 }
