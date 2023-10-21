@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f610edca08287b4fbbd8ebab1a2caa4, type: 3}
+  m_Name: AutoTileMapData
+  m_EditorClassIdentifier: 
+  Data:
+    Metadata:
+      version: 1.2.4
+      compressedTileData: 1
+    TileMapWidth: 200
+    TileMapHeight: 200
+    TileData:
+    - Tiles: f6edfffffffffffff6ffffff1b00000042ffffffffffffff1b000000f8ffffff4d0000001b00000042ffffffffffffff1b000000f8ffffff4d0000001b00000042ffffffffffffff1b000000f8ffffffb40000001b00000042ffffffffffffff1b000000f8ffffffb40000001b00000042ffffffffffffff1b000000f8ffffffb40000001b00000042ffffffffffffff1b000000f8ffffffb40000001b00000042ffffffffffffff1b000000f8ffffffb40000001b000000ffffffff8101000044ffffffffffffff1b000000f8ffffffb40000001b00000088010000890100008a0100008b010000ffffffff8101000048ffffffffffffff1b000000f8ffffffb40000001b000000900100009a010000920100002d00000088010000890100008a0100008b0100004afffffffffffffff6ffffff1b000000feffffff990100009a0100002d00000098010000910100009a01000049fffffffffffffffbffffff4d0000007a000000fcffffff4d00000098010000feffffff990100002d000000feffffffffffffff980100004dfffffffffffffff7ffffff100000002d000000f9ffffff100000002d0000004afffffffffffffff7ffffff100000002d000000f9ffffff100000002d0000004afffffffffffffff7ffffff100000002d000000feffffff1000000018000000fcffffff100000002d0000004afffffffffffffff7ffffff100000002d000000fbffffff1000000018000000100000002d0000004afffffffffffffff7ffffff100000002d000000f9ffffff100000002d0000004afffffffffffffff7ffffff10000000f7ffffff2d00000040ffffffffffffff2d00000039ffffffffffffff2d00000039ffffffffffffff2d00000039ffffffffffffff2d0000003986ffffffffffff
+      Visible: 1
+      Name: Ground
+      LayerType: 0
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: 1
+    - Tiles: 09eaffffffffffffd80100003cffffffffffffff5c03000031ffffffffffffff80010000ffffffff820100008301000045ffffffffffffffd9010000f4ffffffffffffff80010000feffffffffffffff830100003dffffffffffffff9301000035ffffffffffffff93010000cbf9ffffffffffff4001000041010000e383ffffffffffff
+      Visible: 1
+      Name: Ground Overlay
+      LayerType: 0
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: 0.5
+    - Tiles: 2cedffffffffffff1f030000ffffffff1f03000051030000520300001f0300003effffffffffffff270300000503000027030000590300005a030000270300005603000040fffffffffffffffeffffff9f0100000d030000ffffffff6103000062030000ffffffff5e03000078feffffffffffff5303000054030000550300003bffffffffffffff5b030000ffffffff5d03000057030000ffffffffa3040000a4040000a504000040ffffffffffffff6303000064030000650300005f030000ffffffffab040000ac040000ad040000eafcffffffffffff5401000039ffffffffffffff5c010000feffffffffffffff6b0100006c0100003dffffffffffffff64010000feffffffffffffff73010000740100003cffffffffffffff6b0100006c0100007b0100007c0100003cffffffffffffff73010000740100003affffffffffffff7b0100007c01000033ffffffffffffff38010000390100001b83ffffffffffff
+      Visible: 1
+      Name: Overlay
+      LayerType: 1
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: -1
