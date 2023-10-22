@@ -1,12 +1,16 @@
 using UnityEngine;
 using System.Runtime.InteropServices;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class BrowserUI : MonoBehaviour
 {
-#if UNITY_WEBGL
+#if !UNITY_EDITOR && UNITY_WEBGL
     [DllImport("__Internal")]
     private static extern void OpenEditors(string componentName);
 #endif
+    
+    public UnityEvent onEditorCloseEvent;
 
     public void Start()
     {
@@ -17,7 +21,7 @@ public class BrowserUI : MonoBehaviour
     
     public static void OpenEditorsForComponent(string componentName)
     {
-#if UNITY_WEBGL
+#if !UNITY_EDITOR && UNITY_WEBGL
         OpenEditors(componentName);
         Time.timeScale = 0;
 #else
@@ -29,5 +33,6 @@ public class BrowserUI : MonoBehaviour
     {
         Debug.Log("Editor closed");
         Time.timeScale = 1;
+        onEditorCloseEvent?.Invoke();
     }
 }
