@@ -23,6 +23,8 @@ namespace CreativeSpore.RpgMapEditor
         public float SlowMoveDistance = 1f;
         [Tooltip("Distance (red) in which the companion does not move")]
         public float NoMoveDistance = 1f;
+        [Tooltip("Probability of moving in NoMoveDistance area")]
+        public float MoveInNoMoveAreaProbability = 0.5f;
         [Tooltip("If true, the companion flees from player instead following him")]
         public bool FleeFromTarget = false;
         [Tooltip("The companion will follow or flee from Target. If null, target will be the first player found.")]
@@ -92,8 +94,8 @@ namespace CreativeSpore.RpgMapEditor
             yield return new WaitForSeconds(Random.Range(MinStepDelay, MaxStepDelay));
             while (true)
             {
-                var MaxActualDelay = MaxStepDelay;
-                var MinActualDelay = MinStepDelay;
+                var MaxActualDelay = 0f;
+                var MinActualDelay = 0f;
                 m_velocity = Random.rotation * Vector2.right;
                 m_velocity = m_velocity.normalized * MovingStepDist;
                 if (!Target) Target = FindObjectOfType<PlayerController>().gameObject;
@@ -103,21 +105,32 @@ namespace CreativeSpore.RpgMapEditor
                     
                     if (vDist.magnitude <= NoMoveDistance)
                     {
-                        m_dirAnim.IsPlaying = false;
-                        yield return new WaitForSeconds(.25f);
-                        continue;
-                    }
-                    m_dirAnim.IsPlaying = true;
-                    
-                    if (vDist.magnitude <= SightDistance)
-                    {
-                        m_velocity = Vector2.Lerp(vDist, m_velocity, Random.value / 8f);
+                        if (Random.value > MoveInNoMoveAreaProbability)
+                        {
+                            m_dirAnim.IsPlaying = false;
+                            yield return new WaitForSeconds(.25f);
+                            continue;
+                        }
+                        // else: move even though still in NoMoveDistance area
                         
+                        m_dirAnim.IsPlaying = true;
+                        m_velocity = Vector2.Lerp(
+                            new Vector2(vDist.x / Random.Range(-.5f, 2f), vDist.y / Random.Range(-.5f, 2f)), 
+                            m_velocity, 
+                            Random.value / 4f
+                        );
+                    }
+                    else if (vDist.magnitude <= SightDistance)
+                    {
+                        m_dirAnim.IsPlaying = true;
+                        m_velocity = Vector2.Lerp(vDist, m_velocity, Random.value / 8f);
+                    
                         // if the companion is close to the player, it will move less often
                         MaxActualDelay = Mathf.Lerp(MaxStepDelay, 0, vDist.magnitude / SlowMoveDistance);
                         MinActualDelay = Mathf.Lerp(MinStepDelay, 0, vDist.magnitude / SlowMoveDistance);
-                        Debug.Log("MaxActualDelay: " + MaxActualDelay + " MinActualDelay: " + MinActualDelay);
+                        // Debug.Log("MaxActualDelay: " + MaxActualDelay + " MinActualDelay: " + MinActualDelay);
                     }
+                    
                 }
                 for (float dist = 0; dist < MovingStepDist; )
                 {

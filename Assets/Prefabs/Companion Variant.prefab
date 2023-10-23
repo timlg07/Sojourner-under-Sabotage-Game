@@ -110,12 +110,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874e5500d9c0ec342836f3add21df1d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxStepDelay: 5
-  MinStepDelay: 1
+  MaxStepDelay: 0
+  MinStepDelay: 0
   MovingStepDist: 0.4
   MovingSpeed: 0.8
   SightDistance: 20
   SlowMoveDistance: 2
-  NoMoveDistance: 0.5
+  NoMoveDistance: 1
+  MoveInNoMoveAreaProbability: 0.03
   FleeFromTarget: 0
   Target: {fileID: 0}
