@@ -33,7 +33,7 @@ MonoBehaviour:
       SortingLayer: Default
       SortingOrder: 0
       Depth: 0.5
-    - Tiles: fde9ffffffffffff2201000039ffffffffffffff0401000040ffffffffffffff30010000340100003affffffffffffff300100003401000042ffffffffffffff2f010000f9ffffffffffffff3001000034010000de7cffffffffffff
+    - Tiles: fde9ffffffffffff2201000039ffffffffffffff04010000b8fdffffffffffff2f010000d57cffffffffffff
       Visible: 1
       Name: Overlay
       LayerType: 1
