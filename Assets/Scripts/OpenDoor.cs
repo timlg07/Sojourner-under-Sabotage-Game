@@ -8,26 +8,26 @@ using UnityEngine;
 
 public class OpenDoor : MonoBehaviour
 {
+    private float height;
+    private int blockLayer = 1;
     private int oldTileId = -1;
+    private Vector3 oldPosition;
     
-    // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        var childRenderer = GetComponentInChildren<Renderer>();
+        height = childRenderer.bounds.size.y * 3;
     }
 
     public void Open()
     {
-        transform.DOScaleY(0, 0.5f);
-        var tile = RpgMapHelper.GetAutoTileByPosition(transform.position, 1);
-        oldTileId = tile.Id;
-        RpgMapHelper.SetAutoTileByPosition(transform.position, 0, 1);
+        oldPosition = transform.position;
+        oldTileId = RpgMapHelper.GetAutoTileByPosition(oldPosition, blockLayer).Id;
+        
+        transform.DOScaleY(0, 1f);
+        transform.DOMoveY(oldPosition.y + height - .1f, 1f);
+        
+        RpgMapHelper.SetAutoTileByPosition(oldPosition, 0, blockLayer);
     }
 
     private void OnApplicationQuit()
@@ -35,7 +35,7 @@ public class OpenDoor : MonoBehaviour
 #if UNITY_EDITOR
         if (Application.isPlaying && oldTileId != -1)
         {
-            RpgMapHelper.SetAutoTileByPosition(transform.position, oldTileId, 1);
+            RpgMapHelper.SetAutoTileByPosition(oldPosition, oldTileId, blockLayer);
         }
 #endif
     }
