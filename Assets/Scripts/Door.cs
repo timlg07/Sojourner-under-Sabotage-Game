@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using CreativeSpore.RpgMapEditor;
 using DG.Tweening;
+using DG.Tweening.Core;
+using DG.Tweening.Plugins.Options;
 using UnityEditor;
 using UnityEngine;
 
@@ -16,6 +18,9 @@ public class Door : MonoBehaviour
     private int _initialTileId = -1;
     private Vector3 _initialPosition;
     private bool _isLocked = true;
+    private TweenerCore<Vector3, Vector3, VectorOptions> _scaleTween;
+    private TweenerCore<Vector3, Vector3, VectorOptions> _moveTween;
+    private InteractableWorldObject _iwo;
 
     void Start()
     {
@@ -24,30 +29,47 @@ public class Door : MonoBehaviour
         
         _initialPosition = transform.position;
         _initialTileId = RpgMapHelper.GetAutoTileByPosition(_initialPosition, _blockLayer).Id;
+        
+        _iwo = GetComponent<InteractableWorldObject>();
     }
 
     public void Open()
     {
         if (_isLocked) return;
-
-        transform.DOScaleY(0, openDuration);
-        transform.DOMoveY(_initialPosition.y + _height - .1f, openDuration);
+        
+        AbortTweens();
+        _scaleTween = transform.DOScaleY(0, openDuration);
+        _moveTween = transform.DOMoveY(_initialPosition.y + _height - .1f, openDuration);
         
         RpgMapHelper.SetAutoTileByPosition(_initialPosition, 0, _blockLayer);
     }
     
     public void Close()
     {
-        transform.DOScaleY(1, closeDuration);
-        transform.DOMoveY(_initialPosition.y, closeDuration);
+        if (IsNotClear()) return;
+        
+        AbortTweens();
+        _scaleTween = transform.DOScaleY(1, closeDuration);
+        _moveTween = transform.DOMoveY(_initialPosition.y, closeDuration);
         
         if (_isLocked) RpgMapHelper.SetAutoTileByPosition(_initialPosition, _initialTileId, _blockLayer);
     }
-    
+
+    private bool IsNotClear()
+    {
+        return _iwo.IsPetInRange || _iwo.IsPlayerInRange;
+    }
+
     public void Unlock()
     {
         _isLocked = false;
         Open();
+    }
+
+    private void AbortTweens()
+    {
+        if (_scaleTween != null && _scaleTween.IsPlaying()) _scaleTween.Kill();
+        if (_moveTween != null && _moveTween.IsPlaying()) _moveTween.Kill();
     }
 
     private void OnApplicationQuit()

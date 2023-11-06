@@ -27,10 +27,15 @@ public class InteractableWorldObject : MonoBehaviour
 
     [Tooltip("If true, the event will only be triggered once.")]
     public bool reEnableAfterLeave;
+    
+    // PROPERTIES PUBLIC READ-ONLY
+    public bool IsPlayerInRange { get; private set; }
+    public bool IsPetInRange { get; private set; }
 
     // PROPERTIES SERIALIZED
     [SerializeField] private bool isActivationKeyPressed;
     [SerializeField] private float distanceToPlayer;
+    [SerializeField] private float distanceToPet;
     [SerializeField] private bool fixedPosition;
 
     // PROPERTIES PRIVATE
@@ -38,8 +43,6 @@ public class InteractableWorldObject : MonoBehaviour
     private CustomCompanionAI _pet;
     private Renderer _helpTextRenderer;
     private bool _hasHelpText;
-    private bool _isPlayerInRange;
-    private bool _isPetInRange;
     private Vector3? _position = null;
 
     void Start()
@@ -54,7 +57,8 @@ public class InteractableWorldObject : MonoBehaviour
     void Reset()
     {
         isEnabled = true;
-        _isPlayerInRange = false;
+        IsPlayerInRange = false;
+        IsPetInRange = false;
         if (fixedPosition)
         {
             _position = transform.position;
@@ -65,19 +69,20 @@ public class InteractableWorldObject : MonoBehaviour
     {
         isActivationKeyPressed = isActivationKeyPressed && Input.GetKey(activationKey)
                                  || Input.GetKeyDown(activationKey) && Time.timeSinceLevelLoad > 0.5f;
+        
         var pos = _position ?? transform.position;
         distanceToPlayer = Vector2.Distance(pos, _player.transform.position);
-        var distanceToPet = Vector2.Distance(pos, _pet.transform.position);
-
+        distanceToPet = Vector2.Distance(pos, _pet.transform.position);
         var isPlayerCloseEnough = distanceToPlayer <= distanceFromPlayerToTrigger;
         var isPetCloseEnough = distanceToPet <= distanceFromPetToTrigger;
+        
         if (_hasHelpText) _helpTextRenderer.enabled = isPlayerCloseEnough && isEnabled;
         if (isPlayerCloseEnough)
         {
-            if (!_isPlayerInRange)
+            if (!IsPlayerInRange)
             {
+                IsPlayerInRange = true;
                 onPlayerEnter?.Invoke();
-                _isPlayerInRange = true;
             }
 
             if (isActivationKeyPressed && isEnabled)
@@ -101,25 +106,25 @@ public class InteractableWorldObject : MonoBehaviour
                 isEnabled = true;
             }
 
-            if (_isPlayerInRange)
+            if (IsPlayerInRange)
             {
+                IsPlayerInRange = false;
                 onPlayerLeave?.Invoke();
-                _isPlayerInRange = false;
             }
         }
 
         if (isPetCloseEnough)
         {
-            if (!_isPetInRange)
+            if (!IsPetInRange)
             {
+                IsPetInRange = true;
                 onPetEnter?.Invoke();
-                _isPetInRange = true;
             }
         }
-        else if (_isPetInRange)
+        else if (IsPetInRange)
         {
+            IsPetInRange = false;
             onPetLeave?.Invoke();
-            _isPetInRange = false;
         }
     }
 }
