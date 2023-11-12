@@ -14,7 +14,6 @@ public class InteractableWorldObject : MonoBehaviour
     public UnityEvent onPlayerEnter;
     public UnityEvent onPlayerLeave;
     public UnityEvent onPetEnter;
-
     public UnityEvent onPetLeave;
 
     // PROPERTIES PUBLIC
@@ -44,7 +43,11 @@ public class InteractableWorldObject : MonoBehaviour
     private Renderer _helpTextRenderer;
     private bool _hasHelpText;
     private Vector3? _position = null;
+    
+    // METHODS PUBLIC
+    public void EnableOnEvent() => isEnabled = true;
 
+    // UNITY EVENT METHODS
     void Start()
     {
         _player = FindObjectOfType<PlayerController>();
@@ -56,7 +59,6 @@ public class InteractableWorldObject : MonoBehaviour
 
     void Reset()
     {
-        isEnabled = true;
         IsPlayerInRange = false;
         IsPetInRange = false;
         if (fixedPosition)
