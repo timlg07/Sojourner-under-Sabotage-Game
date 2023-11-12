@@ -36,9 +36,9 @@ public class InteractableWorldObject : MonoBehaviour
     [SerializeField] private float distanceToPlayer;
     [SerializeField] private float distanceToPet;
     [SerializeField] private bool fixedPosition;
+    [SerializeField] private bool isEnabled;
 
     // PROPERTIES PRIVATE
-    private bool _isEnabled;
     private PlayerController _player;
     private CustomCompanionAI _pet;
     private Renderer _helpTextRenderer;
@@ -48,10 +48,10 @@ public class InteractableWorldObject : MonoBehaviour
     // METHODS PUBLIC
     public bool IsEnabled
     {
-        get => _isEnabled;
+        get => isEnabled;
         set
         {
-            _isEnabled = value;
+            isEnabled = value;
             interactionIndicator?.gameObject.SetActive(IsEnabled);
         }
     }
