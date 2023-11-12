@@ -17,7 +17,7 @@ public class InteractableWorldObject : MonoBehaviour
     public UnityEvent onPetLeave;
 
     // PROPERTIES PUBLIC
-    public bool isEnabled;
+    public InteractionIndicator interactionIndicator;
     public GameObject helpTextObj;
     public float helpTextFlashingFrequency = .25f;
     public float distanceFromPlayerToTrigger = .25f;
@@ -38,6 +38,7 @@ public class InteractableWorldObject : MonoBehaviour
     [SerializeField] private bool fixedPosition;
 
     // PROPERTIES PRIVATE
+    private bool _isEnabled;
     private PlayerController _player;
     private CustomCompanionAI _pet;
     private Renderer _helpTextRenderer;
@@ -45,7 +46,16 @@ public class InteractableWorldObject : MonoBehaviour
     private Vector3? _position = null;
     
     // METHODS PUBLIC
-    public void EnableOnEvent() => isEnabled = true;
+    public bool IsEnabled
+    {
+        get => _isEnabled;
+        set
+        {
+            _isEnabled = value;
+            interactionIndicator?.gameObject.SetActive(IsEnabled);
+        }
+    }
+    public void EnableOnEvent() => IsEnabled = true;
 
     // UNITY EVENT METHODS
     void Start()
@@ -54,6 +64,7 @@ public class InteractableWorldObject : MonoBehaviour
         _pet = FindObjectOfType<CustomCompanionAI>();
         _hasHelpText = helpTextObj != null;
         _helpTextRenderer = _hasHelpText ? helpTextObj.GetComponent<Renderer>() : null;
+        interactionIndicator = GetComponentInChildren<InteractionIndicator>();
         Reset();
     }
 
@@ -78,7 +89,7 @@ public class InteractableWorldObject : MonoBehaviour
         var isPlayerCloseEnough = distanceToPlayer <= distanceFromPlayerToTrigger;
         var isPetCloseEnough = distanceToPet <= distanceFromPetToTrigger;
         
-        if (_hasHelpText) _helpTextRenderer.enabled = isPlayerCloseEnough && isEnabled;
+        if (_hasHelpText) _helpTextRenderer.enabled = isPlayerCloseEnough && IsEnabled;
         if (isPlayerCloseEnough)
         {
             if (!IsPlayerInRange)
@@ -87,10 +98,10 @@ public class InteractableWorldObject : MonoBehaviour
                 onPlayerEnter?.Invoke();
             }
 
-            if (isActivationKeyPressed && isEnabled)
+            if (isActivationKeyPressed && IsEnabled)
             {
                 onPlayerInteract?.Invoke();
-                isEnabled = false;
+                IsEnabled = false;
             }
             else if (_hasHelpText)
             {
@@ -99,19 +110,25 @@ public class InteractableWorldObject : MonoBehaviour
                     Mathf.Clamp(0.2f + Mathf.Abs(Mathf.Sin(2f * Mathf.PI * helpTextFlashingFrequency * Time.time)), 0f,
                         1f);
                 _helpTextRenderer.material.color = textColor;
+                
+                // disable interaction indicator if help text is visible
+                interactionIndicator?.gameObject.SetActive(false);
             }
         }
         else
         {
             if (reEnableAfterLeave)
             {
-                isEnabled = true;
+                IsEnabled = true;
             }
 
             if (IsPlayerInRange)
             {
                 IsPlayerInRange = false;
                 onPlayerLeave?.Invoke();
+                
+                // enable interaction indicator again, as the help text is not visible anymore
+                interactionIndicator?.gameObject.SetActive(IsEnabled);
             }
         }
 

@@ -14,7 +14,7 @@ public class ComponentBehaviour : MonoBehaviour
         BrowserUI.OpenEditorsForComponent(componentName);
         FindObjectOfType<BrowserUI>().onEditorCloseEvent.AddListener(() =>
         {
-            GetComponent<InteractableWorldObject>().isEnabled = true;
+            GetComponent<InteractableWorldObject>().IsEnabled = true;
         });
     }
     
