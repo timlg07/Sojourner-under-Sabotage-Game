@@ -61,15 +61,4 @@ public class Door : MonoBehaviour
         if (ScaleTween != null && ScaleTween.IsPlaying()) ScaleTween.Kill();
         if (MoveTween != null && MoveTween.IsPlaying()) MoveTween.Kill();
     }
-
-    private void OnApplicationQuit()
-    {
-#if UNITY_EDITOR
-        // reset blocking tile
-        if (Application.isPlaying && _initialBlockTileId != -1)
-        {
-            RpgMapHelper.SetAutoTileByPosition(InitialPosition, _initialBlockTileId, BlockLayer);
-        }
-#endif
-    }
 }

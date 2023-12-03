@@ -822,7 +822,7 @@ MonoBehaviour:
   ViewCamera: {fileID: 0}
   AnimatedTileSpeed: 6
   IsCollisionEnabled: 1
-  SaveChangesAfterPlaying: 1
+  SaveChangesAfterPlaying: 0
   ShowGrid: 1
   MapLayers:
   - Visible: 1
