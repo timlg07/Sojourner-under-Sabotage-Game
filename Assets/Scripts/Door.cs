@@ -6,6 +6,10 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    /// <summary> The id of the room which is unlocked by this door in linear progression. </summary>
+    [SerializeField]
+    protected int roomId;
+    
     protected const float OpenDuration = 1f;
     protected const float CloseDuration = 1f;
     
@@ -53,6 +57,7 @@ public class Door : MonoBehaviour
     public void Unlock()
     {
         IsLocked = false;
+        StompEventDelegation.OnRoomUnlocked(roomId);
         Open();
     }
 
