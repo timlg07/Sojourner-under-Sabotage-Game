@@ -10,8 +10,6 @@ public class StompEventDelegation : MonoBehaviour
     private static extern void SendRoomUnlockedEvent(int roomId);
 #endif
     
-    public UnityEvent onEditorCloseEvent;
-
     public static void OnRoomUnlocked(int roomId)
     {
 #if !UNITY_EDITOR && UNITY_WEBGL
