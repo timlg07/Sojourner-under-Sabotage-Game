@@ -4,7 +4,6 @@ using DG.Tweening;
 public class Alarm : MonoBehaviour
 {
     [SerializeField]
-    [ContextMenuItem("TriggerAlarm - Item", "TriggerAlarm")]
     private UnityEngine.UI.Image image;
 
     private void Start()
@@ -13,7 +12,7 @@ public class Alarm : MonoBehaviour
     }
 
     [ContextMenu("TriggerAlarm")]
-    public void TriggerAlarm()
+    public void TriggerDemoAlarm()
     {
         TriggerAlarm("Demo");
     }
