@@ -10,17 +10,11 @@ public class Alarm : MonoBehaviour
     {
         image.color = new Color(255, 0, 0, 0);
     }
-
-    [ContextMenu("TriggerAlarm")]
-    public void TriggerDemoAlarm()
-    {
-        TriggerAlarm("Demo");
-    }
     
-    public void TriggerAlarm(string componentName)
+    public void TriggerAlarm(ComponentBehaviour component)
     {
-        Debug.Log("Alarm triggered for " + componentName);
-        Color targetColor = new Color(255, 0, 0, .5f); 
+        Debug.Log("Alarm triggered for " + component.componentName);
+        Color targetColor = new Color(255, 0, 0, .35f); 
         float duration = 1f;
 
         DOTween.To(
@@ -30,7 +24,7 @@ public class Alarm : MonoBehaviour
                 targetColor.a = x;
                 image.color = targetColor;
             }, 
-            .5f, 
+            .35f, 
             duration
         ).SetLoops(-1, LoopType.Yoyo);
     }
