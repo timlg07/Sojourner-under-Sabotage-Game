@@ -347,7 +347,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 190, y: 141.4}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7199042312820855879
 CanvasRenderer:
@@ -402,7 +402,7 @@ MonoBehaviour:
   uiCamera: {fileID: 6683580088503443146}
   target: {fileID: 0}
   pointerRectTransform: {fileID: 3824834861325371789}
-  pointerSprite: {fileID: 21300002, guid: db872b71e2864ef41955606b1d427397, type: 3}
+  pointerSprite: {fileID: 21300000, guid: 184f34bc68149b0419c9dad213cce8f9, type: 3}
   crossSprite: {fileID: 21300000, guid: 663803f3c8d480d4b9fd8069cca82ab8, type: 3}
   pointerImage: {fileID: 2585828728182968843}
   borderSize: 100
