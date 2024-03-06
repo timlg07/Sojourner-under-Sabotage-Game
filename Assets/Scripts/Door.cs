@@ -22,12 +22,14 @@ public class Door : MonoBehaviour
 
     private int _initialBlockTileId;
     private InteractableWorldObject _iwo;
+    private DoorManager _doorManager;
 
     public virtual void Start()
     {
         InitialPosition = transform.position;
         _initialBlockTileId = RpgMapHelper.GetAutoTileByPosition(InitialPosition, BlockLayer).Id;
         _iwo = GetComponent<InteractableWorldObject>();
+        _doorManager = FindObjectOfType<DoorManager>();
     }
 
     public virtual void Open()
@@ -54,6 +56,11 @@ public class Door : MonoBehaviour
         return _iwo.IsPetInRange || _iwo.IsPlayerInRange;
     }
 
+    public void TryToUnlock()
+    {
+        _doorManager.TryUnlockRoom(roomId, this);
+    }
+    
     public void Unlock()
     {
         IsLocked = false;

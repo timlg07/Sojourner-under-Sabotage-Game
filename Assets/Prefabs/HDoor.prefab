@@ -152,7 +152,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1156344006094433315}
         m_TargetAssemblyTypeName: Door, Assembly-CSharp
-        m_MethodName: Unlock
+        m_MethodName: TryToUnlock
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
