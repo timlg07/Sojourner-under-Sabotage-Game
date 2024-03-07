@@ -47,24 +47,20 @@ const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => 
         checkRotation()
     }, [board])
 
-    return <div class="w-full h-full flex justify-center items-center">
+    return <div class={emo`
+        height: 100%;
+        margin: 16px 32px;
+    `}>
         <div class={emo`
-            margin: 16px 32px;
             background-color: #aaa;
             padding: 32px;
-            width: 100%;
             height: 100%;
-            max-width: 600px;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: stretch;
         `}>
                 {board.map((row, i) => <div class={emo`
-                    flex: 1;
                     display: flex;
                     flex-direction: row;
-                    justify-content: stretch;
+                    justify-content: center;
+                    align-items: center;
                 `}>
                     {row.map((cell, j) => <div class={emo`
                         flex: 1;
@@ -77,7 +73,21 @@ const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => 
                             newBoard[i][j] = (newBoard[i][j] % 4) + 1
                             return newBoard
                         })
-                    }}>{cell}</div>)}
+                    }}><div class={emo`
+                    position: relative;
+                    padding-bottom: 100%;
+                    background-color: ${cell === 1 ? "#e03" : cell === 2 ? "#3e0" : cell === 3 ? "#03e" : "#ff4"};
+                `}><div class={emo`
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                `}>{cell}</div></div>
+                    </div>)}
                 </div>)}
         </div>
         
