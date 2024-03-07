@@ -1,7 +1,8 @@
 import { useEventfulState } from "onejs"
 import { emo } from "onejs/styled"
 import { h, render } from "preact"
-import { useEffect, useState } from "preact/hooks"
+import { useEffect, useState, useRef } from "preact/hooks"
+import { Dom } from "OneJS/Dom"
 const doorManager = require("doorManager")
 
 
@@ -47,26 +48,49 @@ const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => 
         checkRotation()
     }, [board])
 
+    const ref = useRef<Dom>()
+    useEffect(() => {
+        ref.current.parentNode.ve.generateVisualContent = OnGeometryChanged
+        ref.current.parentNode.ve.MarkDirtyRepaint()
+    }, [])
+
+    function OnGeometryChanged() {
+        const parent = ref.current.parentNode
+        const parentWidth = parent.ve.layout.width
+        const parentHeight = parent.ve.layout.height
+        const parentAspectRatio = parentWidth / parentHeight
+        const aspectRatio = currentPuzzle.cols / currentPuzzle.rows
+
+        if (parentAspectRatio > aspectRatio) {
+            ref.current.style.width = `${parentHeight * aspectRatio}px`
+            ref.current.style.height = `${parentHeight}px`
+        } else {
+            ref.current.style.width = `${parentWidth}px`
+            ref.current.style.height = `${parentWidth / aspectRatio}px`
+        }
+    }
+
     return <div class={emo`
         height: 100%;
-        margin: 16px 32px;
+        margin: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     `}>
-        <div class={emo`
+        <div ref={ref} class={emo`
             background-color: #aaa;
             padding: 32px;
             height: 100%;
         `}>
-                {board.map((row, i) => <div class={emo`
+            {board.map((row, i) => <div class={emo`
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
                 `}>
-                    {row.map((cell, j) => <div class={emo`
+                {row.map((cell, j) => <div class={emo`
                         flex: 1;
-                        border: 1px solid #000;
-                        background-color: #fff;
-                        margin: 4px;
                     `} onClick={() => {
                         setBoard((prevBoard) => {
                             const newBoard = prevBoard.map(row => row.slice())
@@ -76,7 +100,6 @@ const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => 
                     }}><div class={emo`
                     position: relative;
                     padding-bottom: 100%;
-                    background-color: ${cell === 1 ? "#e03" : cell === 2 ? "#3e0" : cell === 3 ? "#03e" : "#ff4"};
                 `}><div class={emo`
                     position: absolute;
                     top: 0;
@@ -86,12 +109,13 @@ const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => 
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    margin: 2px;
+                    background-color: ${cell === 1 ? "cyan" : cell === 2 ? "teal" : cell === 3 ? "blue" : "gray"};
                 `}>{cell}</div></div>
-                    </div>)}
                 </div>)}
+            </div>)}
         </div>
-        
-        Room: {roomId}</div>
+    </div>
 }
 
 const App = () => {
@@ -107,7 +131,7 @@ const App = () => {
         setMinigameActive(false)
         doorManager.UnlockRoom(roomId)
     }
-    
+
     useEffect(() => {
         doorManager.add_OnTryUnlockRoom(tryUnlockDoor)
 
@@ -120,7 +144,7 @@ const App = () => {
         }
     }, [])
 
-    return isMinigameActive 
+    return isMinigameActive
         ? <Puzzle roomId={roomId} puzzleSolved={puzzleSolved} />
         : null
 }
