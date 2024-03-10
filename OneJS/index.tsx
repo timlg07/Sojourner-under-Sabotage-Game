@@ -21,10 +21,10 @@ const puzzleData = {
             [3, 2, 1]
         ],
         solution: [
-            [1, 0, 0],
-            [2, 1, 0],
-            [0, 1, 2]
-        ]
+            [1, 1, 4],
+            [0, 0, 2],
+            [0, 0, 2]
+        ],
     },
 }
 
@@ -36,9 +36,12 @@ const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => 
         for (let i = 0; i < currentPuzzle.rows; i++) {
             for (let j = 0; j < currentPuzzle.cols; j++) {
                 const solution = currentPuzzle.solution[i][j]
-                if (solution !== 0 && solution !== board[i][j]) {
-                    return
-                }
+                const current = board[i][j]
+                const isNotNeeded = solution === 0
+                const isCorrect = solution === current
+                const isLine = currentPuzzle.board[i][j] === 1
+                const isLineRotatedButCorrect = isLine && (current + solution) % 2 === 0; // 1==3, 2==4
+                if (isNotNeeded || isCorrect || isLineRotatedButCorrect) continue; else return
             }
         }
         puzzleSolved()
@@ -90,28 +93,48 @@ const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => 
                     align-items: center;
                 `}>
                 {row.map((cell, j) => <div class={emo`
-                        flex: 1;
-                    `} onClick={() => {
-                        setBoard((prevBoard) => {
-                            const newBoard = prevBoard.map(row => row.slice())
-                            newBoard[i][j] = (newBoard[i][j] % 4) + 1
-                            return newBoard
-                        })
-                    }}><div class={emo`
-                    position: relative;
-                    padding-bottom: 100%;
-                `}><div class={emo`
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 2px;
-                    background-color: ${cell === 1 ? "cyan" : cell === 2 ? "teal" : cell === 3 ? "blue" : "gray"};
-                `}>{cell}</div></div>
+                            flex: 1;
+                        `} onClick={() => {
+                            setBoard((prevBoard) => {
+                                const newBoard = prevBoard.map(row => row.slice())
+                                newBoard[i][j] = (newBoard[i][j] % 4) + 1
+                                return newBoard
+                            })
+                        }}><div class={emo`
+                        position: relative;
+                        padding-bottom: 100%;
+                    `}>
+                        <div class={emo`
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 2px;
+                            rotate: ${cell === 1 ? "0deg" : cell === 2 ? "90deg" : cell === 3 ? "180deg" : "270deg"};
+                        `} style={{backgroundImage: __dirname + `/img/minigame_${currentPuzzle.board[i][j] - 1}.png`}}>{cell}</div>
+                        {(i === 0 && j === 0) && <div class={emo`
+                                position: absolute;
+                                width: 32px;
+                                height: 8px;
+                                margin-top: 50%;
+                                left: -32px;
+                                background-color: #000;
+                                translate: 0 -50%;
+                            `}></div>}
+                        {(i === board.length - 1 && j === board[i].length - 1) && <div class={emo`
+                                position: absolute;
+                                width: 32px;
+                                height: 8px;
+                                margin-top: 50%;
+                                right: -32px;
+                                background-color: #000;
+                                translate: 0 -50%;
+                            `}></div>}
+                    </div>
                 </div>)}
             </div>)}
         </div>
@@ -119,8 +142,8 @@ const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => 
 }
 
 const App = () => {
-    const [roomId, setRoomId] = useState(0)
-    const [isMinigameActive, setMinigameActive] = useState(false);
+    const [roomId, setRoomId] = useState(1)
+    const [isMinigameActive, setMinigameActive] = useState(true);
 
     function tryUnlockDoor(pRoomId: number) {
         setMinigameActive(true)
