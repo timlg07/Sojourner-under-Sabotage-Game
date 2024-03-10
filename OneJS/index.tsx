@@ -1,10 +1,8 @@
-import { useEventfulState } from "onejs"
 import { emo } from "onejs/styled"
 import { h, render } from "preact"
 import { useEffect, useState, useRef } from "preact/hooks"
 import { Dom } from "OneJS/Dom"
 const doorManager = require("doorManager")
-
 
 const puzzleData = {
     1: {
@@ -115,7 +113,7 @@ const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => 
                             align-items: center;
                             margin: 2px;
                             rotate: ${cell === 1 ? "0deg" : cell === 2 ? "90deg" : cell === 3 ? "180deg" : "270deg"};
-                        `} style={{backgroundImage: __dirname + `/img/minigame_${currentPuzzle.board[i][j] - 1}.png`}}>{cell}</div>
+                        `} style={{backgroundImage: __dirname + `/img/minigame_${currentPuzzle.board[i][j] - 1}.png`}}></div>
                         {(i === 0 && j === 0) && <div class={emo`
                                 position: absolute;
                                 width: 32px;
@@ -142,8 +140,8 @@ const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => 
 }
 
 const App = () => {
-    const [roomId, setRoomId] = useState(1)
-    const [isMinigameActive, setMinigameActive] = useState(true);
+    const [roomId, setRoomId] = useState(0)
+    const [isMinigameActive, setMinigameActive] = useState(false);
 
     function tryUnlockDoor(pRoomId: number) {
         setMinigameActive(true)
