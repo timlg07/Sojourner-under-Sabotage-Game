@@ -1,10 +1,13 @@
 using UnityEngine;
 using DG.Tweening;
+using DG.Tweening.Core;
+using DG.Tweening.Plugins.Options;
 
 public class Alarm : MonoBehaviour
 {
     [SerializeField]
     private UnityEngine.UI.Image image;
+    private TweenerCore<float, float, FloatOptions> _alarmTween;
 
     private void Start()
     {
@@ -17,7 +20,7 @@ public class Alarm : MonoBehaviour
         Color targetColor = new Color(255, 0, 0, .35f); 
         float duration = 1f;
 
-        DOTween.To(
+        _alarmTween = DOTween.To(
             () => image.color.a, 
             x =>
             {
@@ -27,5 +30,12 @@ public class Alarm : MonoBehaviour
             .35f, 
             duration
         ).SetLoops(-1, LoopType.Yoyo);
+    }
+    
+    [ContextMenu("Stop Alarm")]
+    public void StopAlarm()
+    {
+        _alarmTween.Kill();
+        image.color = new Color(255, 0, 0, 0);
     }
 }
