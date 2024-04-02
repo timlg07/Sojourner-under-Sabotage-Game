@@ -222,7 +222,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  isEnabled: 1
+  interactionIndicator: {fileID: 0}
   helpTextObj: {fileID: 3918583613447960423}
   helpTextFlashingFrequency: 0.25
   distanceFromPlayerToTrigger: 0.75
@@ -233,6 +233,7 @@ MonoBehaviour:
   distanceToPlayer: 0
   distanceToPet: 0
   fixedPosition: 1
+  isEnabled: 0
 --- !u!114 &1156344006094433315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4240af9f490dc54eac797e246fcd466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roomId: 0
 --- !u!1 &5129311407626243041
 GameObject:
   m_ObjectHideFlags: 0

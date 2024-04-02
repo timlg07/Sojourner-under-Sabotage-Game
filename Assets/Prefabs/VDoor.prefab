@@ -655,6 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9570dbc0c97d649b891bebba468a34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roomId: 0
 --- !u!114 &1736096639048509694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -742,7 +743,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  isEnabled: 1
+  interactionIndicator: {fileID: 0}
   helpTextObj: {fileID: 6393921665949895334}
   helpTextFlashingFrequency: 0.25
   distanceFromPlayerToTrigger: 0.75
@@ -753,3 +754,4 @@ MonoBehaviour:
   distanceToPlayer: 0
   distanceToPet: 0
   fixedPosition: 1
+  isEnabled: 0
