@@ -5,4 +5,7 @@ mergeInto(LibraryManager.library, {
     SendRoomUnlockedEvent: function (roomId) {
         window.es.sendEvent(new RoomUnlockedEvent(roomId));
     },
+    SendConversationFinishedEvent: function () {
+        window.es.sendEvent(new ConversationFinishedEvent());
+    }
 });

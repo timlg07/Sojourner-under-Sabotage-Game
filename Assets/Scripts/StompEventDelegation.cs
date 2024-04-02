@@ -8,14 +8,28 @@ public class StompEventDelegation : MonoBehaviour
 #if !UNITY_EDITOR && UNITY_WEBGL
     [DllImport("__Internal")]
     private static extern void SendRoomUnlockedEvent(int roomId);
+    
+    [DllImport("__Internal")]
+    private static extern void SendConversationFinishedEvent();
 #endif
+    
+    private const string UnsupportedPlatformMessage = "Not supported on this platform (needs to be the WebGL export)";
     
     public static void OnRoomUnlocked(int roomId)
     {
 #if !UNITY_EDITOR && UNITY_WEBGL
         SendRoomUnlockedEvent(roomId);
 #else
-        Debug.Log("Not supported on this platform (needs to be the WebGL export)");
+        Debug.Log(UnsupportedPlatformMessage);
 #endif
+    }
+    
+    public static void OnConversationFinished()
+    {
+#if !UNITY_EDITOR && UNITY_WEBGL
+        SendConversationFinishedEvent();
+#else
+        Debug.Log(UnsupportedPlatformMessage);
+    #endif
     }
 }

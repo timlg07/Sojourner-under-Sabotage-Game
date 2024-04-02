@@ -62,6 +62,7 @@ public class DialogueUI : MonoBehaviour
                 _dialogueText.text = "";
                 _hasDialogueToShow = false;
                 _dialoguePanel.SetActive(false);
+                StompEventDelegation.OnConversationFinished();
             }
         }
     }
