@@ -30,6 +30,12 @@ public class Door : MonoBehaviour
         _initialBlockTileId = RpgMapHelper.GetAutoTileByPosition(InitialPosition, BlockLayer).Id;
         _iwo = GetComponent<InteractableWorldObject>();
         _doorManager = FindObjectOfType<DoorManager>();
+        _doorManager.Register(roomId, this);
+    }
+    
+    public virtual void Enable()
+    {
+        _iwo.IsEnabled = true;
     }
 
     public virtual void Open()
@@ -58,7 +64,7 @@ public class Door : MonoBehaviour
 
     public void TryToUnlock()
     {
-        _doorManager.TryUnlockRoom(roomId, this);
+        _doorManager.TryUnlockRoom(roomId);
     }
     
     public void Unlock()

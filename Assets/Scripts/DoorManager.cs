@@ -7,10 +7,22 @@ public class DoorManager : MonoBehaviour
 {
     public event Action<int> OnTryUnlockRoom;
     private Dictionary<int, Door> _doors = new();
-
-    public void TryUnlockRoom(int roomId, Door door)
+    
+    public void EnableDoor(GameProgressState state)
     {
-        _doors[roomId] = door;
+        if (state.status == GameProgressState.Status.TALK)
+        {
+            _doors[state.room].Enable();
+        }
+    }
+    
+    public void Register(int roomId, Door door)
+    {
+        _doors.Add(roomId, door);
+    }
+
+    public void TryUnlockRoom(int roomId)
+    {
         OnTryUnlockRoom?.Invoke(roomId);
     }
     

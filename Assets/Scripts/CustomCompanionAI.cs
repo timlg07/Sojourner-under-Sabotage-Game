@@ -29,6 +29,7 @@ namespace CreativeSpore.RpgMapEditor
         public bool FleeFromTarget = false;
         [Tooltip("The companion will follow or flee from Target. If null, target will be the first player found.")]
         public GameObject Target;
+        private GameObject _lastTarget;
 
         private PhysicCharBehaviour m_physicBhv;
         private DirectionalAnimation m_dirAnim;
@@ -36,8 +37,26 @@ namespace CreativeSpore.RpgMapEditor
         {
             m_physicBhv = GetComponent<PhysicCharBehaviour>();
             m_dirAnim = GetComponent<DirectionalAnimation>();
+            
+            if (!Target) Target = FindObjectOfType<PlayerController>().gameObject;
+            
             StopAllCoroutines();
             StartCoroutine(DoLogic());
+        }
+        
+        public void ChangeTarget(GameObject newTarget)
+        {
+            _lastTarget = Target;
+            Target = newTarget;
+        }
+        
+        public void ResetTarget()
+        {
+            if (_lastTarget)
+            {
+                Target = _lastTarget;
+                _lastTarget = null;
+            }
         }
 
 #if UNITY_EDITOR
@@ -98,7 +117,6 @@ namespace CreativeSpore.RpgMapEditor
                 var MinActualDelay = 0f;
                 m_velocity = Random.rotation * Vector2.right;
                 m_velocity = m_velocity.normalized * MovingStepDist;
-                if (!Target) Target = FindObjectOfType<PlayerController>().gameObject;
                 if (Target)
                 {
                     Vector2 vDist = FleeFromTarget ? transform.position - Target.transform.position : Target.transform.position - transform.position;

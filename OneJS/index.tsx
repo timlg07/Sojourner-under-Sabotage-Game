@@ -5,7 +5,7 @@ import { Dom } from "OneJS/Dom"
 const doorManager = require("doorManager")
 
 const puzzleData = {
-    1: {
+    2: {
         rows: 3,
         cols: 3,
         board: [
@@ -24,22 +24,48 @@ const puzzleData = {
             [0, 0, 2]
         ],
     },
+    3: {
+        rows: 3,
+        cols: 5,
+        board: [
+            [1, 1, 2, 1, 1],
+            [2, 3, 1, 3, 2],
+            [3, 1, 2, 1, 3]
+        ],
+        orientation: [
+            [2, 2, 2, 2, 2],
+            [1, 1, 2, 1, 1],
+            [3, 2, 1, 2, 3]
+        ],
+        solution: [
+            [3, 3, 4, 0, 0],
+            [0, 0, 2, 0, 0],
+            [0, 0, 2, 3, [3, 1]]
+        ],
+    },
 }
 
 const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => void }) => {
     const currentPuzzle = puzzleData[roomId]
     const [board, setBoard] = useState(currentPuzzle.orientation)
 
+    function isTileRotatedCorrectly(i: number, j: number, solution = currentPuzzle.solution[i][j]) {
+        if (Array.isArray(solution)) {
+            return solution.some(s => isTileRotatedCorrectly(i, j, s))
+        }
+
+        const current = board[i][j]
+        const isNotNeeded = solution === 0
+        const isCorrect = solution === current
+        const isLine = currentPuzzle.board[i][j] === 1
+        const isLineRotatedButCorrect = isLine && (current + solution) % 2 === 0; // 1==3, 2==4
+        return isNotNeeded || isCorrect || isLineRotatedButCorrect
+    }
+
     function checkRotation() {
         for (let i = 0; i < currentPuzzle.rows; i++) {
             for (let j = 0; j < currentPuzzle.cols; j++) {
-                const solution = currentPuzzle.solution[i][j]
-                const current = board[i][j]
-                const isNotNeeded = solution === 0
-                const isCorrect = solution === current
-                const isLine = currentPuzzle.board[i][j] === 1
-                const isLineRotatedButCorrect = isLine && (current + solution) % 2 === 0; // 1==3, 2==4
-                if (isNotNeeded || isCorrect || isLineRotatedButCorrect) continue; else return
+                if (isTileRotatedCorrectly(i, j)) continue; else return
             }
         }
         puzzleSolved()

@@ -114,7 +114,7 @@ MonoBehaviour:
   distanceFromPlayerToTrigger: 0.25
   distanceFromPetToTrigger: 0.25
   activationKey: 13
-  reEnableAfterLeave: 1
+  reEnableAfterLeave: 0
   isActivationKeyPressed: 0
   distanceToPlayer: 0
   distanceToPet: 0

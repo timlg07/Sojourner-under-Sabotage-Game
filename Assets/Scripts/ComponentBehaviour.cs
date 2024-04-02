@@ -18,4 +18,9 @@ public class ComponentBehaviour : MonoBehaviour
         });
     }
     
+    public void EnableComponentInteraction()
+    {
+        GetComponent<InteractableWorldObject>().IsEnabled = true;
+    }
+    
 }
