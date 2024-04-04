@@ -11,6 +11,9 @@ public class StompEventDelegation : MonoBehaviour
     
     [DllImport("__Internal")]
     private static extern void SendConversationFinishedEvent();
+    
+    [DllImport("__Internal")]
+    private static extern void SendGameStartedEvent();
 #endif
     
     private const string UnsupportedPlatformMessage = "Not supported on this platform (needs to be the WebGL export)";
@@ -31,5 +34,14 @@ public class StompEventDelegation : MonoBehaviour
 #else
         Debug.Log(UnsupportedPlatformMessage);
     #endif
+    }
+
+    public static void OnGameStarted()
+    {
+#if !UNITY_EDITOR && UNITY_WEBGL
+        SendGameStartedEvent();
+#else
+        Debug.Log(UnsupportedPlatformMessage);
+#endif
     }
 }

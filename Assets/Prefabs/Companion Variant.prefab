@@ -392,6 +392,7 @@ MonoBehaviour:
   distanceToPlayer: 0
   distanceToPet: 0
   fixedPosition: 0
+  isEnabled: 0
 --- !u!4 &8511971174834431510 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 464362, guid: 8c5ca840990ca334d84895f24f6c3c50, type: 3}

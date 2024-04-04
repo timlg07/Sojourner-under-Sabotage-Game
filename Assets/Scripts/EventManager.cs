@@ -11,10 +11,24 @@ public class EventManager : MonoBehaviour
     public UnityEvent<GameProgressState> onGameProgressionChanged;
     public UnityEvent<ComponentBehaviour> onComponentFixed;
 
+    public static EventManager Instance => _instance;
+    private static EventManager _instance;
     public readonly Dictionary<string, ComponentBehaviour> Components = new();
 
     private const string DemoComponentName = "Demo";
     [SerializeField, TextArea] private string OnGameProgressionChangedJson = "{\"id\":1,\"room\":1,\"componentName\":\"Demo\",\"stage\":1,\"status\":\"TEST\"}";
+
+    private void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
+        }
+        else
+        {
+            Debug.LogError("There is already an EventManager instance in the scene!");
+        }
+    }
 
     public void Start()
     {
@@ -22,6 +36,9 @@ public class EventManager : MonoBehaviour
         {
             Components.Add(c.componentName, c);
         }
+        
+        // Send event to server to let it know that unity is ready to receive game progression updtaes
+        StompEventDelegation.OnGameStarted();
     }
 
     public void OnMutatedComponentTestsFailed(string componentName)

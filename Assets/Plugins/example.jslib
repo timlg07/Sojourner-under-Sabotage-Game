@@ -7,5 +7,8 @@ mergeInto(LibraryManager.library, {
     },
     SendConversationFinishedEvent: function () {
         window.es.sendEvent(new ConversationFinishedEvent());
+    },
+    SendGameStartedEvent: function () {
+        window.es.sendEvent(new GameStartedEvent());
     }
 });

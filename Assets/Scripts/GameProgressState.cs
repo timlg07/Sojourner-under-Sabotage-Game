@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using System;
 
+[Serializable]
 public class GameProgressState
 {
     public static GameProgressState CurrentState;
@@ -14,21 +13,54 @@ public class GameProgressState
     
     public static string ReplaceStatusStringWithInt(string json)
     {
-        return json.Replace("\"status\":\"TALK\"", "\"status\":0")
-                   .Replace("\"status\":\"TEST\"", "\"status\":1")
-                   .Replace("\"status\":\"TESTS_ACTIVE\"", "\"status\":2")
-                   .Replace("\"status\":\"DESTROYED\"", "\"status\":3")
-                   .Replace("\"status\":\"MUTATED\"", "\"status\":4")
-                   .Replace("\"status\":\"DEBUGGING\"", "\"status\":5");
+        foreach (Status status in System.Enum.GetValues(typeof(Status)))
+        {
+            json = json.Replace("status\":\"" + status + "\"", "status\":" + (int) status);
+        }
+        return json;
     }
     
     public enum Status
     {
+        DOOR,
         TALK,
         TEST,
         TESTS_ACTIVE,
         DESTROYED,
         MUTATED,
         DEBUGGING
+    }
+    
+    [Serializable]
+    public class DialogueCondition
+    {
+        public int room = 1;
+        public int stage = 1;
+        public Status status = Status.TALK;
+        
+        public DialogueCondition() {}
+
+        public DialogueCondition(GameProgressState currentState)
+        {
+            room = currentState.room;
+            stage = currentState.stage;
+            status = currentState.status;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj switch
+            {
+                null => false,
+                DialogueCondition c => room == c.room && stage == c.stage && status == c.status,
+                GameProgressState s => room == s.room && stage == s.stage && status == s.status,
+                _ => false
+            };
+        }
+        
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(room, stage, status);
+        }
     }
 }

@@ -52,7 +52,7 @@ public class InteractableWorldObject : MonoBehaviour
         set
         {
             isEnabled = value;
-            interactionIndicator?.gameObject.SetActive(IsEnabled);
+            interactionIndicator?.gameObject.SetActive(isEnabled);
         }
     }
     public void EnableOnEvent() => IsEnabled = true;
@@ -76,6 +76,7 @@ public class InteractableWorldObject : MonoBehaviour
         {
             _position = transform.position;
         }
+        interactionIndicator?.gameObject.SetActive(IsEnabled);
     }
 
     void Update()
@@ -117,15 +118,15 @@ public class InteractableWorldObject : MonoBehaviour
         }
         else
         {
-            if (reEnableAfterLeave)
-            {
-                IsEnabled = true;
-            }
-
             if (IsPlayerInRange)
             {
                 IsPlayerInRange = false;
                 onPlayerLeave?.Invoke();
+                
+                if (reEnableAfterLeave)
+                {
+                    IsEnabled = true;
+                }
                 
                 // enable interaction indicator again, as the help text is not visible anymore
                 interactionIndicator?.gameObject.SetActive(IsEnabled);

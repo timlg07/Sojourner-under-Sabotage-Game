@@ -15,8 +15,7 @@ public class DialogueSystem : MonoBehaviour
     public UnityEvent onHasDialogueToShow;
     public bool HasDialogueToShow => _hasDialogueToShow;
     [SerializeField] private List<DialogueEntry> _dialogueEntries = new();
-    private readonly Dictionary<GameProgressMilestone, List<string>> _dialogueMap = new();
-    private GameProgressMilestone _currentCondition;
+    private readonly Dictionary<GameProgressState.DialogueCondition, List<string>> _dialogueMap = new();
     private bool _wasDialogueShown;
     private bool _hasDialogueToShow = false;
 
@@ -39,14 +38,14 @@ public class DialogueSystem : MonoBehaviour
         // transform list to map
         _dialogueEntries.ForEach(entry =>
         {
-            if (_dialogueMap.ContainsKey(entry.condition))
+            if (_dialogueMap.ContainsKey(entry.Condition))
             {
-                Debug.LogError($"Duplicate dialogue entry for condition {entry.condition}!");
+                Debug.LogError($"Duplicate dialogue entry for condition {entry.Condition}!");
             }
             else
             {
                 _dialogueMap.Add(
-                    entry.condition, 
+                    entry.Condition, 
                     entry.text.Split("\n\n").ToList()
                 );
             }
@@ -55,16 +54,18 @@ public class DialogueSystem : MonoBehaviour
     
     public void Start()
     {
-        GameProgress.Instance.onGameProgressChanged.AddListener(StoreDialogue);
+        EventManager.Instance.onGameProgressionChanged.AddListener(UpdateCurrentGameProgression);
     }
 
-    private void StoreDialogue(GameProgressMilestone condition)
+    private void UpdateCurrentGameProgression(GameProgressState condition)
     {
-        _wasDialogueShown = false;
-        _currentCondition = condition;
-        
-        _hasDialogueToShow = true;
-        onHasDialogueToShow?.Invoke();
+        var hasDialogueToShow = _dialogueMap.ContainsKey(new GameProgressState.DialogueCondition(condition));
+        if (hasDialogueToShow)
+        {
+            _wasDialogueShown = false;
+            _hasDialogueToShow = true;
+            onHasDialogueToShow?.Invoke();
+        }
     }
     
     public void ShowDialogue()
@@ -73,14 +74,15 @@ public class DialogueSystem : MonoBehaviour
         {
             return;
         }
-        
-        if (_dialogueMap.TryGetValue(_currentCondition, out var dialogue))
+
+        var currentCondition = new GameProgressState.DialogueCondition(GameProgressState.CurrentState);
+        if (_dialogueMap.TryGetValue(currentCondition, out var dialogue))
         {
             DialogueUI.Instance.ShowDialogue(dialogue);
         }
         else
         {
-            Debug.LogError($"No dialogue entry for condition {_currentCondition}!");
+            Debug.LogError($"No dialogue entry for condition {GameProgressState.CurrentState}!");
         }
         _hasDialogueToShow = false;
     }
@@ -88,7 +90,7 @@ public class DialogueSystem : MonoBehaviour
     [Serializable]
     public struct DialogueEntry
     {
-        public GameProgressMilestone condition;
+        public GameProgressState.DialogueCondition Condition;
         [TextArea] public string text;
     }
 }
