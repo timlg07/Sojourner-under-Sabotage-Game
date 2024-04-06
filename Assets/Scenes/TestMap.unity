@@ -1873,7 +1873,19 @@ MonoBehaviour:
       room: 1
       stage: 1
       status: 1
-    text: "Hello World!\n\nJoa ganz sch\xF6nes Wetter heute :)"
+    text: 'In this room things are getting added :o
+
+
+      You should write tests
+      for the code, so that we can detect if the component gets manipulated.'
+  - Condition:
+      room: 1
+      stage: 1
+      status: 3
+    text: 'Great, your tests are up and running!
+
+
+'
   - Condition:
       room: 1
       stage: 1
@@ -1883,6 +1895,15 @@ MonoBehaviour:
 
       I think I remember what results
       it usually produces. I will '
+  - Condition:
+      room: 1
+      stage: 1
+      status: 5
+    text: 'The component was attacked! But luckily your tests detected it soon enough.
+
+
+      Now
+      try to fix the component as soon as possible, so we can turn it back on!'
   - Condition:
       room: 2
       stage: 1
