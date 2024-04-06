@@ -50,6 +50,15 @@ namespace CreativeSpore.RpgMapEditor
             Target = newTarget;
         }
         
+        /// <summary>
+        /// Required overload as the events pass componentBehaviours instead of GameObjects as parameters.
+        /// </summary>
+        /// <param name="newTarget">The new target of the companion</param>
+        public void ChangeTarget(ComponentBehaviour newTarget)
+        {
+            ChangeTarget(newTarget.gameObject);
+        }
+        
         public void ResetTarget()
         {
             if (_lastTarget)
