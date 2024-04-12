@@ -82,19 +82,16 @@ const Dialogue = () => {
     }, [])
     */
 
-    return isDialogueActive ? (
+    return (
         <div class={emo`
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
             height: 100%;
             width: 100%;
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
-        `}
-            ref={e => e?.focus()}
-            focusable={true}
-            onKeyDown={e => {
-                if (e.keyCode === 13) next()
-            }}>
+        `}>
             <div class={emo`
                     width: 33%;
                     height: 33%;
@@ -107,17 +104,32 @@ const Dialogue = () => {
                     margin-right: 50px;
                     border-top-left-radius: 15px;
                     border-top-right-radius: 15px;
+
+                    translate: ${isDialogueActive ? "0 0" : "0 100%"};
+                    transition: translate .4s ease-in-out;
                 `}>
-                <scrollview
-                    ref={scrollView}
-                    mode={ScrollViewMode.Vertical}
-                    vertical-scroller-visibility={ScrollerVisibility.Hidden}
-                    horizontal-scroller-visibility={ScrollerVisibility.Hidden}
-                    class={emo`
+                {isDialogueActive ? (
+                    <div ref={e => e?.focus()}
+                        focusable={true}
+                        onKeyDown={e => {
+                            if (e.keyCode === 13) next()
+                        }}
+                        class={emo`
+                        width: 100%;
+                        height: 100%;
+                    `}
+                    >
+                        <scrollview
+                            ref={scrollView}
+                            mode={ScrollViewMode.Vertical}
+                            vertical-scroller-visibility={ScrollerVisibility.Hidden}
+                            horizontal-scroller-visibility={ScrollerVisibility.Hidden}
+                            class={emo`
                         padding: 50px;
                         height: auto;
+                        width: 100%;
                     `}>
-                    {currentDialogue.map((text, i, a) => i <= index ? <div class={emo`
+                            {currentDialogue.map((text, i, a) => i <= index ? <div class={emo`
                             color: ${i === index ? "#fff" : "rgba(255, 255, 255, " + clamp(1 - ((index - i) / (index + 1)), .1, .75) + ")"};
                             font-size: 20px;
                             margin-top: ${i == 0 ? "100px" : "0"};
@@ -125,13 +137,15 @@ const Dialogue = () => {
                             transition: color .4s ease-in-out, scale .4s ease-in-out;
                             scale: ${i === index ? "1" : "0.8"};
                             transform-origin: left;
+                            width: 100%;
                         `}>
-                        {text}
-                    </div> : null)}
-                </scrollview>
+                                {text}
+                            </div> : null)}
+                        </scrollview></div>
+                ) : null}
             </div>
         </div>
-    ) : null
+    )
 }
 
 export default Dialogue
