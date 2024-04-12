@@ -12,6 +12,7 @@ public class DialogueSystem : MonoBehaviour
     public static DialogueSystem Instance => _instance;
     private static DialogueSystem _instance;
 
+    public event Action<List<String>> OnShowDialogue; // used to trigger OneJS
     public UnityEvent onHasDialogueToShow;
     public bool HasDialogueToShow => _hasDialogueToShow;
     [SerializeField] private List<DialogueEntry> _dialogueEntries = new();
@@ -78,7 +79,7 @@ public class DialogueSystem : MonoBehaviour
         var currentCondition = new GameProgressState.DialogueCondition(GameProgressState.CurrentState);
         if (_dialogueMap.TryGetValue(currentCondition, out var dialogue))
         {
-            DialogueUI.Instance.ShowDialogue(dialogue);
+            OnShowDialogue?.Invoke(dialogue);
         }
         else
         {
