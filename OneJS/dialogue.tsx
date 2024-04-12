@@ -59,8 +59,10 @@ const Dialogue = () => {
             const ve = (scrollView.current as any).ve
 
             const tween = new Tween({ y: ve.scrollOffset.y }).to({ y: ve.contentViewport.layout.size.y + 300 }, 1e3).onUpdate((o) => {
-                const ve = (scrollView.current as any).ve
-                ve.scrollOffset = new Vector2(0, o.y)
+                if (scrollView.current) {
+                    const ve = (scrollView.current as any).ve
+                    ve.scrollOffset = new Vector2(0, o.y)
+                }
             }).start()
 
             const animate = time => {
