@@ -6,10 +6,23 @@ const dialogueSystem = require("dialogueSystem")
 
 const Dialogue = () => {
     const [isDialogueActive, setDialogueActive] = useState(false);
+    const [index, setIndex] = useState(0)
+    const [currentDialogue, setCurrentDialogue] = useState([])
+
     function showDialogue(dialogue: List<string>) {
-        log(dialogue)
+        setCurrentDialogue(dialogue.ToArray())
+        setIndex(0)
         setDialogueActive(true)
     }
+
+    function next() {
+        if (index + 1 < currentDialogue.length) {
+            setIndex(index + 1)
+        } else {
+            setDialogueActive(false)
+        }
+    }
+
     useEffect(() => {
         dialogueSystem.add_OnShowDialogue(showDialogue)
 
@@ -21,9 +34,26 @@ const Dialogue = () => {
             dialogueSystem.remove_OnShowDialogue(showDialogue)
         }
     }, [])
+
     return isDialogueActive ? (
-        <div class={emo``}>
-            <p>Hi! I'm a dialogue box!</p>
+        <div class={emo`
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        `}
+            ref={e => e?.focus()}
+            focusable={true}
+            onKeyDown={e => {
+                if (e.keyCode === 13) next()
+            }}>
+            <p class={emo`
+                background-color: #000;
+                color: #fff;
+            `}>
+                {currentDialogue[index]}
+            </p>
         </div>
     ) : null
 }
