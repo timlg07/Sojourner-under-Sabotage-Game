@@ -7,6 +7,7 @@ import { h } from "preact"
 import { useEffect, useRef, useState } from "preact/hooks"
 import { Tween, update } from "tweenjs"
 const dialogueSystem = require("dialogueSystem")
+const stompEventDelegation = require("stompEventDelegation")
 
 const Dialogue = () => {
     const [isDialogueActive, setDialogueActive] = useState(false);
@@ -26,6 +27,7 @@ const Dialogue = () => {
             setIndex(index + 1)
         } else {
             setDialogueActive(false)
+            stompEventDelegation.OnConversationFinished();
         }
     }
 

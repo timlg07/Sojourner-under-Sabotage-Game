@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3654954802149872928}
   - component: {fileID: 7222695567685471908}
   - component: {fileID: 3012954586529440915}
+  - component: {fileID: 8740488160193062296}
   m_Layer: 0
   m_Name: BrowserInterface
   m_TagString: Untagged
@@ -87,3 +88,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onComponentDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  onGameProgressionChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onComponentFixed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGameProgressionChangedJson: '{"id":1,"room":1,"componentName":"Demo","stage":1,"status":"TEST"}'
+--- !u!114 &8740488160193062296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4358976349785285073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a32bd1616eb412783b036a75af4d076, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
