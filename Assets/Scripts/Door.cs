@@ -76,7 +76,16 @@ public class Door : MonoBehaviour
 
     private void AbortTweens()
     {
-        if (ScaleTween != null && ScaleTween.IsPlaying()) ScaleTween.Kill();
-        if (MoveTween != null && MoveTween.IsPlaying()) MoveTween.Kill();
+        if (ScaleTween != null && ScaleTween.IsActive() && !ScaleTween.IsComplete())
+        {
+            ScaleTween.Kill();
+            ScaleTween = null;
+        }
+
+        if (MoveTween != null && MoveTween.IsActive() && !MoveTween.IsComplete())
+        {
+            MoveTween.Kill();
+            MoveTween = null;
+        }
     }
 }
