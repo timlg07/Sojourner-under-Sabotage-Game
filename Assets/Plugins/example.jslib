@@ -2,6 +2,9 @@ mergeInto(LibraryManager.library, {
     OpenEditors: function (componentName) {
         window.openEditor(UTF8ToString(componentName));
     },
+    ToggleAlarm: function (active) {
+        document.getElementById('alarm').classList.toggle('active', active);
+    },
     SendRoomUnlockedEvent: function (roomId) {
         window.es.sendEvent(new RoomUnlockedEvent(roomId));
     },
