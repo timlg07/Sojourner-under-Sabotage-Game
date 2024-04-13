@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8990122456906433096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7926962079291529475}
+  - component: {fileID: 1080662766609989888}
+  m_Layer: 0
+  m_Name: Dialogue System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7926962079291529475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8990122456906433096}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.007215, y: 9.667322, z: -7.5708113}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1080662766609989888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8990122456906433096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710872b753bc29a40a0dea2bca67df5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onHasDialogueToShow:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InteractableWorldObject, Assembly-CSharp
+        m_MethodName: EnableOnEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _dialogueEntries:
+  - Condition:
+      room: 1
+      stage: 1
+      status: 1
+    text: 'In this room things are getting added :o
+
+
+      You should write tests
+      for the code, so that we can detect if the component gets manipulated.'
+  - Condition:
+      room: 1
+      stage: 1
+      status: 3
+    text: Great, your tests are up and running!
+  - Condition:
+      room: 1
+      stage: 1
+      status: 4
+    text: 'Oh no the component was destroyed :(
+
+
+      I think I remember what results
+      it usually produces. I will put them in as tests.
+
+
+      Maybe this helps
+      with debugging. Good luck!'
+  - Condition:
+      room: 1
+      stage: 1
+      status: 5
+    text: 'The component was attacked! But luckily your tests detected it soon enough.
+
+
+      Now
+      try to fix the component as soon as possible, so we can turn it back on!'
+  - Condition:
+      room: 2
+      stage: 1
+      status: 0
+    text: 'Well done!
+
+
+      Everything looks fine in this room now.
+
+
+      Let''s
+      continue our walk through the ship.
+
+
+      The door to the next room seems
+      to be broken though.
+
+
+      Can you fix it?'
+  - Condition:
+      room: 2
+      stage: 1
+      status: 1
+    text: 'Welcome to room 2!
+
+
+      Hier is es recht leer lol'
