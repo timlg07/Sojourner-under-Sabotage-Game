@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using DG.Tweening;
 using DG.Tweening.Core;
@@ -8,6 +9,8 @@ public class Alarm : MonoBehaviour
     [SerializeField]
     private UnityEngine.UI.Image image;
     private TweenerCore<float, float, FloatOptions> _alarmTween;
+    
+    public event Action<bool> ToggleAlarm; // used to trigger OneJS
 
     private void Start()
     {
@@ -16,6 +19,9 @@ public class Alarm : MonoBehaviour
     
     public void TriggerAlarm(ComponentBehaviour component)
     {
+        Debug.Log("Alarm triggered for " + component.componentName);
+        ToggleAlarm?.Invoke(true);
+        return;
         Debug.Log("Alarm triggered for " + component.componentName);
         Color targetColor = new Color(255, 0, 0, .35f); 
         float duration = 1f;
@@ -35,6 +41,8 @@ public class Alarm : MonoBehaviour
     [ContextMenu("Stop Alarm")]
     public void StopAlarm()
     {
+        ToggleAlarm?.Invoke(false);
+        return;
         _alarmTween.Kill();
         image.color = new Color(255, 0, 0, 0);
     }
