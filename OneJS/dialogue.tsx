@@ -1,6 +1,5 @@
 import { List } from "System/Collections/Generic"
-import { Vector2 } from "UnityEngine"
-import { ScrollViewMode, ScrollerVisibility } from "UnityEngine/UIElements"
+import { ScrollView, ScrollViewMode, ScrollerVisibility } from "UnityEngine/UIElements"
 import { clamp } from "math"
 import { emo } from "onejs/styled"
 import { h } from "preact"
@@ -14,15 +13,29 @@ const Dialogue = () => {
     const [index, setIndex] = useState(0)
     const [currentDialogue, setCurrentDialogue] = useState([])
     const scrollView = useRef()
+    const focusElement = useRef()
 
     function showDialogue(dialogue: List<string> | Array<string>) {
         if (!(dialogue instanceof Array)) dialogue = dialogue.ToArray()
+        if (dialogue.length === 0) {
+            log("the given dialogue is empty")
+            return
+        }
+        if (isDialogueActive) {
+            log("a dialogue is already active")
+            return
+        }
         setCurrentDialogue(dialogue)
         setIndex(0)
         setDialogueActive(true)
     }
 
     function next() {
+        if (!isDialogueActive) {
+            log("Dialogue is not active")
+            return
+        }
+
         if (index + 1 < currentDialogue.length) {
             setIndex(index + 1)
         } else {
@@ -56,12 +69,11 @@ const Dialogue = () => {
 
     useEffect(() => {
         if (scrollView.current) {
-            const ve = (scrollView.current as any).ve
-
-            const tween = new Tween({ y: ve.scrollOffset.y }).to({ y: ve.contentViewport.layout.size.y + 300 }, 1e3).onUpdate((o) => {
+            const scroller = ((scrollView.current as any).ve as ScrollView).verticalScroller
+            const tween = new Tween({ y: scroller.value }).to({ y: Math.max(scroller.highValue, 0) }, 4e2).onUpdate((o) => {
                 if (scrollView.current) {
-                    const ve = (scrollView.current as any).ve
-                    ve.scrollOffset = new Vector2(0, o.y)
+                    const sv = (scrollView.current as any).ve as ScrollView
+                    sv.verticalScroller.value = o.y
                 }
             }).start()
 
@@ -73,7 +85,13 @@ const Dialogue = () => {
             };
             requestAnimationFrame(animate);
         }
-    }, [index])
+    }, [index, currentDialogue])
+
+    useEffect(() => {
+        if (focusElement.current && isDialogueActive) {
+            (focusElement.current as any).focus()
+        }
+    }, [isDialogueActive])
 
     /*
     useEffect(() => {
@@ -83,7 +101,13 @@ const Dialogue = () => {
     */
 
     return (
-        <div class={emo`
+        <div
+            ref={focusElement}
+            focusable={true}
+            onKeyDown={e => {
+                if (e.keyCode === 13) next()
+            }}
+            class={emo`
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
             height: 100%;
@@ -109,39 +133,28 @@ const Dialogue = () => {
                     transition: translate .4s ease-in-out;
                 `}>
                 {isDialogueActive ? (
-                    <div ref={e => e?.focus()}
-                        focusable={true}
-                        onKeyDown={e => {
-                            if (e.keyCode === 13) next()
-                        }}
+                    <scrollview
+                        ref={scrollView}
+                        mode={ScrollViewMode.Vertical}
+                        vertical-scroller-visibility={ScrollerVisibility.Hidden}
+                        horizontal-scroller-visibility={ScrollerVisibility.Hidden}
                         class={emo`
-                        width: 100%;
-                        height: 100%;
-                    `}
-                    >
-                        <scrollview
-                            ref={scrollView}
-                            mode={ScrollViewMode.Vertical}
-                            vertical-scroller-visibility={ScrollerVisibility.Hidden}
-                            horizontal-scroller-visibility={ScrollerVisibility.Hidden}
-                            class={emo`
                         padding: 50px;
                         height: auto;
                         width: 100%;
                     `}>
-                            {currentDialogue.map((text, i, a) => i <= index ? <div class={emo`
+                        {currentDialogue.map((text, i, a) => i <= index ? <div class={emo`
                             color: ${i === index ? "#fff" : "rgba(255, 255, 255, " + clamp(1 - ((index - i) / (index + 1)), .1, .75) + ")"};
                             font-size: 20px;
-                            margin-top: ${i == 0 ? "100px" : "0"};
-                            padding-top: ${index === i ? "35px" : "10px"};
+                            margin-top: ${i == 0 ? "300px" : index === i ? "35px" : "10px"};
                             transition: color .4s ease-in-out, scale .4s ease-in-out;
-                            scale: ${i === index ? "1" : "0.8"};
+                            scale: ${i === index ? "1" : "0.75"};
                             transform-origin: left;
                             width: 100%;
                         `}>
-                                {text}
-                            </div> : null)}
-                        </scrollview></div>
+                            {text}
+                        </div> : null)}
+                    </scrollview>
                 ) : null}
             </div>
         </div>
