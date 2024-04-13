@@ -14,6 +14,7 @@ public class Door : MonoBehaviour
     protected const float CloseDuration = 1f;
     
     protected Vector3 InitialPosition;
+    protected float InitialScaleY;
     protected bool IsLocked = true;
     protected TweenerCore<Vector3, Vector3, VectorOptions> ScaleTween;
     protected TweenerCore<Vector3, Vector3, VectorOptions> MoveTween;
@@ -27,6 +28,7 @@ public class Door : MonoBehaviour
     public virtual void Start()
     {
         InitialPosition = transform.position;
+        InitialScaleY = transform.localScale.y;
         _initialBlockTileId = RpgMapHelper.GetAutoTileByPosition(InitialPosition, BlockLayer).Id;
         _iwo = GetComponent<InteractableWorldObject>();
         _doorManager = FindObjectOfType<DoorManager>();

@@ -20,8 +20,8 @@ public class InteractableWorldObject : MonoBehaviour
     public InteractionIndicator interactionIndicator;
     public GameObject helpTextObj;
     public float helpTextFlashingFrequency = .25f;
-    public float distanceFromPlayerToTrigger = .25f;
-    public float distanceFromPetToTrigger = .25f;
+    public float distanceFromPlayerToTrigger = .5f;
+    public float distanceFromPetToTrigger = .5f;
     public KeyCode activationKey = KeyCode.Return;
 
     [Tooltip("If true, the event will only be triggered once.")]

@@ -1,6 +1,4 @@
 using DG.Tweening;
-using DG.Tweening.Core;
-using DG.Tweening.Plugins.Options;
 using UnityEngine;
 
 public class HorizontalDoor : Door
@@ -28,7 +26,7 @@ public class HorizontalDoor : Door
         base.Close();
         if (IsNotClear()) return;
         
-        ScaleTween = transform.DOScaleX(1, CloseDuration);
+        ScaleTween = transform.DOScaleX(InitialScaleY, CloseDuration);
         MoveTween = transform.DOMoveX(InitialPosition.x, CloseDuration);
     }
 }

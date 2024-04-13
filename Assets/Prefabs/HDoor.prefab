@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3918583613447960423}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.045, y: 0.342, z: 0.75399995}
-  m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 0.099999994}
+  m_LocalPosition: {x: 0.045, y: 0.342, z: 0}
+  m_LocalScale: {x: 0.075, y: 0.075, z: 0.075}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5511695542990842367}
@@ -126,7 +126,7 @@ Transform:
   m_GameObject: {fileID: 4134619391441957687}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.638, y: -9.6426, z: -2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1422183436051862447}
@@ -225,8 +225,8 @@ MonoBehaviour:
   interactionIndicator: {fileID: 0}
   helpTextObj: {fileID: 3918583613447960423}
   helpTextFlashingFrequency: 0.25
-  distanceFromPlayerToTrigger: 0.75
-  distanceFromPetToTrigger: 0.5
+  distanceFromPlayerToTrigger: 1.5
+  distanceFromPetToTrigger: 1
   activationKey: 13
   reEnableAfterLeave: 0
   isActivationKeyPressed: 0

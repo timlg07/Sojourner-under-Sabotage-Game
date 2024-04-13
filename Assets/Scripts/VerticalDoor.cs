@@ -1,6 +1,4 @@
 using DG.Tweening;
-using DG.Tweening.Core;
-using DG.Tweening.Plugins.Options;
 using UnityEngine;
 
 public class VerticalDoor : Door
@@ -20,7 +18,7 @@ public class VerticalDoor : Door
         if (IsLocked) return;
         
         ScaleTween = transform.DOScaleY(0, OpenDuration);
-        MoveTween = transform.DOMoveY(InitialPosition.y + _height - .1f, OpenDuration);
+        MoveTween = transform.DOMoveY(InitialPosition.y + _height, OpenDuration);
     }
     
     public override void Close()
@@ -28,7 +26,7 @@ public class VerticalDoor : Door
         base.Close();
         if (IsNotClear()) return;
         
-        ScaleTween = transform.DOScaleY(1, CloseDuration);
+        ScaleTween = transform.DOScaleY(InitialScaleY, CloseDuration);
         MoveTween = transform.DOMoveY(InitialPosition.y, CloseDuration);
     }
 }
