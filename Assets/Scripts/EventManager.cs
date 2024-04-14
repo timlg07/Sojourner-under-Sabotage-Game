@@ -65,6 +65,12 @@ public class EventManager : MonoBehaviour
         OnComponentDestroyed(DemoComponentName);
     }
     
+    [ContextMenu("OnComponentFixed [Demo]")]
+    public void TriggerDemoComponentFixed()
+    {
+        OnComponentFixed(DemoComponentName);
+    }
+    
     public void OnGameProgressionChanged(string json)
     {
         var unityJson = GameProgressState.ReplaceStatusStringWithInt(json);
