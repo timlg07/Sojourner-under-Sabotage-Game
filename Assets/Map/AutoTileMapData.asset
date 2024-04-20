@@ -48,7 +48,7 @@ MonoBehaviour:
       SortingOrder: 0
       Depth: -1.5
     - Tiles: f0d8ffffffffff7f
-      Visible: 1
+      Visible: 0
       Name: Fog
       LayerType: 3
       SortingLayer: Default
