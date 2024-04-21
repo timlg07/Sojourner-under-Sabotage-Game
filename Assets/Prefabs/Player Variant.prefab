@@ -16,8 +16,32 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f8aab679b5991af4eb524608c357e038, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f8aab679b5991af4eb524608c357e038, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f8aab679b5991af4eb524608c357e038, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f8aab679b5991af4eb524608c357e038, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.225
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f8aab679b5991af4eb524608c357e038, type: 3}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f8aab679b5991af4eb524608c357e038, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f8aab679b5991af4eb524608c357e038, type: 3}
+      propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f8aab679b5991af4eb524608c357e038, type: 3}
@@ -60,14 +84,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: f8aab679b5991af4eb524608c357e038, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: f8aab679b5991af4eb524608c357e038, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11445098, guid: f8aab679b5991af4eb524608c357e038, type: 3}
+      propertyPath: m_animIdx
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11445098, guid: f8aab679b5991af4eb524608c357e038, type: 3}
+      propertyPath: m_dirAnimCtrl
+      value: 
+      objectReference: {fileID: 11400000, guid: d985ebc6649627d459948502e5826275, type: 2}
+    - target: {fileID: 11445098, guid: f8aab679b5991af4eb524608c357e038, type: 3}
+      propertyPath: m_stopFrameIdx
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: f8aab679b5991af4eb524608c357e038, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300098, guid: e8f7408de36fedc46a6d83c6ede811bd, type: 3}
+      objectReference: {fileID: -1311639028, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c423a4315d2914996b2c562ee0fca2, type: 3}
+  m_Name: CharacterAnimations
+  m_EditorClassIdentifier: 
+  m_spriteAlignment: 7
+  m_pivot: {x: 0, y: 0}
+  m_dirMapping: 0000000006000000020000000400000007000000010000000500000003000000
+  m_fps: 6
+  m_fpa: 3
+  m_dirType: 2
+  m_anims:
+  - name: player2
+    animSprites:
+    - {fileID: -249324122, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
+    - {fileID: 1718308930, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
+    - {fileID: -1311639028, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
+    - {fileID: 243752597, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
+    - {fileID: -115238864, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
+    - {fileID: 396223869, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
+    - {fileID: 1860920566, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
+    - {fileID: 653649139, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
+    - {fileID: -1867197020, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
+    - {fileID: 1590068111, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
+    - {fileID: 1761070219, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
+    - {fileID: 24026133, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
+    m_dirNb: 4
+    m_frameNb: 3
