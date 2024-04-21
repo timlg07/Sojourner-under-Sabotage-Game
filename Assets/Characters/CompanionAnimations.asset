@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c423a4315d2914996b2c562ee0fca2, type: 3}
+  m_Name: CompanionAnimations
+  m_EditorClassIdentifier: 
+  m_spriteAlignment: 7
+  m_pivot: {x: 0, y: 0}
+  m_dirMapping: 0000000006000000020000000400000007000000010000000500000003000000
+  m_fps: 6
+  m_fpa: 3
+  m_dirType: 2
+  m_anims:
+  - name: robot
+    animSprites:
+    - {fileID: -1753607109, guid: 541fa11f356a7974a8349acfd18bd62a, type: 3}
+    - {fileID: 1110234792, guid: 541fa11f356a7974a8349acfd18bd62a, type: 3}
+    - {fileID: -1059107366, guid: 541fa11f356a7974a8349acfd18bd62a, type: 3}
+    - {fileID: -633679814, guid: 541fa11f356a7974a8349acfd18bd62a, type: 3}
+    - {fileID: 1032525933, guid: 541fa11f356a7974a8349acfd18bd62a, type: 3}
+    - {fileID: -1434769143, guid: 541fa11f356a7974a8349acfd18bd62a, type: 3}
+    - {fileID: -1022744537, guid: 541fa11f356a7974a8349acfd18bd62a, type: 3}
+    - {fileID: -1334505630, guid: 541fa11f356a7974a8349acfd18bd62a, type: 3}
+    - {fileID: -1370335186, guid: 541fa11f356a7974a8349acfd18bd62a, type: 3}
+    - {fileID: 1412094639, guid: 541fa11f356a7974a8349acfd18bd62a, type: 3}
+    - {fileID: -235662399, guid: 541fa11f356a7974a8349acfd18bd62a, type: 3}
+    - {fileID: 1156741576, guid: 541fa11f356a7974a8349acfd18bd62a, type: 3}
+    m_dirNb: 4
+    m_frameNb: 3
