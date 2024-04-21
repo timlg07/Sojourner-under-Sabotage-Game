@@ -54,3 +54,10 @@ MonoBehaviour:
       SortingLayer: Default
       SortingOrder: 0
       Depth: -1
+    - Tiles: c063ffffffffff7f
+      Visible: 1
+      Name: Fog of Space
+      LayerType: 3
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: -1.5
