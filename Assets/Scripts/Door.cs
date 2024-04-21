@@ -19,9 +19,10 @@ public class Door : MonoBehaviour
     protected TweenerCore<Vector3, Vector3, VectorOptions> ScaleTween;
     protected TweenerCore<Vector3, Vector3, VectorOptions> MoveTween;
 
-    private const int BlockLayer = 1;
+    private const int BlockLayer = 2;
 
-    private int _initialBlockTileId;
+    private int _initialBlockTileId; // 184
+    private const int NonBlockingTileId = 62;
     private InteractableWorldObject _iwo;
     private DoorManager _doorManager;
 
@@ -45,7 +46,7 @@ public class Door : MonoBehaviour
         if (IsLocked) return;
         
         // remove blocking tile
-        RpgMapHelper.SetAutoTileByPosition(InitialPosition, 0, BlockLayer);
+        RpgMapHelper.SetAutoTileByPosition(InitialPosition, NonBlockingTileId, BlockLayer);
         
         AbortTweens();
     }

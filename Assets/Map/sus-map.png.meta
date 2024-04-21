@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8abd4ecc7ea366d43a1191219995b68b
+guid: a0282b22316133b46b32ff60a7affd80
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_0
+      name: sus-map_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65bf74b971952d648a7af42082daa263
-      internalID: -521604783
+      spriteID: 4ea5f955e3223b74686b441d767e1e9b
+      internalID: 1208108723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_1
+      name: sus-map_1
       rect:
         serializedVersion: 2
         x: 32
@@ -171,35 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12b89c68f885bcd4bbc888ed65d44447
-      internalID: -574891941
+      spriteID: f6b75bd5b1c60ea43a0f8db2ed726dbe
+      internalID: 864365665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 480
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64a4ff7c6e5439241abe33c141dc1958
-      internalID: -1828330175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_3
+      name: sus-map_2
       rect:
         serializedVersion: 2
         x: 96
@@ -213,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3fe874ff018b98459e4c44bd48be832
-      internalID: -1840732399
+      spriteID: acaae66c2974eee429748e7f573076c8
+      internalID: -426321041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_4
+      name: sus-map_3
       rect:
         serializedVersion: 2
         x: 128
@@ -234,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42324a00a354fa84a9972313cf0b2288
-      internalID: -457507104
+      spriteID: fbfbb636091456d4e8becb38d5ad8538
+      internalID: -352417688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_5
+      name: sus-map_4
       rect:
         serializedVersion: 2
         x: 160
@@ -255,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 904daf636de5670448974403f12d22ee
-      internalID: 1656913016
+      spriteID: 2837f455e9b6cbf40930238930cda17b
+      internalID: 1038123095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_6
+      name: sus-map_5
       rect:
         serializedVersion: 2
         x: 192
@@ -276,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5c28daca73ceb741a4d65e467c5187a
-      internalID: 2135478226
+      spriteID: 898877722e82fd6479b99762ed331f79
+      internalID: -1977772257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_7
+      name: sus-map_6
       rect:
         serializedVersion: 2
         x: 224
@@ -297,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c51ff048105ea3d45981a4bedb913003
-      internalID: 1618681489
+      spriteID: 9cd1fd9d0c261264bb89138c153eb7f5
+      internalID: 633255699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_8
+      name: sus-map_7
       rect:
         serializedVersion: 2
         x: 256
@@ -318,14 +297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 623f63f0bd8b5ed4681b4f4c0774bb4c
-      internalID: -444875077
+      spriteID: a33f0dda1bef43149a177987eadcd334
+      internalID: -1582040744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_9
+      name: sus-map_8
       rect:
         serializedVersion: 2
         x: 288
@@ -339,14 +318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0393a4d640abc4346a132f98df39c048
-      internalID: -598588249
+      spriteID: bd7fefb0dcd71d446a6adbb271777bac
+      internalID: -1818833397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_10
+      name: sus-map_9
       rect:
         serializedVersion: 2
         x: 320
@@ -360,35 +339,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f36ff9bc4d5188342a3fba6584b74b29
-      internalID: -1692767347
+      spriteID: 66233a711c98caf499cf67f7eb3e5090
+      internalID: 1140556620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_11
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 480
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd534c1d425845248940a7434f3941db
-      internalID: -125255143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_12
+      name: sus-map_10
       rect:
         serializedVersion: 2
         x: 416
@@ -402,14 +360,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f32f59ad05bd58347993b3aa4a339b32
-      internalID: 889079796
+      spriteID: af3be5b21c9f3344e87836a7a1c1ebed
+      internalID: -1957926241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_13
+      name: sus-map_11
       rect:
         serializedVersion: 2
         x: 448
@@ -423,14 +381,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee46331d2d25ca241800bfc3412e98e5
-      internalID: -1337432731
+      spriteID: 58d4a2dc84a21724db78f5c8994c6ea2
+      internalID: 768194609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_14
+      name: sus-map_12
       rect:
         serializedVersion: 2
         x: 480
@@ -444,14 +402,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 521fd9c0f3de95149b6119e35e599109
-      internalID: 2041276182
+      spriteID: aaf24b4f7dc9ec442a07e2836a42f856
+      internalID: 11569809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_15
+      name: sus-map_13
       rect:
         serializedVersion: 2
         x: 0
@@ -465,14 +423,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb1f8ad72a58f324cbc7d49761297d9d
-      internalID: 1309272318
+      spriteID: b9cdaa0fa2b01ef4295c464877ec0f1d
+      internalID: -581267600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_16
+      name: sus-map_14
       rect:
         serializedVersion: 2
         x: 32
@@ -486,35 +444,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d0003a219a56b046b77a78b9f4db5bb
-      internalID: -206535290
+      spriteID: 72f2092ee84ef9743826d60c22fa518b
+      internalID: -2011101208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_17
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 448
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6cd09cc66af62fb4ebf3a13ae0cc7e7f
-      internalID: -567940176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_18
+      name: sus-map_15
       rect:
         serializedVersion: 2
         x: 96
@@ -528,14 +465,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32bcd2c5671ae7242b44aff99022680d
-      internalID: 1578122122
+      spriteID: cb7182dcd96f2d84c93880200eda50e1
+      internalID: -1437481555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_19
+      name: sus-map_16
       rect:
         serializedVersion: 2
         x: 128
@@ -549,14 +486,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9935226c311d6ec4081870171e41815f
-      internalID: -409536601
+      spriteID: c6c6fdc88cf2aa54abd1dfa0a7836bfa
+      internalID: 1950479228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_20
+      name: sus-map_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b8b2c158583dc4bb426db4a2154c8a
+      internalID: -84737187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_18
       rect:
         serializedVersion: 2
         x: 192
@@ -570,14 +528,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c0c547bae02ca94bb07360d50c1bdca
-      internalID: -468539409
+      spriteID: de09303e4ed4b604aa03e76c409cce26
+      internalID: -592139581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_21
+      name: sus-map_19
       rect:
         serializedVersion: 2
         x: 224
@@ -591,14 +549,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c6921c3ee67b9c40809495a340cc0e8
-      internalID: -217482498
+      spriteID: 77737cbbc18fd7a4c931d6bfa7f95b12
+      internalID: -722758991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_22
+      name: sus-map_20
       rect:
         serializedVersion: 2
         x: 256
@@ -612,14 +570,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15ae657cc7ad9114f929039fc31704b9
-      internalID: 628785910
+      spriteID: c176896fe1111134cb04978def24fb63
+      internalID: 1658238720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_23
+      name: sus-map_21
       rect:
         serializedVersion: 2
         x: 288
@@ -633,17 +591,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 826d893c38c2ff14b972faa3812c84ac
-      internalID: -1078117092
+      spriteID: abbbc44a65cc5d2479a15c164353b163
+      internalID: 1818984147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_24
+      name: sus-map_22
       rect:
         serializedVersion: 2
-        x: 352
+        x: 320
         y: 448
         width: 32
         height: 32
@@ -654,14 +612,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d857afff48750614a9726ab518020b0e
-      internalID: 1353334326
+      spriteID: e4f48dddb4f317249aab917846449174
+      internalID: 726897556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_25
+      name: sus-map_23
       rect:
         serializedVersion: 2
         x: 416
@@ -675,14 +633,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffe8d25213f30c5479bb4b979b7ceda2
-      internalID: -557674672
+      spriteID: 56355a5dc8ddb33408821b1a1b8d7014
+      internalID: -1936265084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_26
+      name: sus-map_24
       rect:
         serializedVersion: 2
         x: 448
@@ -696,14 +654,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e759000d064c1e44b4aa2a62dd8099e
-      internalID: -474935675
+      spriteID: 6f8667bb98d0ee244bd6bdaf07a86d73
+      internalID: 1701765187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_27
+      name: sus-map_25
       rect:
         serializedVersion: 2
         x: 480
@@ -717,14 +675,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42c462f2635a024428e33cfcce224c8a
-      internalID: 622631028
+      spriteID: d84b55a544d714b47a6430ed8423c578
+      internalID: -874453730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_28
+      name: sus-map_26
       rect:
         serializedVersion: 2
         x: 0
@@ -738,14 +696,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af8ddf8d70e4d8c4ebd269794de7df37
-      internalID: 585454999
+      spriteID: fed0e382f38788742bba39a44391ee2d
+      internalID: -528789006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_29
+      name: sus-map_27
       rect:
         serializedVersion: 2
         x: 32
@@ -759,35 +717,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8217dc6b71bdddb4cb2c8f5811f4af1f
-      internalID: -393595278
+      spriteID: f49ef2c08ebf54e43ad47901446817b0
+      internalID: 424816536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_30
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32e433fbecd5496499820a19f7c3ef37
-      internalID: 724823683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_31
+      name: sus-map_28
       rect:
         serializedVersion: 2
         x: 96
@@ -801,14 +738,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c34c8879e5561c449881fb9ad24caac0
-      internalID: 1570488298
+      spriteID: 77d99a9a445938248be8a2f73d014cbb
+      internalID: 119410732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_32
+      name: sus-map_29
       rect:
         serializedVersion: 2
         x: 128
@@ -822,14 +759,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67370b9b6490d0d478bed174f547bdf4
-      internalID: 909819788
+      spriteID: 5f66517df9504ed4c8f0cd7613f094fc
+      internalID: 340849251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_33
+      name: sus-map_30
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1549dbfe4ef14f344b71e01c29d7c9ba
+      internalID: 476644815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_31
       rect:
         serializedVersion: 2
         x: 192
@@ -843,14 +801,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f6ed7ee6cb56f54a8bab72a1bb0ba4e
-      internalID: 158146688
+      spriteID: 1b5aa64860ca1d145bdc0a7194cff908
+      internalID: 1568393163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_34
+      name: sus-map_32
       rect:
         serializedVersion: 2
         x: 224
@@ -864,14 +822,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d07e019c95baa7545b54483c9da23a5e
-      internalID: 2010845464
+      spriteID: ee9ad56d3795e34448a36feac1a935c4
+      internalID: 1091670141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_35
+      name: sus-map_33
       rect:
         serializedVersion: 2
         x: 256
@@ -885,1572 +843,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34f65dcf6fa9e4047ad4544c0984fb4e
-      internalID: -765905374
+      spriteID: 47c254da109e68f498d43974b72e86f4
+      internalID: -848743693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_36
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3059689eb0f1ca449ac2219a8070f28
-      internalID: -663920500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_37
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e03182ab25e2594f881b925904104fa
-      internalID: -1604859302
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_38
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1887dca8c568a2f4c83f330ba2d16884
-      internalID: -223441033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_39
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e357d8b38a600fa419bb07354799a335
-      internalID: -856598641
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_40
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4943ec389aa1fff4491e142466325bae
-      internalID: -1257936289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_41
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7552239ff182d094c9c9d62f097d6fab
-      internalID: 240761352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_42
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39bf5af9222f8e64b90f265e7b3ec3d3
-      internalID: 711637237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_43
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c28ccc068be320498183f606dcd5639
-      internalID: 1075939778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_44
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d4681c3914fc8e46bd7c3f5d93d8869
-      internalID: 1317157762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_45
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2061b9b90451e1849b4fe6edb11900e9
-      internalID: -2074775372
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_46
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 736742459e1ddb241bc10c00fb715d36
-      internalID: -1045931216
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_47
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bebf3fae83aec74479a721a57c136821
-      internalID: -783915893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_48
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5a60f8f6cfadd34f8f65814c1a67ef2
-      internalID: -1179616998
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_49
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 304dac89a2923be4c9672dbe923256a3
-      internalID: -175641576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_50
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f683f50b6064a141b8b391d365fe907
-      internalID: 393770421
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_51
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c075c918b082a93459c0114ca6bcf263
-      internalID: 912243404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_52
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ffcc597674992f3468f9799d494284dd
-      internalID: 1434447150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_53
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93b611b4a9edd0c49a0e00f7a3de7d87
-      internalID: -985125080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_54
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66b946b4bc7923f47a6237b286ec1a48
-      internalID: -980346714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_55
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebc5285e41b2bd24c955123222108095
-      internalID: 497837500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_56
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ade893cb17ac8fa45a78fd8ea80a8e64
-      internalID: -1134053328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_57
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be39ebb82381556408ec7b84a6e8a823
-      internalID: 1398384015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_58
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6482ac31baf79d94486daa7dce7d6707
-      internalID: 1291108045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_59
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8925c30720e04a844b77e7c05d769b40
-      internalID: -1995866917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_60
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d99639d6bdb667c468482a7172481c3c
-      internalID: -364038741
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_61
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7145501369a29ba4fa7ec1d10c2589ca
-      internalID: 150643070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_62
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 449552af799ba1845886ff5fcc56103c
-      internalID: -1990134442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_63
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37600699cf589a64bae345bccdd425cd
-      internalID: 326958440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_64
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d49cb08ad3e90e44390df909a14b7cd7
-      internalID: -1944564367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_65
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d009b4e3da7076e43a2dc511af8384e6
-      internalID: 1979123793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_66
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ce38fa3c693af848849d8db72979471
-      internalID: -434968039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_67
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59d1899c5f6915f4484abd593faa0323
-      internalID: -581894877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_68
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d9db5c7408608f43a91dc3dbf382fa1
-      internalID: -1530190291
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_69
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00e34ee52dd7c374582ffbc1ad0af9da
-      internalID: 1027753529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_70
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca1e2f828ceaf8440870217e616fdba8
-      internalID: -1844103166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_71
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e75337097057df94084b4e99d66211ef
-      internalID: 1224490212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_72
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1d98038a602ff047ae4152e71272690
-      internalID: 1329146120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_73
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2a223e1f12e3204cbb5a7898e1292d6
-      internalID: 1795524745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_74
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f98ddeaa7d67a7c4c99901b09d102fee
-      internalID: -416367087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_75
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fcab9342df26aa04f9d0f58781330f5c
-      internalID: -759178819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_76
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cd1224546b12f847a8bc4aedcf9613f
-      internalID: -829688718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_77
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88989ad8c8b506440a88e77619fdd1a3
-      internalID: 217253301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_78
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a355e8e0612e0647a73827cbd326a10
-      internalID: 40649208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_79
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06baf6f60ac312449b47a4fd3e2982e7
-      internalID: 1724526278
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_80
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 624725bc162c32d48996de952bb0bf8d
-      internalID: -485202259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_81
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a89f9a926cb67642a0807729a6c689d
-      internalID: 132230972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_82
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ebccf16318d1364da567b86dd5866e0
-      internalID: 817544645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_83
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97bd8f54f3f5d1544a0b56517836e2b2
-      internalID: -1837192583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_84
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd0d028101aaf394b858945c08134e30
-      internalID: 1353820968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_85
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f8ea3e73f0fb7f4a83eb505754b475a
-      internalID: 218558686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_86
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 339980f9b643e4a4ca3f9d33d9d730c7
-      internalID: -1260933123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_87
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 243220702f715944a891e18773ce4269
-      internalID: -434320851
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_88
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a34f0e2275f666479be8c966fa118cd
-      internalID: 1012591746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_89
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a82bb717106236d4b953f32e810b7e3f
-      internalID: -951097324
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_90
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4b0b97f8f695264aa115b7d1a633020
-      internalID: -665922000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_91
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6d0e6dd81a418346bcca12f9552b5cc
-      internalID: -2097957395
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_92
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17f1b380b25f5d448858a3d6c5fd8447
-      internalID: -473337918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_93
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d03d0194bbc90e343b16c5ab39ef7f19
-      internalID: -403607018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_94
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9487b23d8849fc6489707efa86ffacdd
-      internalID: 623669861
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_95
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c654e8bb9ba088c4e9c62045b5490d18
-      internalID: 382902088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_96
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be7b1f2fb52879f4099e22653f925253
-      internalID: 934097239
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_97
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3197b0acf8630394e9df0e2fff7f937c
-      internalID: 1479948721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_98
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d77af9a569069b24b99edd0b69f69e68
-      internalID: -26032210
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_99
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d3db24f62871c645a63da5d2caf9241
-      internalID: -1362937955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_100
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2895aa3a5ca7a9d45a5acca901d15ca4
-      internalID: -1700300178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_101
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5ca50a861851cb44901e432ef3ecba4
-      internalID: -1411477814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_102
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34fc9922f3663b940bf75c4705830783
-      internalID: 797227256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_103
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6aad6a979b107a34a8347be3880cdd31
-      internalID: 811368549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_104
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62c2a98c59a9d834fa8d683398352a0e
-      internalID: 574964057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_105
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d0b96e4be6236143883e9b5df424ddb
-      internalID: -27024276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_106
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c689fcf4f4107464b9224a53b83114dd
-      internalID: 364722071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_107
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7dc4afc962f8a7d4d8a531c47059d3d5
-      internalID: 895811987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_108
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b922df0bad1bfcd4da279681a1f3a45a
-      internalID: 975929318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_109
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2c70eadf2ae53f4ebfd35426f170caa
-      internalID: 997076265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_110
+      name: sus-map_34
       rect:
         serializedVersion: 2
         x: 288
-        y: 192
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -2460,18 +864,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51de398f8d28b3a4fbbd2a55bc636959
-      internalID: 442115017
+      spriteID: 3590d06425014be42a6d685f66e44d77
+      internalID: -2064041151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_111
+      name: sus-map_35
       rect:
         serializedVersion: 2
         x: 320
-        y: 192
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -2481,18 +885,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7161857b641183409190a67543053af
-      internalID: -1432239968
+      spriteID: ae48c9f1b43985a419098af57a9392c7
+      internalID: -577616365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_112
+      name: sus-map_36
       rect:
         serializedVersion: 2
         x: 352
-        y: 192
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -2502,39 +906,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9db8004b41aa1524a961544d15a79c2f
-      internalID: -456264886
+      spriteID: 26d27aa424d60ac41babc8dce3d282b7
+      internalID: -1953097621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_113
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9820a090437a6cc429d871062c1b7911
-      internalID: 993339025
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_114
+      name: sus-map_37
       rect:
         serializedVersion: 2
         x: 416
-        y: 192
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -2544,18 +927,60 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c118dac0a42c2e54dbedbfec38bfab93
-      internalID: 1749152052
+      spriteID: ef41896c07561514da1e58adf595f83e
+      internalID: 1887089992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_115
+      name: sus-map_38
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef84dd2aa5f6d54a94741ddf9148df6
+      internalID: -80116459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_39
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78eb51e509e5e9468621fb12e55d0e5
+      internalID: -1584208017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_40
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -2565,18 +990,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01ae84ec7511b4a4c8677262272c447e
-      internalID: 694339865
+      spriteID: 5e468a3d585649c42aa3ded576acf153
+      internalID: 2133585177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_116
+      name: sus-map_41
       rect:
         serializedVersion: 2
         x: 32
-        y: 160
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -2586,18 +1011,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa72c08c763fba54a9c9e6d05fa435d6
-      internalID: 1479031082
+      spriteID: a2fc1035439aedf45950d4b4190dfb94
+      internalID: -1587053282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_117
+      name: sus-map_42
       rect:
         serializedVersion: 2
         x: 64
-        y: 160
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -2607,18 +1032,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75552eef2e3e33947a22bb98c9a3efa5
-      internalID: 1440926902
+      spriteID: a01ecc5e95238f54289dda818eaaf9ca
+      internalID: -931244527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_118
+      name: sus-map_43
       rect:
         serializedVersion: 2
         x: 96
-        y: 160
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -2628,18 +1053,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a56c20a364acdb4c8d568432fd48840
-      internalID: -719055296
+      spriteID: e8cb7808622f5c94bb40fc6fec0824c8
+      internalID: 43399969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_119
+      name: sus-map_44
       rect:
         serializedVersion: 2
         x: 128
-        y: 160
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -2649,18 +1074,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37bf7a4bc7d4c63409ad9995e678b4be
-      internalID: 1101456093
+      spriteID: 7adb6cf9797a166428d3fd4a8a045ccd
+      internalID: -1359184050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_120
+      name: sus-map_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2f72d981c4e644f9809e80ff5f6fa8
+      internalID: 88964350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_46
       rect:
         serializedVersion: 2
         x: 192
-        y: 160
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -2670,18 +1116,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d79244600d98d7c4581c79bafc76684f
-      internalID: -788611713
+      spriteID: f4edc11abe2944348a3ccd0e5fe256e6
+      internalID: 540142997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_121
+      name: sus-map_47
       rect:
         serializedVersion: 2
         x: 224
-        y: 160
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -2691,18 +1137,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09402138b5532794a95ccd28900d3501
-      internalID: -1927280360
+      spriteID: 3315563a398e27c46be9c3c4b50da82b
+      internalID: -2103256767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_122
+      name: sus-map_48
       rect:
         serializedVersion: 2
         x: 256
-        y: 160
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -2712,18 +1158,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72f822fc07b5d1f40825c4460b3557e9
-      internalID: 1514634099
+      spriteID: d3ebf1c307679c844ad831b4b0956b1a
+      internalID: 1028407990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_123
+      name: sus-map_49
       rect:
         serializedVersion: 2
         x: 288
-        y: 160
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -2733,18 +1179,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc02bcc957b477a4aa7fdeace365473e
-      internalID: -1626688646
+      spriteID: 2b56acf9735b06641b19a919c7ca0f63
+      internalID: 816246132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_124
+      name: sus-map_50
       rect:
         serializedVersion: 2
         x: 320
-        y: 160
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -2754,17 +1200,1151 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd12d4801c2622e49bb4e8ef22cb1e3c
-      internalID: 68503951
+      spriteID: 8a3d3db2d6207c543ba91448275b1ba8
+      internalID: -1325287144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_125
+      name: sus-map_51
       rect:
         serializedVersion: 2
         x: 352
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e31405abb7c9d645be0c29cb65322be
+      internalID: -1566850608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_52
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db48d9174e9e884ba6d601f43615203
+      internalID: 1288425861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_53
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9d649c9c62362458fbd05cb5d5c013
+      internalID: -406202871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_54
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add364d6f46e1db4586abe89df0686c1
+      internalID: 107501169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_55
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd7d23770553c34490bda437873dd13
+      internalID: 832855651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_56
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e854d5a8372534e970f1c9695e8b7f
+      internalID: 2074649032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_57
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6bc8f37d7565b140a738158a8b5dbc2
+      internalID: -2028471608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_58
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b830841a53c9b4999c4ac3945fd213
+      internalID: 955128585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_59
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8203ed5692c613a449b55362c4dc4707
+      internalID: 1314763177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_60
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e853a658547b84285f18f799086f4b
+      internalID: -11371119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_61
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b733c2914a24c8418d7a5e24fe4403a
+      internalID: -1496930979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_62
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20a6e027f1ab6e40a6c6070d8b06ce8
+      internalID: 22800501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_63
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9401b483ea4ad84498c40fb05d89d0c
+      internalID: -242707746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_64
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f94a583534189e4783f3a7228d918af
+      internalID: 1839691472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_65
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31130a2332dc85646866f8dad9ecd3eb
+      internalID: 839087431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_66
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52597a6f1d8546d458758143bca345ee
+      internalID: 1694680250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_67
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf93d61e0a149340a4b77122f57ccff
+      internalID: 94539655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_68
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c3d1f58c06afb47bf626c99e991a04
+      internalID: -202415179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_69
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b87891d37a266b4c8bf4031dc548b66
+      internalID: -1643362295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_70
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a41f17d2f372e4b818cca3711deeb1
+      internalID: 1829005811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_71
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03992a058095044468d38fe279c9e2cc
+      internalID: -1956820335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_72
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4990d022058c5f4408bd731ca8cf37d8
+      internalID: 1129988862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_73
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421b8bf3f06bac547a9515f79d358a29
+      internalID: -831936255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_74
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7534e0a760204f04bbf9389de71e7cc9
+      internalID: 142055412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658619e15713efe4c8aa56d0708498a9
+      internalID: 846316096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_76
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973a000399b014342ad8e54034ededf1
+      internalID: 207928981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_77
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53925f3ae6ace1c42b09b7779a015f14
+      internalID: -2121422780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_78
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807f07995deed324eaa318ef6185000a
+      internalID: -274033699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_79
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5b0cbdda7188c428f9d268b76e702f
+      internalID: 1665986173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_80
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7873629233f7744be9e1f71325599c
+      internalID: -984639695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_81
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb8d1d353184cb48b25ac8d82f7bda2
+      internalID: 1556246070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_82
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96149926b148a66469df51586acbc92e
+      internalID: 1925623494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8a8260d98242248b6ecb1ecf7703fa
+      internalID: 1228462228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_84
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91482b1733105234293fcecdcf280423
+      internalID: -1317760512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_85
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b906f30569bfb1428b6b56982e0dfb5
+      internalID: -2025544654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_86
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec408f2cf9d1824d8fe75a91cf964b0
+      internalID: 641963345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_87
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef2561ee4f25d74dae3c939434e24a6
+      internalID: 308928961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_88
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7cbdadcf4aa314ea9f0936bee8aa4f
+      internalID: -1288896242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_89
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8d0ff42052b7b4f96cf12970c70abb
+      internalID: -376912925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_90
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d710f22f7b6a0e4f8c038a06e78ecca
+      internalID: -76501399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ea26857df78644f9f76176255edf9c
+      internalID: 1190854290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_92
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 579b9b9541002164b8f45008c643e3e8
+      internalID: -1599776178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_93
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc5a029e26ecfd4890d4e27cf1773d1
+      internalID: -1291723977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_94
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f07b8c59df35f44ea19856eba0bbc66
+      internalID: 427952799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_95
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce51f4fc4bd1fb439dcd3b11caeb4c0
+      internalID: -1971872474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_96
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144009e01e7dda44aaa1234d3f346aea
+      internalID: 2017518189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_97
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b4c3f22d8ad3c4ba49573ff0c33cec
+      internalID: -1299730018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_98
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874bc93142bb13546b1f6f9399086412
+      internalID: -1947278357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_99
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0287fde43cf7004289b453e21c85a2d
+      internalID: -624199861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_100
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212e0b626193f474a9f14a44f9138605
+      internalID: 876711873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_101
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378fabc49376e3b4dbc7716cdb942def
+      internalID: 910019602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_102
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133bdbf68810e4d49b3410cacb1517d3
+      internalID: -1456932716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_103
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784932b914315784c8e8857db81d14c7
+      internalID: -1801068083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_104
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1503e5b0f35384c8f30f103fe3c8c0
+      internalID: -2015466369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_105
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 160
         width: 32
         height: 32
@@ -2775,14 +2355,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef7dd1813a2e77f409eb7e37d27c9d0d
-      internalID: -1591808784
+      spriteID: fcd7e95f3e10bb94ea109568438d406c
+      internalID: -635673022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_126
+      name: sus-map_106
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12afbf116ba97364f80282735168d85d
+      internalID: -1917309051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_107
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493eb4e829e8cca44a82aa4c93bfad5c
+      internalID: -975683765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_108
       rect:
         serializedVersion: 2
         x: 384
@@ -2796,14 +2418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef468351f993c194aaa87fc43990ea12
-      internalID: -1726983728
+      spriteID: 00b8ef3d67cfae64199c8ed47d572b9e
+      internalID: -224602636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_127
+      name: sus-map_109
       rect:
         serializedVersion: 2
         x: 416
@@ -2817,14 +2439,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1478778f82764640a23aa6e96e3b7ea
-      internalID: 894316434
+      spriteID: b572b2c318dbc32438072e2ac9953af4
+      internalID: 20510173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_128
+      name: sus-map_110
       rect:
         serializedVersion: 2
         x: 0
@@ -2838,14 +2460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e1c6e711185f3d4fa9ff76589f09f49
-      internalID: -700252742
+      spriteID: d4625f1223cda7b4fbe9187b5bdedf04
+      internalID: 331815317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_129
+      name: sus-map_111
       rect:
         serializedVersion: 2
         x: 32
@@ -2859,14 +2481,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35b8cd7cd9a12b442b83d3352eb2eae3
-      internalID: 1818028722
+      spriteID: fecb134a9f6274a4e9f364f71d72a9b0
+      internalID: -1841776307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_130
+      name: sus-map_112
       rect:
         serializedVersion: 2
         x: 64
@@ -2880,14 +2502,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff5998daabea3ba468e98a21ecbb8a84
-      internalID: 2135366105
+      spriteID: 5598f67448b1fb4418e523436bc8c67a
+      internalID: -1336423258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_131
+      name: sus-map_113
       rect:
         serializedVersion: 2
         x: 96
@@ -2901,14 +2523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3ba09daebb7c2a408da6b6c032c3007
-      internalID: -567533006
+      spriteID: 0e96269bc85c62a4695b83f021cc3905
+      internalID: -832184464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_132
+      name: sus-map_114
       rect:
         serializedVersion: 2
         x: 128
@@ -2922,14 +2544,98 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 125fb28d8c58d3545ba2723848eec9b3
-      internalID: -1810089728
+      spriteID: d3e17e4e2f68239459844040bcbcb58c
+      internalID: 2126439417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_133
+      name: sus-map_115
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956d011d12ebd0a48a28c912e8c67d21
+      internalID: -1228109886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_116
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac02aa9eafbc6c74f85333019579a3e7
+      internalID: -1043840974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_117
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62994c84924f1b45bd93ff93182b5d7
+      internalID: -117784374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_118
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28dbcdcdb82e2d45a125bd32a588df6
+      internalID: -1173507035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_119
       rect:
         serializedVersion: 2
         x: 0
@@ -2943,14 +2649,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8c691312dddb6e44bb4937e57c693df
-      internalID: -21052241
+      spriteID: adceb323040a0704e8967dd0a85670e1
+      internalID: -794775586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_134
+      name: sus-map_120
       rect:
         serializedVersion: 2
         x: 32
@@ -2964,14 +2670,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 183eba0f8659a1c41b95ca637ab44c07
-      internalID: -210638729
+      spriteID: 89e540ae5bba18242a378f99a9bb27cb
+      internalID: 726848277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_135
+      name: sus-map_121
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87fa464e8380f914a84e02b7ddc301a1
+      internalID: 805180415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_122
       rect:
         serializedVersion: 2
         x: 96
@@ -2985,14 +2712,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d13544c9860c8548a874e92ffb2941e
-      internalID: -2071970213
+      spriteID: 193d51a5c9c6f364bb59134571181cd4
+      internalID: -469273111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_136
+      name: sus-map_123
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc6c36fd90ec2f478228b2ee0913e6a
+      internalID: 1212314249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_124
       rect:
         serializedVersion: 2
         x: 160
@@ -3006,14 +2754,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45d0e0786ef65d844842fb739d07c343
-      internalID: -1707375233
+      spriteID: ead4549caacb2aa43b57f8994b47d25b
+      internalID: -600481081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_137
+      name: sus-map_125
       rect:
         serializedVersion: 2
         x: 192
@@ -3027,17 +2775,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d1b5aa3868316a4f9ffce86705606b3
-      internalID: -1922940235
+      spriteID: 8e6fa57b17dbe794eb6e75fef5f6b3b0
+      internalID: -1603448256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_138
+      name: sus-map_126
       rect:
         serializedVersion: 2
-        x: 224
+        x: 384
         y: 96
         width: 32
         height: 32
@@ -3048,17 +2796,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 241d6e2eadcd6174c9dfb383fa714cbb
-      internalID: 1662822595
+      spriteID: f9f1e75d9f0999349a353ca057d00be7
+      internalID: -609115718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_139
+      name: sus-map_127
       rect:
         serializedVersion: 2
-        x: 256
+        x: 416
         y: 96
         width: 32
         height: 32
@@ -3069,14 +2817,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67ea7103b0f05064996234e4c84447c8
-      internalID: 651694532
+      spriteID: f688981075e7d83458506e7e089befc8
+      internalID: -459317267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_140
+      name: sus-map_128
       rect:
         serializedVersion: 2
         x: 0
@@ -3090,14 +2838,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59d2e228cd4158241b041f4217db22db
-      internalID: 676796425
+      spriteID: 198241a1520bce244a6e272bc5482fd0
+      internalID: 2097506128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_141
+      name: sus-map_129
       rect:
         serializedVersion: 2
         x: 32
@@ -3111,17 +2859,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de65eb5b5404b16448b4c72b2d24851f
-      internalID: 1408853546
+      spriteID: 8e935b1df8a6a22439ec8deb07b1f53c
+      internalID: -2137086056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_142
+      name: sus-map_130
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 64
         width: 32
         height: 32
@@ -3132,14 +2880,98 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d553fbbfab8cfb249bcd996315e1d71a
-      internalID: 923565911
+      spriteID: 52b68d46a320f064fa52ef3bf27dd132
+      internalID: 975881695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_143
+      name: sus-map_131
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1115d28af57b6949bad3eba2d7a8881
+      internalID: -1858594988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_132
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c4d80efd5da914eb4fe31c5f90dfac
+      internalID: 793260883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_133
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df99621ead27d04482b79aa3a685be8
+      internalID: -171177630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_134
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29a4311c37eca942a50f14c125929e4
+      internalID: -189332767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_135
       rect:
         serializedVersion: 2
         x: 0
@@ -3153,14 +2985,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 046defaf8b536184e97da7e2f71506da
-      internalID: 2039279921
+      spriteID: 7a7f2986fe5192c468117a4569dd1cb0
+      internalID: 1474136588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_144
+      name: sus-map_136
       rect:
         serializedVersion: 2
         x: 32
@@ -3174,14 +3006,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02c543f73cb19e24f95e462e2c5861e2
-      internalID: 1957886714
+      spriteID: 6781151edb880ad4f9991a67ad39b80f
+      internalID: 166970818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_145
+      name: sus-map_137
       rect:
         serializedVersion: 2
         x: 64
@@ -3195,14 +3027,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d82e07f6918dcbe4097c99d07d4ebb35
-      internalID: -7411913
+      spriteID: 8203209875f5659448b05633a7a2a18c
+      internalID: 1479886353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_146
+      name: sus-map_138
       rect:
         serializedVersion: 2
         x: 96
@@ -3216,14 +3048,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 974f285d4dc40404082312fc52c76ad3
-      internalID: 410785084
+      spriteID: 848e870b3c09b4444846144e3763dbc8
+      internalID: 1536864156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_147
+      name: sus-map_139
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53fb1b6aea281f47bf068782683204a
+      internalID: 1748640840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_140
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e604db0ff031b934f8ef7688295b116a
+      internalID: -588939056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_141
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8502e106db334f5468ee355581eb2989
+      internalID: 1264537283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_142
       rect:
         serializedVersion: 2
         x: 0
@@ -3237,14 +3132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19143d13c980b41419bcb7b8f62f55d2
-      internalID: -520538429
+      spriteID: 7f6a909d832f51442aa041e5633e470c
+      internalID: -1841527929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_148
+      name: sus-map_143
       rect:
         serializedVersion: 2
         x: 32
@@ -3258,14 +3153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5118923dfa03d81419a0bfa193085243
-      internalID: -1960160526
+      spriteID: 83830381f6d55524aa92a46a4425e328
+      internalID: -901322967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel-cyberpunk-interior 1_149
+      name: sus-map_144
       rect:
         serializedVersion: 2
         x: 64
@@ -3279,8 +3174,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c7f575d59f479441a68e6f8c6af441a
-      internalID: 851329674
+      spriteID: b5c2dfa48af85d948844f59e0a11d5cc
+      internalID: -1771249337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_145
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa05f1fb10b3a542b1164ba59c2f441
+      internalID: 1621360610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_146
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b9bd07196bbd34893139cd8cbb8786
+      internalID: 100915826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_147
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7255ace4c0125438aeb55db300f459
+      internalID: 605585611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sus-map_148
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cac9dcf09236214cbeac044ca279229
+      internalID: -1692352054
       vertices: []
       indices: 
       edges: []
@@ -3288,7 +3267,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2a20e08233dc2884c89dfd60096417ce
+    spriteID: 586bf6bcdaf3da5489be716e0f2d3ab1
     internalID: 0
     vertices: []
     indices: 
@@ -3296,156 +3275,155 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pixel-cyberpunk-interior 1_0: -521604783
-      pixel-cyberpunk-interior 1_1: -574891941
-      pixel-cyberpunk-interior 1_10: -1692767347
-      pixel-cyberpunk-interior 1_100: -1700300178
-      pixel-cyberpunk-interior 1_101: -1411477814
-      pixel-cyberpunk-interior 1_102: 797227256
-      pixel-cyberpunk-interior 1_103: 811368549
-      pixel-cyberpunk-interior 1_104: 574964057
-      pixel-cyberpunk-interior 1_105: -27024276
-      pixel-cyberpunk-interior 1_106: 364722071
-      pixel-cyberpunk-interior 1_107: 895811987
-      pixel-cyberpunk-interior 1_108: 975929318
-      pixel-cyberpunk-interior 1_109: 997076265
-      pixel-cyberpunk-interior 1_11: -125255143
-      pixel-cyberpunk-interior 1_110: 442115017
-      pixel-cyberpunk-interior 1_111: -1432239968
-      pixel-cyberpunk-interior 1_112: -456264886
-      pixel-cyberpunk-interior 1_113: 993339025
-      pixel-cyberpunk-interior 1_114: 1749152052
-      pixel-cyberpunk-interior 1_115: 694339865
-      pixel-cyberpunk-interior 1_116: 1479031082
-      pixel-cyberpunk-interior 1_117: 1440926902
-      pixel-cyberpunk-interior 1_118: -719055296
-      pixel-cyberpunk-interior 1_119: 1101456093
-      pixel-cyberpunk-interior 1_12: 889079796
-      pixel-cyberpunk-interior 1_120: -788611713
-      pixel-cyberpunk-interior 1_121: -1927280360
-      pixel-cyberpunk-interior 1_122: 1514634099
-      pixel-cyberpunk-interior 1_123: -1626688646
-      pixel-cyberpunk-interior 1_124: 68503951
-      pixel-cyberpunk-interior 1_125: -1591808784
-      pixel-cyberpunk-interior 1_126: -1726983728
-      pixel-cyberpunk-interior 1_127: 894316434
-      pixel-cyberpunk-interior 1_128: -700252742
-      pixel-cyberpunk-interior 1_129: 1818028722
-      pixel-cyberpunk-interior 1_13: -1337432731
-      pixel-cyberpunk-interior 1_130: 2135366105
-      pixel-cyberpunk-interior 1_131: -567533006
-      pixel-cyberpunk-interior 1_132: -1810089728
-      pixel-cyberpunk-interior 1_133: -21052241
-      pixel-cyberpunk-interior 1_134: -210638729
-      pixel-cyberpunk-interior 1_135: -2071970213
-      pixel-cyberpunk-interior 1_136: -1707375233
-      pixel-cyberpunk-interior 1_137: -1922940235
-      pixel-cyberpunk-interior 1_138: 1662822595
-      pixel-cyberpunk-interior 1_139: 651694532
-      pixel-cyberpunk-interior 1_14: 2041276182
-      pixel-cyberpunk-interior 1_140: 676796425
-      pixel-cyberpunk-interior 1_141: 1408853546
-      pixel-cyberpunk-interior 1_142: 923565911
-      pixel-cyberpunk-interior 1_143: 2039279921
-      pixel-cyberpunk-interior 1_144: 1957886714
-      pixel-cyberpunk-interior 1_145: -7411913
-      pixel-cyberpunk-interior 1_146: 410785084
-      pixel-cyberpunk-interior 1_147: -520538429
-      pixel-cyberpunk-interior 1_148: -1960160526
-      pixel-cyberpunk-interior 1_149: 851329674
-      pixel-cyberpunk-interior 1_15: 1309272318
-      pixel-cyberpunk-interior 1_16: -206535290
-      pixel-cyberpunk-interior 1_17: -567940176
-      pixel-cyberpunk-interior 1_18: 1578122122
-      pixel-cyberpunk-interior 1_19: -409536601
-      pixel-cyberpunk-interior 1_2: -1828330175
-      pixel-cyberpunk-interior 1_20: -468539409
-      pixel-cyberpunk-interior 1_21: -217482498
-      pixel-cyberpunk-interior 1_22: 628785910
-      pixel-cyberpunk-interior 1_23: -1078117092
-      pixel-cyberpunk-interior 1_24: 1353334326
-      pixel-cyberpunk-interior 1_25: -557674672
-      pixel-cyberpunk-interior 1_26: -474935675
-      pixel-cyberpunk-interior 1_27: 622631028
-      pixel-cyberpunk-interior 1_28: 585454999
-      pixel-cyberpunk-interior 1_29: -393595278
-      pixel-cyberpunk-interior 1_3: -1840732399
-      pixel-cyberpunk-interior 1_30: 724823683
-      pixel-cyberpunk-interior 1_31: 1570488298
-      pixel-cyberpunk-interior 1_32: 909819788
-      pixel-cyberpunk-interior 1_33: 158146688
-      pixel-cyberpunk-interior 1_34: 2010845464
-      pixel-cyberpunk-interior 1_35: -765905374
-      pixel-cyberpunk-interior 1_36: -663920500
-      pixel-cyberpunk-interior 1_37: -1604859302
-      pixel-cyberpunk-interior 1_38: -223441033
-      pixel-cyberpunk-interior 1_39: -856598641
-      pixel-cyberpunk-interior 1_4: -457507104
-      pixel-cyberpunk-interior 1_40: -1257936289
-      pixel-cyberpunk-interior 1_41: 240761352
-      pixel-cyberpunk-interior 1_42: 711637237
-      pixel-cyberpunk-interior 1_43: 1075939778
-      pixel-cyberpunk-interior 1_44: 1317157762
-      pixel-cyberpunk-interior 1_45: -2074775372
-      pixel-cyberpunk-interior 1_46: -1045931216
-      pixel-cyberpunk-interior 1_47: -783915893
-      pixel-cyberpunk-interior 1_48: -1179616998
-      pixel-cyberpunk-interior 1_49: -175641576
-      pixel-cyberpunk-interior 1_5: 1656913016
-      pixel-cyberpunk-interior 1_50: 393770421
-      pixel-cyberpunk-interior 1_51: 912243404
-      pixel-cyberpunk-interior 1_52: 1434447150
-      pixel-cyberpunk-interior 1_53: -985125080
-      pixel-cyberpunk-interior 1_54: -980346714
-      pixel-cyberpunk-interior 1_55: 497837500
-      pixel-cyberpunk-interior 1_56: -1134053328
-      pixel-cyberpunk-interior 1_57: 1398384015
-      pixel-cyberpunk-interior 1_58: 1291108045
-      pixel-cyberpunk-interior 1_59: -1995866917
-      pixel-cyberpunk-interior 1_6: 2135478226
-      pixel-cyberpunk-interior 1_60: -364038741
-      pixel-cyberpunk-interior 1_61: 150643070
-      pixel-cyberpunk-interior 1_62: -1990134442
-      pixel-cyberpunk-interior 1_63: 326958440
-      pixel-cyberpunk-interior 1_64: -1944564367
-      pixel-cyberpunk-interior 1_65: 1979123793
-      pixel-cyberpunk-interior 1_66: -434968039
-      pixel-cyberpunk-interior 1_67: -581894877
-      pixel-cyberpunk-interior 1_68: -1530190291
-      pixel-cyberpunk-interior 1_69: 1027753529
-      pixel-cyberpunk-interior 1_7: 1618681489
-      pixel-cyberpunk-interior 1_70: -1844103166
-      pixel-cyberpunk-interior 1_71: 1224490212
-      pixel-cyberpunk-interior 1_72: 1329146120
-      pixel-cyberpunk-interior 1_73: 1795524745
-      pixel-cyberpunk-interior 1_74: -416367087
-      pixel-cyberpunk-interior 1_75: -759178819
-      pixel-cyberpunk-interior 1_76: -829688718
-      pixel-cyberpunk-interior 1_77: 217253301
-      pixel-cyberpunk-interior 1_78: 40649208
-      pixel-cyberpunk-interior 1_79: 1724526278
-      pixel-cyberpunk-interior 1_8: -444875077
-      pixel-cyberpunk-interior 1_80: -485202259
-      pixel-cyberpunk-interior 1_81: 132230972
-      pixel-cyberpunk-interior 1_82: 817544645
-      pixel-cyberpunk-interior 1_83: -1837192583
-      pixel-cyberpunk-interior 1_84: 1353820968
-      pixel-cyberpunk-interior 1_85: 218558686
-      pixel-cyberpunk-interior 1_86: -1260933123
-      pixel-cyberpunk-interior 1_87: -434320851
-      pixel-cyberpunk-interior 1_88: 1012591746
-      pixel-cyberpunk-interior 1_89: -951097324
-      pixel-cyberpunk-interior 1_9: -598588249
-      pixel-cyberpunk-interior 1_90: -665922000
-      pixel-cyberpunk-interior 1_91: -2097957395
-      pixel-cyberpunk-interior 1_92: -473337918
-      pixel-cyberpunk-interior 1_93: -403607018
-      pixel-cyberpunk-interior 1_94: 623669861
-      pixel-cyberpunk-interior 1_95: 382902088
-      pixel-cyberpunk-interior 1_96: 934097239
-      pixel-cyberpunk-interior 1_97: 1479948721
-      pixel-cyberpunk-interior 1_98: -26032210
-      pixel-cyberpunk-interior 1_99: -1362937955
+      sus-map_0: 1208108723
+      sus-map_1: 864365665
+      sus-map_10: -1957926241
+      sus-map_100: 876711873
+      sus-map_101: 910019602
+      sus-map_102: -1456932716
+      sus-map_103: -1801068083
+      sus-map_104: -2015466369
+      sus-map_105: -635673022
+      sus-map_106: -1917309051
+      sus-map_107: -975683765
+      sus-map_108: -224602636
+      sus-map_109: 20510173
+      sus-map_11: 768194609
+      sus-map_110: 331815317
+      sus-map_111: -1841776307
+      sus-map_112: -1336423258
+      sus-map_113: -832184464
+      sus-map_114: 2126439417
+      sus-map_115: -1228109886
+      sus-map_116: -1043840974
+      sus-map_117: -117784374
+      sus-map_118: -1173507035
+      sus-map_119: -794775586
+      sus-map_12: 11569809
+      sus-map_120: 726848277
+      sus-map_121: 805180415
+      sus-map_122: -469273111
+      sus-map_123: 1212314249
+      sus-map_124: -600481081
+      sus-map_125: -1603448256
+      sus-map_126: -609115718
+      sus-map_127: -459317267
+      sus-map_128: 2097506128
+      sus-map_129: -2137086056
+      sus-map_13: -581267600
+      sus-map_130: 975881695
+      sus-map_131: -1858594988
+      sus-map_132: 793260883
+      sus-map_133: -171177630
+      sus-map_134: -189332767
+      sus-map_135: 1474136588
+      sus-map_136: 166970818
+      sus-map_137: 1479886353
+      sus-map_138: 1536864156
+      sus-map_139: 1748640840
+      sus-map_14: -2011101208
+      sus-map_140: -588939056
+      sus-map_141: 1264537283
+      sus-map_142: -1841527929
+      sus-map_143: -901322967
+      sus-map_144: -1771249337
+      sus-map_145: 1621360610
+      sus-map_146: 100915826
+      sus-map_147: 605585611
+      sus-map_148: -1692352054
+      sus-map_15: -1437481555
+      sus-map_16: 1950479228
+      sus-map_17: -84737187
+      sus-map_18: -592139581
+      sus-map_19: -722758991
+      sus-map_2: -426321041
+      sus-map_20: 1658238720
+      sus-map_21: 1818984147
+      sus-map_22: 726897556
+      sus-map_23: -1936265084
+      sus-map_24: 1701765187
+      sus-map_25: -874453730
+      sus-map_26: -528789006
+      sus-map_27: 424816536
+      sus-map_28: 119410732
+      sus-map_29: 340849251
+      sus-map_3: -352417688
+      sus-map_30: 476644815
+      sus-map_31: 1568393163
+      sus-map_32: 1091670141
+      sus-map_33: -848743693
+      sus-map_34: -2064041151
+      sus-map_35: -577616365
+      sus-map_36: -1953097621
+      sus-map_37: 1887089992
+      sus-map_38: -80116459
+      sus-map_39: -1584208017
+      sus-map_4: 1038123095
+      sus-map_40: 2133585177
+      sus-map_41: -1587053282
+      sus-map_42: -931244527
+      sus-map_43: 43399969
+      sus-map_44: -1359184050
+      sus-map_45: 88964350
+      sus-map_46: 540142997
+      sus-map_47: -2103256767
+      sus-map_48: 1028407990
+      sus-map_49: 816246132
+      sus-map_5: -1977772257
+      sus-map_50: -1325287144
+      sus-map_51: -1566850608
+      sus-map_52: 1288425861
+      sus-map_53: -406202871
+      sus-map_54: 107501169
+      sus-map_55: 832855651
+      sus-map_56: 2074649032
+      sus-map_57: -2028471608
+      sus-map_58: 955128585
+      sus-map_59: 1314763177
+      sus-map_6: 633255699
+      sus-map_60: -11371119
+      sus-map_61: -1496930979
+      sus-map_62: 22800501
+      sus-map_63: -242707746
+      sus-map_64: 1839691472
+      sus-map_65: 839087431
+      sus-map_66: 1694680250
+      sus-map_67: 94539655
+      sus-map_68: -202415179
+      sus-map_69: -1643362295
+      sus-map_7: -1582040744
+      sus-map_70: 1829005811
+      sus-map_71: -1956820335
+      sus-map_72: 1129988862
+      sus-map_73: -831936255
+      sus-map_74: 142055412
+      sus-map_75: 846316096
+      sus-map_76: 207928981
+      sus-map_77: -2121422780
+      sus-map_78: -274033699
+      sus-map_79: 1665986173
+      sus-map_8: -1818833397
+      sus-map_80: -984639695
+      sus-map_81: 1556246070
+      sus-map_82: 1925623494
+      sus-map_83: 1228462228
+      sus-map_84: -1317760512
+      sus-map_85: -2025544654
+      sus-map_86: 641963345
+      sus-map_87: 308928961
+      sus-map_88: -1288896242
+      sus-map_89: -376912925
+      sus-map_9: 1140556620
+      sus-map_90: -76501399
+      sus-map_91: 1190854290
+      sus-map_92: -1599776178
+      sus-map_93: -1291723977
+      sus-map_94: 427952799
+      sus-map_95: -1971872474
+      sus-map_96: 2017518189
+      sus-map_97: -1299730018
+      sus-map_98: -1947278357
+      sus-map_99: -624199861
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

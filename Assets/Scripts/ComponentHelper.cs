@@ -6,9 +6,7 @@ using UnityEngine.UIElements;
 
 public class ComponentHelper : MonoBehaviour
 {
-    private const int LayerGroundOverlay = 1;
-    private const int DestroyedComponentTileId = 262;
-    private const int FixedComponentTileId = 263;
+    private const int LayerObjects = 2;
 
     public static void OnMutatedComponentTestsFailed(ComponentBehaviour c)
     {
@@ -16,12 +14,12 @@ public class ComponentHelper : MonoBehaviour
 
     public static void OnComponentDestroyed(ComponentBehaviour c)
     {
-        RpgMapHelper.SetAutoTileByPosition(GetPosition(c.gameObject), DestroyedComponentTileId, LayerGroundOverlay);
+        RpgMapHelper.SetAutoTileByPosition(GetPosition(c.gameObject), c.destroyedTileId, LayerObjects);
     }
 
     public static void OnComponentFixed(ComponentBehaviour c)
     {
-        RpgMapHelper.SetAutoTileByPosition(GetPosition(c.gameObject), FixedComponentTileId, LayerGroundOverlay);
+        RpgMapHelper.SetAutoTileByPosition(GetPosition(c.gameObject), c.fixedTileId, LayerObjects);
     }
 
     public static Vector3 GetPosition(GameObject o)

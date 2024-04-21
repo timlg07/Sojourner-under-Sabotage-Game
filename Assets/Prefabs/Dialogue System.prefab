@@ -64,16 +64,21 @@ MonoBehaviour:
       room: 1
       stage: 1
       status: 1
-    text: 'In this room things are getting added :o
-
-
-      You should write tests
-      for the code, so that we can detect if the component gets manipulated.'
+    text: "Hi.\n\nYou just woke up from your cryogenic sleep.\n\nIt's completely
+      normal if you feel a bit dizzy at first.\n\nThe fact that you woke up is everything
+      else than normal though. \n\nI think something is attacking our ship. This
+      must have caused the malfunction in the system handling the cryo capsules.\n\nYou
+      should write tests for the code, so that we can detect if the system malfunctions
+      again!"
   - Condition:
       room: 1
       stage: 1
       status: 3
-    text: Great, your tests are up and running!
+    text: 'Great, your tests are up and running!
+
+
+      Finally some time to rest
+      for you!'
   - Condition:
       room: 1
       stage: 1
@@ -95,7 +100,12 @@ MonoBehaviour:
 
 
       Now
-      try to fix the component as soon as possible, so we can turn it back on!'
+      try to fix the component as soon as possible, so we can turn it back on!
+
+
+      While
+      the system is down, we risk the lifes of the crew members that are still asleep.
+      So hurry up!'
   - Condition:
       room: 2
       stage: 1
@@ -119,7 +129,16 @@ MonoBehaviour:
       room: 2
       stage: 1
       status: 1
-    text: 'Welcome to room 2!
+    text: 'Great!
 
 
-      Hier is es recht leer lol'
+      We made it to the defense room. Here we can configure the
+      shield of our ship.
+
+
+      The shield defends us against attackers or debris
+      flying around in space.
+
+
+      We have to make sure that it cannot be manipulated
+      and is always ready to protect us.'

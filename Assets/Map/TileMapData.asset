@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f610edca08287b4fbbd8ebab1a2caa4, type: 3}
+  m_Name: TileMapData
+  m_EditorClassIdentifier: 
+  Data:
+    Metadata:
+      version: 1.2.4
+      compressedTileData: 1
+    TileMapWidth: 200
+    TileMapHeight: 200
+    TileData:
+    - Tiles: e7edffffffffffff35000000faffffff2f000000a800000040ffffffffffffff3d000000fbffffff030000000b000000b900000040ffffffffffffff3d000000fcffffff0b0000001b0000001c000000b90000004effffffffffffff35000000f8ffffff2f000000b1000000fcffffffffffffff3d000000130000001400000013000000140000001b0000001c000000b90000004effffffffffffff3d000000fcffffff0300000004000000fdffffff05000000b9000000fcffffffffffffff3d000000fdffffff13000000140000001b0000001c000000b90000004effffffffffffff3d000000fcffffff0b0000000c000000fdffffff0d000000b9000000feffffffffffffff350000002f000000360000001b0000001c0000001b0000001c0000001b0000001c000000b90000004effffffffffffff3d0000001300000014000000130000001400000013000000140000001300000014000000b0000000feffffff2f00000036000000fcffffff0300000013000000fdffffff03000000b90000004effffffffffffff3d0000001b0000001c0000001b0000001c0000001b0000001c0000001b0000001c000000fcffffff03000000fcffffff0b0000001b000000fdffffff0b000000b90000004effffffffffffff3d0000001300000014000000130000001400000013000000140000001300000014000000fcffffff0b00000050000000faffffff5100000052000000b90000004effffffffffffff3d0000001b0000001c0000001b0000001c0000001b0000001c0000001b0000001c0000001b0000001c0000001b0000001c00000058000000faffffff590000005a000000b90000004effffffffffffff3d0000001300000014000000130000001400000013000000140000001300000014000000c0000000feffffff4f0000004600000058000000faffffff590000005a000000b90000004effffffffffffff3d0000001b0000001c0000001b0000001c0000001b0000001c0000001b0000001c000000b9000000feffffffffffffff3d00000058000000faffffff590000005a000000b90000004effffffffffffff45000000f8ffffff4f000000c1000000feffffffffffffff3d00000060000000faffffff6100000062000000b900000042ffffffffffffff45000000f8ffffff4f000000c80000000980ffffffffffff
+      Visible: 1
+      Name: Floor, Walls
+      LayerType: 0
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: 1.5
+    - Tiles: 4cf0ffffffffffff74000000cefcffffffffffff1a0000003cffffffffffffff2500000026000000230000002200000083feffffffffffff530000005400000055000000feffffffffffffff1000000011000000f9ffffffffffffff4100000047ffffffffffffff1700000090000000910000002affffffffffffff100000001100000044ffffffffffffff81000000feffffffffffffff82000000feffffff26000000feffffffffffffff0e00000048ffffffffffffff0800000009000000ffffffff0000000001000000feffffffffffffff89000000feffffffffffffff8a0000007bfeffffffffffff0000000001000000ffffffff0000000001000000f9ffffffffffffff8d0000008e0000008f000000ffffffffa2000000a3000000af7dffffffffffff
+      Visible: 1
+      Name: Objects
+      LayerType: 0
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: 1
+    - Tiles: 0beaffffffffffff5b0000005c0000005d0000002efffffffffffffffeffffffb8000000fffffffffdffffffb80000003cffffffffffffffb800000078feffffffffffffb80000003e000000df7cffffffffffff
+      Visible: 1
+      Name: C# Collisions
+      LayerType: 0
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: 0.5
+    - Tiles: 8debffffffffffff3900000072fefffffffffffffaffffff2f0000003cffffffffffffff80000000acfdffffffffffff850000008600000087000000ffffffff9a0000009b000000e77cffffffffffff
+      Visible: 1
+      Name: Overlay
+      LayerType: 1
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: -0.5
+    - Tiles: dae6ffffffffffff5600000039ffffffffffffff5e000000af7dffffffffffff
+      Visible: 1
+      Name: Over Overlay
+      LayerType: 1
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: -1

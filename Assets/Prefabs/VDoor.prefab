@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1329146120, guid: 8abd4ecc7ea366d43a1191219995b68b, type: 3}
+  m_Sprite: {fileID: -1288896242, guid: a0282b22316133b46b32ff60a7affd80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -157,7 +157,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1329146120, guid: 8abd4ecc7ea366d43a1191219995b68b, type: 3}
+  m_Sprite: {fileID: -1288896242, guid: a0282b22316133b46b32ff60a7affd80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -241,7 +241,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1795524745, guid: 8abd4ecc7ea366d43a1191219995b68b, type: 3}
+  m_Sprite: {fileID: -76501399, guid: a0282b22316133b46b32ff60a7affd80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -325,7 +325,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1795524745, guid: 8abd4ecc7ea366d43a1191219995b68b, type: 3}
+  m_Sprite: {fileID: -76501399, guid: a0282b22316133b46b32ff60a7affd80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -409,7 +409,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1795524745, guid: 8abd4ecc7ea366d43a1191219995b68b, type: 3}
+  m_Sprite: {fileID: -76501399, guid: a0282b22316133b46b32ff60a7affd80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -493,7 +493,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1329146120, guid: 8abd4ecc7ea366d43a1191219995b68b, type: 3}
+  m_Sprite: {fileID: -1288896242, guid: a0282b22316133b46b32ff60a7affd80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -641,7 +641,7 @@ Transform:
   - {fileID: 2996934800849333388}
   - {fileID: 3221967119826025233}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7710663390825966353
 MonoBehaviour:
