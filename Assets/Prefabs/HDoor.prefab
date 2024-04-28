@@ -257,6 +257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1422183436051862447}
   - component: {fileID: 2612701061750633787}
+  - component: {fileID: 1928484472280717622}
   m_Layer: 0
   m_Name: pixel-cyberpunk-interior 1_97
   m_TagString: Untagged
@@ -331,6 +332,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1928484472280717622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5129311407626243041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab1e75dd89483e459c562def1c01a78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unlockedSprite: {fileID: 88964350, guid: a0282b22316133b46b32ff60a7affd80, type: 3}
 --- !u!1 &5963565090244065318
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,6 +355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1945965364024995846}
   - component: {fileID: 1500943883045328210}
+  - component: {fileID: 4539804920274341077}
   m_Layer: 0
   m_Name: pixel-cyberpunk-interior 1_85
   m_TagString: Untagged
@@ -415,3 +430,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4539804920274341077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5963565090244065318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab1e75dd89483e459c562def1c01a78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unlockedSprite: {fileID: 476644815, guid: a0282b22316133b46b32ff60a7affd80, type: 3}

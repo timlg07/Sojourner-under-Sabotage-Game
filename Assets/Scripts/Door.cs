@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using CreativeSpore.RpgMapEditor;
 using DG.Tweening;
 using DG.Tweening.Core;
@@ -6,8 +7,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    /// <summary> The id of the room which is unlocked by this door in linear progression. </summary>
-    [SerializeField]
+    [SerializeField, Tooltip("The id of the room which is unlocked by this door in linear progression.")] 
     protected int roomId;
     
     protected const float OpenDuration = 1f;
@@ -25,6 +25,7 @@ public class Door : MonoBehaviour
     private const int NonBlockingTileId = 62;
     private InteractableWorldObject _iwo;
     private DoorManager _doorManager;
+    private List<DoorSprite> _doorSprites;
 
     public virtual void Start()
     {
@@ -34,6 +35,7 @@ public class Door : MonoBehaviour
         _iwo = GetComponent<InteractableWorldObject>();
         _doorManager = FindObjectOfType<DoorManager>();
         _doorManager.Register(roomId, this);
+        _doorSprites = new List<DoorSprite>(GetComponentsInChildren<DoorSprite>());
     }
     
     public virtual void Enable()
@@ -74,6 +76,7 @@ public class Door : MonoBehaviour
     {
         IsLocked = false;
         StompEventDelegation.OnRoomUnlocked(roomId);
+        _doorSprites.ForEach(sprite => sprite.Unlock());
         Open();
     }
 

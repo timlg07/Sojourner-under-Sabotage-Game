@@ -86,7 +86,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f8aab679b5991af4eb524608c357e038, type: 3}
       propertyPath: CollRect.x
-      value: -0.27397442
+      value: -0.24288845
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f8aab679b5991af4eb524608c357e038, type: 3}
       propertyPath: CollRect.y
@@ -94,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f8aab679b5991af4eb524608c357e038, type: 3}
       propertyPath: CollRect.width
-      value: 0.54795074
+      value: 0.4754181
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f8aab679b5991af4eb524608c357e038, type: 3}
       propertyPath: CollRect.height
