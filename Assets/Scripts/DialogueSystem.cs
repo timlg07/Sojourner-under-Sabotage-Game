@@ -15,7 +15,8 @@ public class DialogueSystem : MonoBehaviour
     public event Action<List<String>> OnShowDialogue; // used to trigger OneJS
     public UnityEvent onHasDialogueToShow;
     public bool HasDialogueToShow => _hasDialogueToShow;
-    [SerializeField] private List<DialogueEntry> _dialogueEntries = new();
+    [FormerlySerializedAs("_dialogueEntries")] [SerializeField] 
+    private List<DialogueEntry> dialogueEntries = new();
     private readonly Dictionary<GameProgressState.DialogueCondition, List<string>> _dialogueMap = new();
     private bool _wasDialogueShown;
     private bool _hasDialogueToShow = false;
@@ -38,7 +39,7 @@ public class DialogueSystem : MonoBehaviour
         RegisterInstance(this);
         
         // transform list to map
-        _dialogueEntries.ForEach(entry =>
+        dialogueEntries.ForEach(entry =>
         {
             if (_dialogueMap.ContainsKey(entry.Condition))
             {
@@ -119,5 +120,10 @@ public class DialogueSystem : MonoBehaviour
     {
         public GameProgressState.DialogueCondition Condition;
         [TextArea] public string text;
+    }
+
+    public void PlayExternalDialogue(List<string> dialogue)
+    {
+        OnShowDialogue?.Invoke(dialogue);
     }
 }

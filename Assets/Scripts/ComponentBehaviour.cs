@@ -10,10 +10,12 @@ public class ComponentBehaviour : MonoBehaviour
     public int destroyedTileId = 116;
     public int fixedTileId = 84;
     private InteractableWorldObject _interactableWorldObject;
+    private bool _wasNeverOpened = true;
     
     private void Start()
     {
         _interactableWorldObject = GetComponent<InteractableWorldObject>();
+        _interactableWorldObject.onPlayerInteract.AddListener(() => { _wasNeverOpened = false; });
     }
 
     public void OpenComponent()
@@ -26,11 +28,13 @@ public class ComponentBehaviour : MonoBehaviour
     public void DisableComponentInteraction()
     {
         _interactableWorldObject.IsEnabled = false;
+        _interactableWorldObject.interactionIndicator.enabled = false;
     }
     
     public void EnableComponentInteraction()
     {
         _interactableWorldObject.IsEnabled = true;
+        _interactableWorldObject.interactionIndicator.enabled = _wasNeverOpened;
     }
     
 }

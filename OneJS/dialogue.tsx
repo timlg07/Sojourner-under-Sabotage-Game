@@ -40,8 +40,8 @@ const Dialogue = () => {
             setIndex(index + 1)
         } else {
             setDialogueActive(false)
-            stompEventDelegation.OnConversationFinished();
-            dialogueSystem.EnableInteraction();
+            stompEventDelegation.OnConversationFinished()
+            dialogueSystem.EnableInteraction()
         }
     }
 
