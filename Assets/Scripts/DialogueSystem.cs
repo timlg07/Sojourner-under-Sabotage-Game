@@ -19,6 +19,7 @@ public class DialogueSystem : MonoBehaviour
     private readonly Dictionary<GameProgressState.DialogueCondition, List<string>> _dialogueMap = new();
     private bool _wasDialogueShown;
     private bool _hasDialogueToShow = false;
+    private ComponentBehaviour _activateAfterDialogue;
 
     private static void RegisterInstance(DialogueSystem instance)
     {
@@ -56,6 +57,8 @@ public class DialogueSystem : MonoBehaviour
     public void Start()
     {
         EventManager.Instance.onGameProgressionChanged.AddListener(UpdateCurrentGameProgression);
+        EventManager.Instance.onComponentDestroyed.AddListener(DisableInteraction);
+        EventManager.Instance.onMutatedComponentTestsFailed.AddListener(DisableInteraction);
     }
 
     private void UpdateCurrentGameProgression(GameProgressState condition)
@@ -86,6 +89,20 @@ public class DialogueSystem : MonoBehaviour
             Debug.LogError($"No dialogue entry for condition {GameProgressState.CurrentState}!");
         }
         _hasDialogueToShow = false;
+    }
+
+    public void DisableInteraction(ComponentBehaviour c)
+    {
+        _activateAfterDialogue = c;
+        _activateAfterDialogue.DisableComponentInteraction();
+    }
+    
+    // called from OneJS
+    public void EnableInteraction()
+    {
+        if (_activateAfterDialogue == null) return;
+        _activateAfterDialogue.EnableComponentInteraction();
+        _activateAfterDialogue = null;
     }
 
     [Serializable]

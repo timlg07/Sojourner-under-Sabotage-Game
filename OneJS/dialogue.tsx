@@ -41,6 +41,7 @@ const Dialogue = () => {
         } else {
             setDialogueActive(false)
             stompEventDelegation.OnConversationFinished();
+            dialogueSystem.EnableInteraction();
         }
     }
 

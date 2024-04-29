@@ -9,20 +9,28 @@ public class ComponentBehaviour : MonoBehaviour
     public string componentName;
     public int destroyedTileId = 116;
     public int fixedTileId = 84;
+    private InteractableWorldObject _interactableWorldObject;
+    
+    private void Start()
+    {
+        _interactableWorldObject = GetComponent<InteractableWorldObject>();
+    }
 
     public void OpenComponent()
     {
         Debug.Log("Opening component " + componentName);
         BrowserUI.OpenEditorsForComponent(componentName);
-        FindObjectOfType<BrowserUI>().onEditorCloseEvent.AddListener(() =>
-        {
-            GetComponent<InteractableWorldObject>().IsEnabled = true;
-        });
+        FindObjectOfType<BrowserUI>().onEditorCloseEvent.AddListener(EnableComponentInteraction);
+    }
+    
+    public void DisableComponentInteraction()
+    {
+        _interactableWorldObject.IsEnabled = false;
     }
     
     public void EnableComponentInteraction()
     {
-        GetComponent<InteractableWorldObject>().IsEnabled = true;
+        _interactableWorldObject.IsEnabled = true;
     }
     
 }
