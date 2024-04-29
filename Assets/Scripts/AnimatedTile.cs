@@ -29,9 +29,13 @@ public class AnimatedTile : MonoBehaviour
 
     private void GameProgressionChanged(GameProgressState gps)
     {
-        if (gps.room == roomId)
+        var destroy = gps.status is GameProgressState.Status.DESTROYED or GameProgressState.Status.MUTATED;
+        var fixedComp = gps.status is GameProgressState.Status.DEBUGGING;
+        
+        if (gps.room == roomId && (destroy || fixedComp))
         {
-            _isDestroyed = gps.status is GameProgressState.Status.DESTROYED or GameProgressState.Status.MUTATED;
+            Debug.Log($"Room {roomId} is {gps.status} -> {gameObject.name} plays destroyed animation: {destroy}");
+            _isDestroyed = destroy;
             _currentFrame = 0;
             _timeSinceLastFrame = 0;
         }
