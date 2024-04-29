@@ -69,6 +69,11 @@ public class DialogueSystem : MonoBehaviour
             _wasDialogueShown = false;
             _hasDialogueToShow = true;
             onHasDialogueToShow?.Invoke();
+        } 
+        else if (condition.status is GameProgressState.Status.MUTATED or GameProgressState.Status.DESTROYED)
+        {
+            // no dialogue to show, but the component interaction might have been already disabled
+            EnableInteraction();
         }
     }
     
@@ -93,8 +98,12 @@ public class DialogueSystem : MonoBehaviour
 
     public void DisableInteraction(ComponentBehaviour c)
     {
-        _activateAfterDialogue = c;
-        _activateAfterDialogue.DisableComponentInteraction();
+        var condition = new GameProgressState.DialogueCondition(GameProgressState.CurrentState);
+        if (_dialogueMap.ContainsKey(condition) && condition.status is GameProgressState.Status.MUTATED or GameProgressState.Status.DESTROYED)
+        {
+            _activateAfterDialogue = c;
+            _activateAfterDialogue.DisableComponentInteraction();
+        }
     }
     
     // called from OneJS
