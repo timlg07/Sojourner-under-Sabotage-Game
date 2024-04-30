@@ -100,10 +100,18 @@ public class DialogueSystem : MonoBehaviour
     public void DisableInteraction(ComponentBehaviour c)
     {
         var condition = new GameProgressState.DialogueCondition(GameProgressState.CurrentState);
-        if (_dialogueMap.ContainsKey(condition) && condition.status is GameProgressState.Status.MUTATED or GameProgressState.Status.DESTROYED)
+        if (condition.status is GameProgressState.Status.MUTATED or GameProgressState.Status.DESTROYED)
         {
-            _activateAfterDialogue = c;
-            _activateAfterDialogue.DisableComponentInteraction();
+            if (_dialogueMap.ContainsKey(condition))
+            {
+                _activateAfterDialogue = c;
+                _activateAfterDialogue.DisableComponentInteraction();
+            } 
+            else
+            {
+                // no dialogue -> directly interact with component
+                c.HighlightInteraction();
+            }
         }
     }
     
@@ -112,6 +120,7 @@ public class DialogueSystem : MonoBehaviour
     {
         if (_activateAfterDialogue == null) return;
         _activateAfterDialogue.EnableComponentInteraction();
+        _activateAfterDialogue.HighlightInteraction();
         _activateAfterDialogue = null;
     }
 

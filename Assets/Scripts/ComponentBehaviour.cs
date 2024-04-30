@@ -15,26 +15,30 @@ public class ComponentBehaviour : MonoBehaviour
     private void Start()
     {
         _interactableWorldObject = GetComponent<InteractableWorldObject>();
-        _interactableWorldObject.onPlayerInteract.AddListener(() => { _wasNeverOpened = false; });
     }
 
     public void OpenComponent()
     {
         Debug.Log("Opening component " + componentName);
         BrowserUI.OpenEditorsForComponent(componentName);
+        _wasNeverOpened = false;
         FindObjectOfType<BrowserUI>().onEditorCloseEvent.AddListener(EnableComponentInteraction);
     }
     
     public void DisableComponentInteraction()
     {
         _interactableWorldObject.IsEnabled = false;
-        _interactableWorldObject.interactionIndicator.enabled = false;
+        _interactableWorldObject.interactionIndicator.Hide();
     }
     
     public void EnableComponentInteraction()
     {
         _interactableWorldObject.IsEnabled = true;
-        _interactableWorldObject.interactionIndicator.enabled = _wasNeverOpened;
+        _interactableWorldObject.interactionIndicator.SetVisible(_wasNeverOpened);
     }
     
+    public void HighlightInteraction()
+    {
+        _interactableWorldObject.interactionIndicator.Show();
+    }
 }
