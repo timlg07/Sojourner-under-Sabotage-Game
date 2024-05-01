@@ -170,17 +170,17 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4712307563877904783}
-  m_Text: "Press \"Enter\" \nto interact"
+  m_Text: "Press \u23CE to \ninteract"
   m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
+  m_CharacterSize: 0.2
+  m_LineSpacing: 1.25
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
-  m_FontStyle: 1
+  m_FontSize: 64
+  m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 9ec3f618f2c139c46b9f79ef7e3cd1dc, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -284,15 +284,15 @@ TextMesh:
   m_GameObject: {fileID: 4766115686281978469}
   m_Text: '!'
   m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
+  m_CharacterSize: 0.2
+  m_LineSpacing: 1.25
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 64
   m_FontStyle: 1
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 9ec3f618f2c139c46b9f79ef7e3cd1dc, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
