@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f610edca08287b4fbbd8ebab1a2caa4, type: 3}
+  m_Name: GameTileMapData
+  m_EditorClassIdentifier: 
+  Data:
+    Metadata:
+      version: 1.2.4
+      compressedTileData: 1
+    TileMapWidth: 180
+    TileMapHeight: 120
+    TileData:
+    - Tiles: a0abffffffffffff
+      Visible: 1
+      Name: Ground
+      LayerType: 0
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: 1
+    - Tiles: a0abffffffffffff
+      Visible: 1
+      Name: Ground Overlay
+      LayerType: 0
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: 0.5
+    - Tiles: a0abffffffffffff
+      Visible: 1
+      Name: Overlay
+      LayerType: 1
+      SortingLayer: Default
+      SortingOrder: 0
+      Depth: -1

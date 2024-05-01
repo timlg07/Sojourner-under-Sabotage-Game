@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f610edca08287b4fbbd8ebab1a2caa4, type: 3}
-  m_Name: TileMapData
+  m_Name: DemoTileMapData
   m_EditorClassIdentifier: 
   Data:
     Metadata:
