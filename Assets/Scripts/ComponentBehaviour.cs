@@ -7,8 +7,6 @@ using UnityEngine.Serialization;
 public class ComponentBehaviour : MonoBehaviour
 {
     public string componentName;
-    public int destroyedTileId = 116;
-    public int fixedTileId = 84;
     private InteractableWorldObject _interactableWorldObject;
     private bool _wasNeverOpened = true;
     
