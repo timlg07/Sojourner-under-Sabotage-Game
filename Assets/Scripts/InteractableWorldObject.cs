@@ -20,8 +20,8 @@ public class InteractableWorldObject : MonoBehaviour
     public InteractionIndicator interactionIndicator;
     public GameObject helpTextObj;
     public float helpTextFlashingFrequency = .25f;
-    public float distanceFromPlayerToTrigger = .5f;
-    public float distanceFromPetToTrigger = .5f;
+    [Tooltip("Green circle")] public float distanceFromPlayerToTrigger = .5f;
+    [Tooltip("Grey  circle")] public float distanceFromPetToTrigger = .5f;
     public KeyCode activationKey = KeyCode.Return;
 
     [Tooltip("If true, the event will only be triggered once.")]
@@ -147,4 +147,18 @@ public class InteractableWorldObject : MonoBehaviour
             onPetLeave?.Invoke();
         }
     }
+    
+    
+#if UNITY_EDITOR
+    void OnDrawGizmosSelected()
+    {
+        var transform0 = transform;
+        var rotation = transform0.rotation;
+        var position = transform0.position;
+        UnityEditor.Handles.color = Color.green;
+        EditorCompatibilityUtils.CircleCap(0, position, rotation, distanceFromPlayerToTrigger);
+        UnityEditor.Handles.color = Color.grey;
+        EditorCompatibilityUtils.CircleCap(0, position, rotation, distanceFromPetToTrigger);
+    }
+#endif
 }

@@ -71,8 +71,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Demo
-  destroyedTileId: 116
-  fixedTileId: 117
 --- !u!114 &8797941961533875060
 MonoBehaviour:
   m_ObjectHideFlags: 0
