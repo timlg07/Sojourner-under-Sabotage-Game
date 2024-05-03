@@ -43,6 +43,28 @@ const puzzleData = {
             [0, 0, 2, 3, [3, 1]]
         ],
     },
+    4: {
+        rows: 4,
+        cols: 4,
+        board: [
+            [1, 1, 2, 1],
+            [2, 3, 1, 3],
+            [3, 1, 2, 1],
+            [2, 3, 1, 3]
+        ],
+        orientation: [
+            [2, 2, 2, 2],
+            [1, 1, 2, 1],
+            [3, 2, 1, 2],
+            [3, 3, 1, 3]
+        ],
+        solution: [
+            [    3,     3, 4, 0],
+            [    0,     0, 2, 0],
+            [[1,4],     3, 1, 0],
+            [    2, [1,3], 3, [1,3]]
+        ],
+    },
 }
 
 const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => void }) => {
