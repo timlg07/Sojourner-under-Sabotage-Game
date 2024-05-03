@@ -25,6 +25,11 @@ public class AnimatedTile : MonoBehaviour
     public void Start()
     {
         EventManager.Instance.onGameProgressionChanged.AddListener(GameProgressionChanged);
+
+        if (tileIds.Count == 0)
+        {
+            tileIds.Add(RpgMapHelper.GetAutoTileByPosition(transform.position, layer).Id);
+        }
     }
 
     private void GameProgressionChanged(GameProgressState gps)
@@ -44,7 +49,7 @@ public class AnimatedTile : MonoBehaviour
     void Update()
     {
         var tileIdsCurrent = _isDestroyed && tileIdsDestroyed.Count > 0 ? tileIdsDestroyed : tileIds;
-        if (tileIdsCurrent.Count < 2) return;
+        // if (tileIdsCurrent.Count < 2) return;
         
         _timeSinceLastFrame += Time.deltaTime;
         if (_timeSinceLastFrame >= interval)
