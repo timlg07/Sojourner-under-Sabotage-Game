@@ -101,8 +101,8 @@ public class InteractableWorldObject : MonoBehaviour
 
             if (isActivationKeyPressed && IsEnabled)
             {
-                onPlayerInteract?.Invoke();
                 IsEnabled = false;
+                onPlayerInteract?.Invoke();
             }
             else if (_hasHelpText)
             {

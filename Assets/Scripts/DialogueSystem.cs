@@ -15,12 +15,15 @@ public class DialogueSystem : MonoBehaviour
     public event Action<List<String>> OnShowDialogue; // used to trigger OneJS
     public UnityEvent onHasDialogueToShow;
     public bool HasDialogueToShow => _hasDialogueToShow;
+    public bool IsDialoguePlaying => _isInternalDialoguePlaying || _isExternalDialoguePlaying;
     [FormerlySerializedAs("_dialogueEntries")] [SerializeField] 
     private List<DialogueEntry> dialogueEntries = new();
     private readonly Dictionary<GameProgressState.DialogueCondition, List<string>> _dialogueMap = new();
     private bool _wasDialogueShown;
     private bool _hasDialogueToShow = false;
     private ComponentBehaviour _activateAfterDialogue;
+    private bool _isInternalDialoguePlaying;
+    private bool _isExternalDialoguePlaying;
 
     private static void RegisterInstance(DialogueSystem instance)
     {
@@ -88,6 +91,8 @@ public class DialogueSystem : MonoBehaviour
         var currentCondition = new GameProgressState.DialogueCondition(GameProgressState.CurrentState);
         if (_dialogueMap.TryGetValue(currentCondition, out var dialogue))
         {
+            _isInternalDialoguePlaying = true;
+            _isExternalDialoguePlaying = false;
             OnShowDialogue?.Invoke(dialogue);
         }
         else
@@ -118,10 +123,14 @@ public class DialogueSystem : MonoBehaviour
     // called from OneJS
     public void EnableInteraction()
     {
-        if (_activateAfterDialogue == null) return;
-        _activateAfterDialogue.EnableComponentInteraction();
-        _activateAfterDialogue.HighlightInteraction();
-        _activateAfterDialogue = null;
+        if (_activateAfterDialogue != null && !_isExternalDialoguePlaying)
+        {
+            _activateAfterDialogue.EnableComponentInteraction();
+            _activateAfterDialogue.HighlightInteraction();
+            _activateAfterDialogue = null;
+        }
+        _isExternalDialoguePlaying = false;
+        _isInternalDialoguePlaying = false;
     }
 
     [Serializable]
@@ -133,6 +142,8 @@ public class DialogueSystem : MonoBehaviour
 
     public void PlayExternalDialogue(List<string> dialogue)
     {
+        _isExternalDialoguePlaying = true;
+        _isInternalDialoguePlaying = false;
         OnShowDialogue?.Invoke(dialogue);
     }
 }

@@ -75,14 +75,12 @@ public class EventManager : MonoBehaviour
     {
         var unityJson = GameProgressState.ReplaceStatusStringWithInt(json);
         var gameProgressState = JsonUtility.FromJson<GameProgressState>(unityJson);
+        var component = Components[gameProgressState.componentName];
         GameProgressState.CurrentState = gameProgressState;
         onGameProgressionChanged?.Invoke(gameProgressState);
-        
-        if (gameProgressState.status == GameProgressState.Status.TEST)
-        {
-            Components[gameProgressState.componentName].EnableComponentInteraction();
-            Debug.Log("Component "+gameProgressState.componentName+" enabled");
-        }
+        component.HandleGameProgressionChanged(gameProgressState);
+        Debug.Log("Game progression changed: "+json);
+        Debug.Log("Component = " + component.componentName);
     }
     
     [ContextMenu("OnGameProgressionChanged [JSON]")]
@@ -93,6 +91,8 @@ public class EventManager : MonoBehaviour
     
     public void OnComponentFixed(string componentName)
     {
-        onComponentFixed?.Invoke(Components[componentName]);
+        var c = Components[componentName];
+        c.HandleComponentFixed();
+        onComponentFixed?.Invoke(c);
     }
 }

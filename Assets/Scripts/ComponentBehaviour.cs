@@ -9,6 +9,7 @@ public class ComponentBehaviour : MonoBehaviour
     public string componentName;
     private InteractableWorldObject _interactableWorldObject;
     private bool _wasNeverOpened = true;
+    private bool _doNotReEnableAfterEditorClose;
     
     private void Start()
     {
@@ -20,23 +21,55 @@ public class ComponentBehaviour : MonoBehaviour
         Debug.Log("Opening component " + componentName);
         BrowserUI.OpenEditorsForComponent(componentName);
         _wasNeverOpened = false;
-        FindObjectOfType<BrowserUI>().onEditorCloseEvent.AddListener(EnableComponentInteraction);
+        FindObjectOfType<BrowserUI>().onEditorCloseEvent.AddListener(HandleEditorClosed);
     }
-    
+
+    private void HandleEditorClosed()
+    {
+        if (!_doNotReEnableAfterEditorClose)
+        {
+            EnableComponentInteraction();
+        }
+    }
+
     public void DisableComponentInteraction()
     {
         _interactableWorldObject.IsEnabled = false;
         _interactableWorldObject.interactionIndicator.Hide();
+        _doNotReEnableAfterEditorClose = true;
     }
     
     public void EnableComponentInteraction()
     {
         _interactableWorldObject.IsEnabled = true;
         _interactableWorldObject.interactionIndicator.SetVisible(_wasNeverOpened);
+        _doNotReEnableAfterEditorClose = false;
     }
     
     public void HighlightInteraction()
     {
+        _interactableWorldObject.IsEnabled = true;
         _interactableWorldObject.interactionIndicator.Show();
+        _doNotReEnableAfterEditorClose = false;
+    }
+
+    public void HandleComponentFixed()
+    {
+        DisableComponentInteraction();
+    }
+
+    public void HandleGameProgressionChanged(GameProgressState gameProgressState)
+    {
+        switch (gameProgressState.status)
+        {
+            case GameProgressState.Status.TEST:
+                EnableComponentInteraction();
+                Debug.Log("Component "+gameProgressState.componentName+" enabled");
+                break;
+            case GameProgressState.Status.TESTS_ACTIVE:
+                DisableComponentInteraction();
+                Debug.Log("Component "+gameProgressState.componentName+" disabled");
+                break;
+        }
     }
 }

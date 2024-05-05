@@ -68,7 +68,7 @@ MonoBehaviour:
   distanceFromPlayerToTrigger: 0.5
   distanceFromPetToTrigger: 0.5
   activationKey: 13
-  reEnableAfterLeave: 1
+  reEnableAfterLeave: 0
   isActivationKeyPressed: 0
   distanceToPlayer: 0
   distanceToPet: 0
@@ -86,6 +86,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a234922bf6b1bf943a56cdfcdd56742b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roomId: 0
   dialogue: []
 --- !u!1 &4712307563877904783
 GameObject:
