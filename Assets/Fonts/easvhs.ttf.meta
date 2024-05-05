@@ -3,16 +3,17 @@ guid: 9ec3f618f2c139c46b9f79ef7e3cd1dc
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
-  fontSize: 16
-  forceTextureCase: -2
+  fontSize: 64
+  forceTextureCase: 3
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
   fontNames:
   - EASVHS
+  - NotInter
   fallbackFontReferences: []
-  customCharacters: 
-  fontRenderingMode: 0
+  customCharacters: "Pres \u23CEtoinac!qwzup\xFCdfghjkl\xF6\xE4yxvbm;:,._-#()?1234567890\xDF+*><|/"
+  fontRenderingMode: 3
   ascentCalculationMode: 1
   useLegacyBoundsCalculation: 0
   shouldRoundAdvanceValue: 1
