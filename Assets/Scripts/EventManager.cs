@@ -79,8 +79,6 @@ public class EventManager : MonoBehaviour
         GameProgressState.CurrentState = gameProgressState;
         onGameProgressionChanged?.Invoke(gameProgressState);
         component.HandleGameProgressionChanged(gameProgressState);
-        Debug.Log("Game progression changed: "+json);
-        Debug.Log("Component = " + component.componentName);
     }
     
     [ContextMenu("OnGameProgressionChanged [JSON]")]
