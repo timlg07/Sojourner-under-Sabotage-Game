@@ -377,7 +377,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300002, guid: db872b71e2864ef41955606b1d427397, type: 3}
+  m_Sprite: {fileID: -376912925, guid: a0282b22316133b46b32ff60a7affd80, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -402,7 +402,7 @@ MonoBehaviour:
   uiCamera: {fileID: 6683580088503443146}
   target: {fileID: 0}
   pointerRectTransform: {fileID: 3824834861325371789}
-  pointerSprite: {fileID: 21300000, guid: 184f34bc68149b0419c9dad213cce8f9, type: 3}
-  crossSprite: {fileID: 21300000, guid: 663803f3c8d480d4b9fd8069cca82ab8, type: 3}
+  pointerSprite: {fileID: -376912925, guid: a0282b22316133b46b32ff60a7affd80, type: 3}
+  crossSprite: {fileID: 1129988862, guid: a0282b22316133b46b32ff60a7affd80, type: 3}
   pointerImage: {fileID: 2585828728182968843}
   borderSize: 100
