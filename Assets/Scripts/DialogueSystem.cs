@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 public class DialogueSystem : MonoBehaviour
@@ -94,6 +95,12 @@ public class DialogueSystem : MonoBehaviour
             _isInternalDialoguePlaying = true;
             _isExternalDialoguePlaying = false;
             OnShowDialogue?.Invoke(dialogue);
+            
+            if (currentCondition.status is GameProgressState.Status.DESTROYED)
+            {
+                var c = EventManager.Instance.Components[GameProgressState.CurrentState.componentName];
+                FindObjectOfType<QuestPointer>().Show(c);
+            }
         }
         else
         {
