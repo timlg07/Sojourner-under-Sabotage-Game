@@ -128,7 +128,7 @@ const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => 
         align-items: center;
     `}>
         <div ref={ref} class={emo`
-            background-color: #aaa;
+            background-color: #1e1e1e;
             padding: 32px;
             height: 100%;
         `}>
@@ -159,25 +159,27 @@ const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => 
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            margin: 2px;
                             rotate: ${cell === 1 ? "0deg" : cell === 2 ? "90deg" : cell === 3 ? "180deg" : "270deg"};
                         `} style={{backgroundImage: __dirname + `/img/minigame_${currentPuzzle.board[i][j] - 1}.png`}}></div>
                         {(i === 0 && j === 0) && <div class={emo`
                                 position: absolute;
-                                width: 32px;
-                                height: 8px;
-                                margin-top: 50%;
-                                left: -32px;
-                                background-color: #000;
-                                translate: 0 -50%;
-                            `}></div>}
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                translate: -100% 0;
+                            `} style={{backgroundImage: __dirname + `/img/minigame_4.png`}}></div>}
                         {(i === board.length - 1 && j === board[i].length - 1) && <div class={emo`
                                 position: absolute;
                                 width: 32px;
-                                height: 8px;
+                                height: 16px;
                                 margin-top: 50%;
                                 right: -32px;
-                                background-color: #000;
+                                background-color: #586d7d;
                                 translate: 0 -50%;
                             `}></div>}
                     </div>
