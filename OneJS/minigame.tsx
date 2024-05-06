@@ -175,13 +175,16 @@ const Puzzle = ({ roomId, puzzleSolved }: { roomId: number, puzzleSolved: () => 
                             `} style={{backgroundImage: __dirname + `/img/minigame_4.png`}}></div>}
                         {(i === board.length - 1 && j === board[i].length - 1) && <div class={emo`
                                 position: absolute;
-                                width: 32px;
-                                height: 16px;
-                                margin-top: 50%;
-                                right: -32px;
-                                background-color: #586d7d;
-                                translate: 0 -50%;
-                            `}></div>}
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                translate: 100% 0;
+                            `} style={{backgroundImage: __dirname + `/img/minigame_5.png`}}></div>}
                     </div>
                 </div>)}
             </div>)}
