@@ -172,13 +172,13 @@ TextMesh:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4712307563877904783}
   m_Text: "Press \u23CE to \ninteract"
-  m_OffsetZ: 0
+  m_OffsetZ: -7.58
   m_CharacterSize: 0.2
   m_LineSpacing: 1.25
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 64
+  m_FontSize: 1
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: 9ec3f618f2c139c46b9f79ef7e3cd1dc, type: 3}
@@ -284,14 +284,14 @@ TextMesh:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4766115686281978469}
   m_Text: '!'
-  m_OffsetZ: 0
+  m_OffsetZ: -15.03
   m_CharacterSize: 0.2
   m_LineSpacing: 1.25
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 64
-  m_FontStyle: 1
+  m_FontSize: 1
+  m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: 9ec3f618f2c139c46b9f79ef7e3cd1dc, type: 3}
   m_Color:
