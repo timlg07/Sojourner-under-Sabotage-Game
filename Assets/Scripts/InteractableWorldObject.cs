@@ -40,7 +40,7 @@ public class InteractableWorldObject : MonoBehaviour
 
     // PROPERTIES PRIVATE
     private PlayerController _player;
-    private CustomCompanionAI _pet;
+    private CustomFollowerAI _pet;
     private Renderer _helpTextRenderer;
     private bool _hasHelpText;
     private Vector3? _position = null;
@@ -61,7 +61,7 @@ public class InteractableWorldObject : MonoBehaviour
     void Start()
     {
         _player = FindObjectOfType<PlayerController>();
-        _pet = FindObjectOfType<CustomCompanionAI>();
+        _pet = FindObjectOfType<CustomFollowerAI>();
         _hasHelpText = helpTextObj != null;
         _helpTextRenderer = _hasHelpText ? helpTextObj.GetComponent<Renderer>() : null;
         interactionIndicator = GetComponentInChildren<InteractionIndicator>();
