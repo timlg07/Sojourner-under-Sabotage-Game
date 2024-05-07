@@ -5,6 +5,7 @@ using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
 using UnityEngine;
 
+[RequireComponent(typeof(InteractableWorldObject))]
 public class Door : MonoBehaviour
 {
     [SerializeField, Tooltip("The id of the room which is unlocked by this door in linear progression.")] 

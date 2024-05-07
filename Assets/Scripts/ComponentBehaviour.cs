@@ -4,6 +4,7 @@ using CreativeSpore.RpgMapEditor;
 using UnityEngine;
 using UnityEngine.Serialization;
 
+[RequireComponent(typeof(InteractableWorldObject))]
 public class ComponentBehaviour : MonoBehaviour
 {
     public string componentName;

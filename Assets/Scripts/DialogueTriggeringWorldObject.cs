@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(InteractableWorldObject))]
 public class DialogueTriggeringWorldObject : MonoBehaviour
 {
     [SerializeField] private int roomId;
