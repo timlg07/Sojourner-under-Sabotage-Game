@@ -52,7 +52,10 @@ public class InteractableWorldObject : MonoBehaviour
         set
         {
             isEnabled = value;
-            interactionIndicator?.gameObject.SetActive(isEnabled);
+            if (interactionIndicator != null)
+            {
+                interactionIndicator.gameObject.SetActive(isEnabled);
+            }
         }
     }
     public void EnableOnEvent() => IsEnabled = true;
@@ -64,7 +67,10 @@ public class InteractableWorldObject : MonoBehaviour
         _pet = FindObjectOfType<CustomFollowerAI>();
         _hasHelpText = helpTextObj != null;
         _helpTextRenderer = _hasHelpText ? helpTextObj.GetComponent<Renderer>() : null;
-        interactionIndicator = GetComponentInChildren<InteractionIndicator>();
+        if (interactionIndicator == null)
+        {
+            interactionIndicator = GetComponentInChildren<InteractionIndicator>();
+        }
         Reset();
     }
 
@@ -76,7 +82,10 @@ public class InteractableWorldObject : MonoBehaviour
         {
             _position = transform.position;
         }
-        interactionIndicator?.gameObject.SetActive(IsEnabled);
+        if (interactionIndicator != null)
+        {
+            interactionIndicator.gameObject.SetActive(IsEnabled);
+        }
     }
 
     void Update()
@@ -113,7 +122,10 @@ public class InteractableWorldObject : MonoBehaviour
                 _helpTextRenderer.material.color = textColor;
                 
                 // disable interaction indicator if help text is visible
-                interactionIndicator?.gameObject.SetActive(false);
+                if (interactionIndicator != null)
+                {
+                    interactionIndicator.gameObject.SetActive(false);
+                }
             }
         }
         else
@@ -129,7 +141,10 @@ public class InteractableWorldObject : MonoBehaviour
                 }
                 
                 // enable interaction indicator again, as the help text is not visible anymore
-                interactionIndicator?.gameObject.SetActive(IsEnabled);
+                if (interactionIndicator != null)
+                {
+                    interactionIndicator.gameObject.SetActive(IsEnabled);
+                }
             }
         }
 

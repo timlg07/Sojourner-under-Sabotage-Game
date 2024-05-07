@@ -78,6 +78,8 @@ public class Door : MonoBehaviour
         IsLocked = false;
         StompEventDelegation.OnRoomUnlocked(roomId);
         _doorSprites.ForEach(sprite => sprite.Unlock());
+        _iwo.IsEnabled = false;
+        _iwo.interactionIndicator.Hide();
         Open();
     }
 

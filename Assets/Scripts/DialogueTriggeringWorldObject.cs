@@ -20,15 +20,15 @@ public class DialogueTriggeringWorldObject : MonoBehaviour
             _interactableWorldObject.onPlayerInteract.AddListener(TriggerDialogue);
         }
         
-        EventManager.Instance.onGameProgressionChanged.AddListener(GameProgressionChanged);
+        EventManager.Instance.onGameProgressionChanged.AddListener(HandleGameProgressionChanged);
     }
 
-    private void GameProgressionChanged(GameProgressState p)
+    private void HandleGameProgressionChanged(GameProgressState p)
     {
         if (p.status == GameProgressState.Status.TESTS_ACTIVE && p.room == roomId)
         {
-            _interactableWorldObject.interactionIndicator.Show();
             _interactableWorldObject.IsEnabled = true;
+            _interactableWorldObject.interactionIndicator.Show();
         }
     }
 
