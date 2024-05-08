@@ -13,7 +13,8 @@ public class SpawnPosition : MonoBehaviour
 
     private void HandleFirstGameProgressionChanged(GameProgressState gps)
     {
-        if (gps.room > 1 && gps.room == roomId)
+        var currentRoomTarget = (gps.status == GameProgressState.Status.DOOR) ? gps.room - 1 : gps.room;
+        if (currentRoomTarget > 1 && currentRoomTarget == roomId)
         {
             var target = transform.position;
             var player = FindObjectOfType<PlayerController>();
