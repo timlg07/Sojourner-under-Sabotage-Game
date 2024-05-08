@@ -96,7 +96,7 @@ public class DialogueSystem : MonoBehaviour
             _isExternalDialoguePlaying = false;
             OnShowDialogue?.Invoke(dialogue);
             
-            if (currentCondition.status is GameProgressState.Status.DESTROYED)
+            if (currentCondition.status is GameProgressState.Status.DESTROYED or GameProgressState.Status.MUTATED)
             {
                 var c = EventManager.Instance.Components[GameProgressState.CurrentState.componentName];
                 FindObjectOfType<QuestPointer>().Show(c);
