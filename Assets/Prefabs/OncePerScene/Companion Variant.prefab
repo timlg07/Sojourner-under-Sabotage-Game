@@ -515,7 +515,7 @@ MonoBehaviour:
   Acc: {x: 0, y: 0, z: 0}
   Radious: 0.08
   MaxForce: 0.5
-  MaxSpeed: 0.5
+  MaxSpeed: 0.9
 --- !u!114 &3560668707440421339
 MonoBehaviour:
   m_ObjectHideFlags: 0
