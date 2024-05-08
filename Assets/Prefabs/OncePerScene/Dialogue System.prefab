@@ -410,7 +410,7 @@ MonoBehaviour:
       Try to fix the software as soon as possible, so that we can activate
       the cooling system of the reactor again!'
   - Condition:
-      room: 6
+      room: 7
       stage: 1
       status: 5
     text: "The RNA analyzer was attacked! \n\nBut luckily your tests detected it
@@ -484,8 +484,11 @@ MonoBehaviour:
     text: 'Nice!
 
 
-      If you fix this door up here real quick, we can take a shortcut
-      through the main hall.'
+      We can take a shortcut through the main hall now.
+
+
+      The
+      door to the infirmary seems broken though.'
   - Condition:
       room: 2
       stage: 1
@@ -545,3 +548,20 @@ MonoBehaviour:
 
       But hey, if you want, here
       would be enough free beds.'
+  - Condition:
+      room: 6
+      stage: 1
+      status: 5
+    text: 'Look at the defense radar!
+
+
+      Something tries to attack us!
+
+
+      And
+      the flee algorithm of our space ship does not seem to work!
+
+
+      But luckily
+      your tests detected it soon enough, so we still have some time to fix it until
+      the enemies are close enough to hit us.'
