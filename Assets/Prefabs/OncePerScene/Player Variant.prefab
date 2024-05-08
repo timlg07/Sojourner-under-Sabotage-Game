@@ -82,7 +82,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f8aab679b5991af4eb524608c357e038, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 1.26
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f8aab679b5991af4eb524608c357e038, type: 3}
       propertyPath: CollRect.x
@@ -119,7 +119,7 @@ PrefabInstance:
     - target: {fileID: 21200000, guid: f8aab679b5991af4eb524608c357e038, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -249324122, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
+      objectReference: {fileID: 1718308930, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
