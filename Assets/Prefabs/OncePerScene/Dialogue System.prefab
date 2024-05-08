@@ -59,7 +59,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _dialogueEntries:
+  dialogueEntries:
   - Condition:
       room: 1
       stage: 1
@@ -83,29 +83,37 @@ MonoBehaviour:
       room: 1
       stage: 1
       status: 4
-    text: 'Oh no the component was destroyed :(
+    text: 'Oh no :/
 
 
-      I think I remember what results
-      it usually produces. I will put them in as tests.
+      The cryo chamber malfuntioned and the system crashed.
 
 
-      Maybe this helps
-      with debugging. Good luck!'
+      Luckily
+      it looks like it at least woke no one up this time.
+
+
+      I will try to fix
+      the physical damage.
+
+
+      Can you check the software and fix it?
+
+
+      I
+      think I remember what results it usually produces. I will put them in as tests.
+
+
+      Maybe
+      this helps with debugging. Good luck!'
   - Condition:
       room: 1
       stage: 1
       status: 5
-    text: 'The component was attacked! But luckily your tests detected it soon enough.
-
-
-      Now
-      try to fix the component as soon as possible, so we can turn it back on!
-
-
-      While
-      the system is down, we risk the lifes of the crew members that are still asleep.
-      So hurry up!'
+    text: "The cryo chamber system was attacked again! \n\nBut luckily now your tests
+      detected it soon enough and powered it off.\n\nNow try to fix the component
+      as soon as possible, so we can turn it back on!\n\nWhile the system is down,
+      we risk the lifes of the crew members that are still asleep. So hurry up!"
   - Condition:
       room: 2
       stage: 1
@@ -132,13 +140,408 @@ MonoBehaviour:
     text: 'Great!
 
 
-      We made it to the defense room. Here we can configure the
-      shield of our ship.
+      Let''s head to the back of the spaceship.
 
 
-      The shield defends us against attackers or debris
-      flying around in space.
+      There
+      are fuel tanks, engines and the engine control system.
 
 
-      We have to make sure that it cannot be manipulated
-      and is always ready to protect us.'
+      It''s very crucial
+      to keep the engines safe, as errors in the software might lead to damages or
+      even explosions.'
+  - Condition:
+      room: 3
+      stage: 1
+      status: 1
+    text: 'If you follow this corridor, you''ll get to the farm of the ship.
+
+
+      It
+      contains automatic harvesting systems that grow food.'
+  - Condition:
+      room: 4
+      stage: 1
+      status: 1
+    text: 'This is the canteen of the spaceship.
+
+
+      As you are the only one
+      awake, you can choose any table you want.
+
+
+      yay.'
+  - Condition:
+      room: 5
+      stage: 1
+      status: 1
+    text: "This is the nuclear reactor.\n\nAll the electric energy on board the Sojourner
+      is generated here.\n\nThis room means the most to me. \n\nProbably because
+      I need the electricity."
+  - Condition:
+      room: 6
+      stage: 1
+      status: 1
+    text: 'Great!
+
+
+      We made it to the defense room.
+
+
+      The systems here
+      ensure the safety of our ship.
+
+
+      You should make sure the Sojourner stays
+      safe by adding a few unit tests to the defense system.'
+  - Condition:
+      room: 7
+      stage: 1
+      status: 1
+    text: 'Oh, looks like the reception is empty today.
+
+
+      (It''s empty everyday!)
+
+
+      Let''s
+      go in and check on the virus precautions.
+
+
+      Because what if our attackers
+      want to send us an actual virus instead of a digital one?'
+  - Condition:
+      room: 2
+      stage: 1
+      status: 4
+    text: 'Oh no :/
+
+
+      The engine malfuntioned and the propulsion system crashed.
+
+
+      I
+      will try to fix the physical damage.
+
+
+      Can you check the software and
+      fix it?
+
+
+      I think I remember what results it usually produces. I will
+      put them in as tests.
+
+
+      Maybe this helps with debugging. Good luck!'
+  - Condition:
+      room: 3
+      stage: 1
+      status: 4
+    text: 'Oh no :/
+
+
+      The software malfuntioned and the automatic harvesting
+      system crashed.
+
+
+      I will try to fix the physical damage.
+
+
+      Can
+      you check the software and fix it?
+
+
+      I think I remember what results
+      it usually produces. I will put them in as tests.
+
+
+      Maybe this helps
+      with debugging. Good luck!'
+  - Condition:
+      room: 4
+      stage: 1
+      status: 4
+    text: 'Oh no :/
+
+
+      The smart fridge malfuntioned and it won''t open anymore!
+
+
+      Can
+      you check the software and fix it?
+
+
+      I think I remember what results
+      it usually produces. I will put them in as tests.
+
+
+      Maybe this helps
+      with debugging. Good luck!'
+  - Condition:
+      room: 5
+      stage: 1
+      status: 4
+    text: 'Uhmm..
+
+
+      This looks bad.
+
+
+      ...
+
+
+      I think the reactor
+      just had a malfunction.
+
+
+      Well at least robots have no problem with radiation.
+
+
+      I
+      will try to fix it again, no worries.
+
+
+      While I do that, can you please
+      check the logging software?
+
+
+      I think I remember what results it usually
+      produces. I will put them in as tests.
+
+
+      Maybe this helps with debugging.
+      Good luck!'
+  - Condition:
+      room: 6
+      stage: 1
+      status: 4
+    text: 'What''s that?
+
+
+      Do you hear it?
+
+
+      Look at the defense radar.
+      An enemy came close enough to fire!
+
+
+      I will activate the lasers and
+      try to attack it.
+
+
+      While I do that, can you please fix the defense radar?
+
+
+      I
+      think I remember what results it usually produces. I will put them in as tests.
+
+
+      Maybe
+      this helps with debugging. Good luck!'
+  - Condition:
+      room: 7
+      stage: 1
+      status: 4
+    text: 'One of our RNA Analyzers just crashed.
+
+
+      I will try to repair it
+      again.
+
+
+      While I do that, can you please fix its software?
+
+
+      I
+      think I remember what results it usually produces. I will put them in as tests.
+
+
+      Maybe
+      this helps with debugging. Good luck!'
+  - Condition:
+      room: 2
+      stage: 1
+      status: 5
+    text: "The engine was attacked! \n\nBut luckily your tests detected it soon enough
+      and powered it off.\n\nNow try to fix the engine software as soon as possible,
+      so we can turn it back on and continue our journey."
+  - Condition:
+      room: 3
+      stage: 1
+      status: 5
+    text: 'The automatic harvesting system was attacked.
+
+
+      But luckily your
+      tests detected it soon enough and powered it off.
+
+
+      Try to fix the software,
+      so the food production can continue as usual.'
+  - Condition:
+      room: 4
+      stage: 1
+      status: 5
+    text: 'Oh, looks like the smart fridge was attacked.
+
+
+      But luckily your
+      tests detected it soon enough and powered it off.
+
+
+      Try to fix the software
+      before the food inside gets warm.'
+  - Condition:
+      room: 5
+      stage: 1
+      status: 5
+    text: 'It seems like something is wrong with the reactor.
+
+
+      Nice job with
+      the tests! They detected it before the reactor software crashed.
+
+
+      Something
+      with the temperatures was the problem, so the cooling system is now turned
+      off.
+
+
+      Try to fix the software as soon as possible, so that we can activate
+      the cooling system of the reactor again!'
+  - Condition:
+      room: 6
+      stage: 1
+      status: 5
+    text: "The RNA analyzer was attacked! \n\nBut luckily your tests detected it
+      soon enough and powered it off.\n\nNow try to fix its software as soon as possible,
+      so we can turn it back on."
+  - Condition:
+      room: 3
+      stage: 1
+      status: 0
+    text: 'Well done!
+
+
+      The engines are up and running again.
+
+
+      Let''s
+      continue our walk through the ship.
+
+
+      While the door back opens and closes
+      automatically, the next one seems to be broken again.
+
+
+      Can you fix it?'
+  - Condition:
+      room: 4
+      stage: 1
+      status: 0
+    text: 'Good job!
+
+
+      You don''t need to worry about food anymore now.
+
+
+      I
+      don''t need to worry about food at all though, that''s even better.
+
+
+      Come
+      on now, let''s use the food and get you something to eat!
+
+
+      Ah, but the
+      door is broken again. Of course it is.'
+  - Condition:
+      room: 5
+      stage: 1
+      status: 1
+    text: 'Awesome!
+
+
+      Well since you just had a break and ate something, I
+      hope you''re ready for some important work again.
+
+
+      Let''s check in on
+      the reactor.'
+  - Condition:
+      room: 6
+      stage: 1
+      status: 1
+    text: 'I''m very happy we managed this without blowing up the ship. Congrats.
+
+
+      And
+      look .. another broken door. At least you know what to do by now.'
+  - Condition:
+      room: 7
+      stage: 1
+      status: 1
+    text: 'Nice!
+
+
+      If you fix this door up here real quick, we can take a shortcut
+      through the main hall.'
+  - Condition:
+      room: 2
+      stage: 1
+      status: 3
+    text: 'Nice, your tests are up and running!
+
+
+      Do you want to know more
+      about how the engines work?
+
+
+      Come and take a look at them, I will try
+      to explain it.'
+  - Condition:
+      room: 3
+      stage: 1
+      status: 3
+    text: 'Good job, your tests are up and running!
+
+
+      If you want, I can show
+      you all the plants we grow here.'
+  - Condition:
+      room: 4
+      stage: 1
+      status: 3
+    text: "Great, your tests are up and running!\n\nNow you can finally eat something.
+      \n\nYou must be hungry after all those years in the cryogenic sleep."
+  - Condition:
+      room: 5
+      stage: 1
+      status: 3
+    text: 'Good job, your tests are up and running.
+
+
+      I can finally recharge
+      my batteries now!'
+  - Condition:
+      room: 6
+      stage: 1
+      status: 3
+    text: 'Great, your tests are up and running!
+
+
+      Take a look at the defense
+      radar in action now.'
+  - Condition:
+      room: 7
+      stage: 1
+      status: 3
+    text: 'Great, your tests are up and running!
+
+
+      I think you were laying
+      in bed for long enough those last years.
+
+
+      But hey, if you want, here
+      would be enough free beds.'
