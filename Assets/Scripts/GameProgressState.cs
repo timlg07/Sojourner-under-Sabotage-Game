@@ -62,5 +62,10 @@ public class GameProgressState
         {
             return HashCode.Combine(room, stage, status);
         }
+
+        public override string ToString()
+        {
+            return $"[Room {room}, Stage {stage}, Status {status}]";
+        }
     }
 }

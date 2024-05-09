@@ -458,7 +458,7 @@ MonoBehaviour:
   - Condition:
       room: 5
       stage: 1
-      status: 1
+      status: 0
     text: 'Awesome!
 
 
@@ -471,7 +471,7 @@ MonoBehaviour:
   - Condition:
       room: 6
       stage: 1
-      status: 1
+      status: 0
     text: 'I''m very happy we managed this without blowing up the ship. Congrats.
 
 
@@ -480,7 +480,7 @@ MonoBehaviour:
   - Condition:
       room: 7
       stage: 1
-      status: 1
+      status: 0
     text: 'Nice!
 
 
