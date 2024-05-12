@@ -15,7 +15,7 @@ public class EventManager : MonoBehaviour
     private static EventManager _instance;
     public readonly Dictionary<string, ComponentBehaviour> Components = new();
 
-    private const string DemoComponentName = "CryoSleep";
+    [SerializeField] private string DemoComponentName = "CryoSleep";
     [SerializeField, TextArea] private string OnGameProgressionChangedJson = "{\"id\":1,\"room\":1,\"componentName\":\"Demo\",\"stage\":1,\"status\":\"TEST\"}";
 
     private void Awake()
