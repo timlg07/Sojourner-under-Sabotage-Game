@@ -86,7 +86,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f8aab679b5991af4eb524608c357e038, type: 3}
       propertyPath: MaxSpeed
-      value: 1.8
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f8aab679b5991af4eb524608c357e038, type: 3}
       propertyPath: CollRect.x

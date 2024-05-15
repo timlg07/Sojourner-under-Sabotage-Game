@@ -123,9 +123,8 @@ namespace CreativeSpore.RpgMapEditor
                 m_pathFindingBehaviour.enabled = true;
                 
                 // adaptive speed
-                m_moving.MaxSpeed = Mathf.Lerp(0.9f, 2.2f, distanceToTarget - 1f);
-                m_moving.MaxForce = m_moving.MaxSpeed;
-                Debug.Log($"Distance: {distanceToTarget}, MaxSpeed: {m_moving.MaxSpeed}");
+                m_moving.MaxSpeed = Mathf.Lerp(0.8f, 1.5f, distanceToTarget - 1f);
+                m_moving.MaxForce = m_moving.MaxSpeed - 0.2f;
             }
             // --
 
