@@ -378,6 +378,10 @@ PrefabInstance:
       value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 11464364, guid: 8c5ca840990ca334d84895f24f6c3c50, type: 3}
+      propertyPath: m_fps
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464364, guid: 8c5ca840990ca334d84895f24f6c3c50, type: 3}
       propertyPath: m_animIdx
       value: 0
       objectReference: {fileID: 0}

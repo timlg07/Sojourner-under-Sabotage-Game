@@ -85,9 +85,10 @@ namespace CreativeSpore.RpgMapEditor
             var vPlayerPos = Target.transform.position;
             var position = transform.position;
             vPlayerPos.z = position.z;
+            var distanceToTarget = Vector2.Distance(vPlayerPos, position);
 
             // stop following the path when close enough to target (wait on a random position in range) --
-            var isTargetReached = Vector2.Distance(vPlayerPos, position) <= minDistToReachTarget;
+            var isTargetReached = distanceToTarget <= minDistToReachTarget;
             if (isTargetReached)
             {
                 if (_tempTarget == null)
@@ -120,6 +121,11 @@ namespace CreativeSpore.RpgMapEditor
                 m_animCtrl.IsPlaying = true;
                 m_pathFindingBehaviour.TargetPos = vPlayerPos;
                 m_pathFindingBehaviour.enabled = true;
+                
+                // adaptive speed
+                m_moving.MaxSpeed = Mathf.Lerp(0.9f, 2.2f, distanceToTarget - 1f);
+                m_moving.MaxForce = m_moving.MaxSpeed;
+                Debug.Log($"Distance: {distanceToTarget}, MaxSpeed: {m_moving.MaxSpeed}");
             }
             // --
 

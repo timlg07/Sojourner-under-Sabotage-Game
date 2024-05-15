@@ -85,6 +85,10 @@ PrefabInstance:
       value: 1.26
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: f8aab679b5991af4eb524608c357e038, type: 3}
+      propertyPath: MaxSpeed
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: f8aab679b5991af4eb524608c357e038, type: 3}
       propertyPath: CollRect.x
       value: -0.24288845
       objectReference: {fileID: 0}
@@ -120,7 +124,8 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1718308930, guid: e2c6e87d1353acd429777b466f8136df, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400006, guid: f8aab679b5991af4eb524608c357e038, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
