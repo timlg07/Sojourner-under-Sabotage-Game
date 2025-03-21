@@ -3,6 +3,11 @@
 This repository contains the Unity part of the serious game _Sojourner under Sabotage_. 
 The Unity export is designed to be deployed as a part of the web application developed in the Sojourner-under-Sabotage-Server repository.
 
+## Unity
+
+This game was build with Unity 2022.3.0f1. Opening the project with other versions than Unity 2022 is not recommended.  
+The correct Unity version can be downloaded best by adding this repository to your Unity Hub and opening it there. Only the WebGL build support is required. 
+
 ## Licensed Assets from the Asset Store
 
 The game makes use of several packages and assets to improve the development workflow. Two of these assets are purchased from the Unity Asset Store:  
