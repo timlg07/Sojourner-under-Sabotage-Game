@@ -1,7 +1,7 @@
 # Sojourner under Sabotage - Game
 
 This repository contains the Unity part of the serious game _Sojourner under Sabotage_. 
-The Unity export is designed to be deployed as a part of the web application developed in the Sojourner-under-Sabotage-Server repository.
+The Unity export is designed to be deployed as a part of the web application developed in the [Sojourner-under-Sabotage-Server](../../../Sojourner-under-Sabotage-Server) repository.
 
 ## Unity
 
