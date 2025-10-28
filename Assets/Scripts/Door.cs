@@ -73,10 +73,13 @@ public class Door : MonoBehaviour
         _doorManager.TryUnlockRoom(roomId);
     }
     
-    public void Unlock()
+    /// <param name="persistRemotely">
+    /// If true, the unlock event will be propagated via Stomp to the server and persisted there.
+    /// </param>
+    public void Unlock(bool persistRemotely = true)
     {
         IsLocked = false;
-        StompEventDelegation.OnRoomUnlocked(roomId);
+        if (persistRemotely) StompEventDelegation.OnRoomUnlocked(roomId);
         _doorSprites.ForEach(sprite => sprite.Unlock());
         _iwo.IsEnabled = false;
         _iwo.interactionIndicator.Hide();

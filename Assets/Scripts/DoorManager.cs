@@ -11,13 +11,16 @@ public class DoorManager : MonoBehaviour
 
     public void EnableDoor(GameProgressState state)
     {
-        if (state.status == GameProgressState.Status.DOOR)
+        if (state.status == GameProgressState.Status.DOOR) // DOOR is first status of a room
         {
             UnlockAllPreviousDoors(state.room);
+            
+            // make the door to the current room interactable:
             _doors[state.room].ForEach(door => door.Enable());
         } 
         else
         {
+            // current room's door puzzle already solved -> unlock door as well
             UnlockAllPreviousDoors(state.room + 1);
         }
     }
@@ -51,7 +54,7 @@ public class DoorManager : MonoBehaviour
             {
                 doors.Value.ForEach(door =>
                 {
-                    door.Unlock();
+                    door.Unlock(false);
                     door.Close();
                 });
             }
