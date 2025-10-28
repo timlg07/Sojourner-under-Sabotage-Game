@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.InteropServices;
 using UnityEngine.Events;
@@ -17,9 +18,17 @@ public class StompEventDelegation : MonoBehaviour
 #endif
     
     private const string UnsupportedPlatformMessage = "Not supported on this platform (needs to be the WebGL export)";
+    private static int _latestRoomUnlocked = -1;
     
     public static void OnRoomUnlocked(int roomId)
     {
+        if (_latestRoomUnlocked >= roomId)
+        {
+            Debug.Log($"Room {roomId} already unlocked, skipping event.");
+            return;
+        }
+        _latestRoomUnlocked = roomId;
+        
 #if !UNITY_EDITOR && UNITY_WEBGL
         SendRoomUnlockedEvent(roomId);
 #else
